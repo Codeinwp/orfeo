@@ -1,0 +1,98 @@
+@import "../0_base/mixins";
+
+.hestia-team,
+.team {
+  .col-xs-6 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .card {
+    text-align: center;
+    border-radius: 0;
+
+    &-image {
+      width: 120px;
+      max-height: 120px;
+      margin: -60px auto 0;
+      @include team-border-radius(50%);
+
+      img {
+        @include team-border-radius(12px);
+      }
+    }
+
+    .col-md-5, .col-md-7 {
+      width: 100%;
+    }
+
+    .col-md-7 {
+      padding-top: 20px;
+    }
+
+    .content {
+      padding-top: 0;
+
+      .card-title {
+        margin: 5px 0 0;
+      }
+
+      .category {
+        margin: 5px 0;
+        font-weight: 600;
+      }
+
+      .card-description {
+        margin-bottom: 5px;
+        margin-top: 15px;
+        text-align: center;
+      }
+
+      .footer {
+        margin-left: -12px;
+        margin-top: 0;
+        padding-top: 35px;
+
+        .btn.btn-just-icon {
+          opacity: 0.8;
+          padding: 8px;
+        }
+      }
+    }
+  }
+
+  h5.description {
+    margin-bottom: 70px;
+  }
+}
+
+.authors-on-blog {
+  background: rgba(18,20,23,1);
+  background: -moz-linear-gradient(top, rgba(18,20,23,1) 0%, rgba(50,52,55,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(18,20,23,1)), color-stop(100%, rgba(50,52,55,1)));
+  background: -webkit-linear-gradient(top, rgba(18,20,23,1) 0%, rgba(50,52,55,1) 100%);
+  background: -o-linear-gradient(top, rgba(18,20,23,1) 0%, rgba(50,52,55,1) 100%);
+  background: -ms-linear-gradient(top, rgba(18,20,23,1) 0%, rgba(50,52,55,1) 100%);
+  background: linear-gradient(to bottom, rgba(18,20,23,1) 0%, rgba(50,52,55,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121417', endColorstr='#323437', GradientType=0 );
+
+  .card-title {
+    color: #fff;
+  }
+
+  .footer {
+    a {
+      @extend %transition-all-3s-ease;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+// Generate for each social network specific buttons code
+@each $current-social in $social-networks {
+  $i: index($social-networks, $current-social);
+  @include footer-buttons-social-icon($current-social,nth($social-networks-colors,$i));
+}

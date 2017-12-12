@@ -18,7 +18,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
 Hestia Pro is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
-a {
+a, .authors-on-blog .footer a {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -35,6 +35,8 @@ body {
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   line-height: 21px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -109,7 +111,9 @@ h1.hestia-title,
 
 h2.title,
 h2.hestia-title {
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  min-height: 32px;
 }
 
 .carousel h1.hestia-title,
@@ -360,6 +364,255 @@ h2.hestia-title {
 .single-product .features .hestia-info > p,
 .single-product .features .info > p {
   margin-bottom: 10px;
+}
+
+.hestia-team .col-xs-6,
+.team .col-xs-6 {
+  padding-left: 0;
+  padding-right: 0;
+}
+.hestia-team .card,
+.team .card {
+  text-align: center;
+  border-radius: 0;
+}
+.hestia-team .card-image,
+.team .card-image {
+  width: 120px;
+  max-height: 120px;
+  margin: -60px auto 0;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+.hestia-team .card-image img,
+.team .card-image img {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+.hestia-team .card .col-md-5, .hestia-team .card .col-md-7,
+.team .card .col-md-5,
+.team .card .col-md-7 {
+  width: 100%;
+}
+.hestia-team .card .col-md-7,
+.team .card .col-md-7 {
+  padding-top: 20px;
+}
+.hestia-team .card .content,
+.team .card .content {
+  padding-top: 0;
+}
+.hestia-team .card .content .card-title,
+.team .card .content .card-title {
+  margin: 5px 0 0;
+}
+.hestia-team .card .content .category,
+.team .card .content .category {
+  margin: 5px 0;
+  font-weight: 600;
+}
+.hestia-team .card .content .card-description,
+.team .card .content .card-description {
+  margin-bottom: 5px;
+  margin-top: 15px;
+  text-align: center;
+}
+.hestia-team .card .content .footer,
+.team .card .content .footer {
+  margin-left: -12px;
+  margin-top: 0;
+  padding-top: 35px;
+}
+.hestia-team .card .content .footer .btn.btn-just-icon,
+.team .card .content .footer .btn.btn-just-icon {
+  opacity: 0.8;
+  padding: 8px;
+}
+.hestia-team h5.description,
+.team h5.description {
+  margin-bottom: 70px;
+}
+
+.authors-on-blog {
+  background: #121417;
+  background: -moz-linear-gradient(top, #121417 0%, #323437 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #121417), color-stop(100%, #323437));
+  background: -webkit-linear-gradient(top, #121417 0%, #323437 100%);
+  background: -o-linear-gradient(top, #121417 0%, #323437 100%);
+  background: -ms-linear-gradient(top, #121417 0%, #323437 100%);
+  background: linear-gradient(to bottom, #121417 0%, #323437 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#121417', endColorstr='#323437', GradientType=0 );
+}
+.authors-on-blog .card-title {
+  color: #fff;
+}
+.authors-on-blog .footer a:hover {
+  color: #fff;
+}
+
+.hestia-team .footer a[href*="facebook.com"],
+.team .footer a[href*="facebook.com"],
+.footer-menu a[href*="facebook.com"] {
+  color: #3b5998;
+}
+
+.hestia-team .footer a[href*="twitter.com"],
+.team .footer a[href*="twitter.com"],
+.footer-menu a[href*="twitter.com"] {
+  color: #55acee;
+}
+
+.hestia-team .footer a[href*="pinterest.com"],
+.team .footer a[href*="pinterest.com"],
+.footer-menu a[href*="pinterest.com"] {
+  color: #cc2127;
+}
+
+.hestia-team .footer a[href*="google.com"],
+.team .footer a[href*="google.com"],
+.footer-menu a[href*="google.com"] {
+  color: #dd4b39;
+}
+
+.hestia-team .footer a[href*="linkedin.com"],
+.team .footer a[href*="linkedin.com"],
+.footer-menu a[href*="linkedin.com"] {
+  color: #0976b4;
+}
+
+.hestia-team .footer a[href*="dribbble.com"],
+.team .footer a[href*="dribbble.com"],
+.footer-menu a[href*="dribbble.com"] {
+  color: #ea4c89;
+}
+
+.hestia-team .footer a[href*="github.com"],
+.team .footer a[href*="github.com"],
+.footer-menu a[href*="github.com"] {
+  color: #333;
+}
+
+.hestia-team .footer a[href*="youtube.com"],
+.team .footer a[href*="youtube.com"],
+.footer-menu a[href*="youtube.com"] {
+  color: #e52d27;
+}
+
+.hestia-team .footer a[href*="instagram.com"],
+.team .footer a[href*="instagram.com"],
+.footer-menu a[href*="instagram.com"] {
+  color: #125688;
+}
+
+.hestia-team .footer a[href*="reddit.com"],
+.team .footer a[href*="reddit.com"],
+.footer-menu a[href*="reddit.com"] {
+  color: #ff4500;
+}
+
+.hestia-team .footer a[href*="tumblr.com"],
+.team .footer a[href*="tumblr.com"],
+.footer-menu a[href*="tumblr.com"] {
+  color: #35465c;
+}
+
+.hestia-team .footer a[href*="behance.com"],
+.team .footer a[href*="behance.com"],
+.footer-menu a[href*="behance.com"] {
+  color: #1769ff;
+}
+
+.hestia-team .footer a[href*="snapchat.com"],
+.team .footer a[href*="snapchat.com"],
+.footer-menu a[href*="snapchat.com"] {
+  color: #fffc00;
+}
+
+.hestia-team .footer a[href*="deviantart.com"],
+.team .footer a[href*="deviantart.com"],
+.footer-menu a[href*="deviantart.com"] {
+  color: #05cc47;
+}
+
+.hestia-team .footer a[href*="vimeo.com"],
+.team .footer a[href*="vimeo.com"],
+.footer-menu a[href*="vimeo.com"] {
+  color: #1ab7ea;
+}
+
+.hestia-blogs article:nth-child(6n) .category a, .hestia-blogs article:nth-child(6n) .card-description .moretag {
+  color: #6bd098;
+}
+.hestia-blogs article:nth-child(6n) .category a:hover, .hestia-blogs article:nth-child(6n) .card-description .moretag:hover {
+  color: #44c47d;
+}
+.hestia-blogs article:nth-child(6n+1) .category a, .hestia-blogs article:nth-child(6n+1) .card-description .moretag {
+  color: #34b5b8;
+}
+.hestia-blogs article:nth-child(6n+1) .category a:hover, .hestia-blogs article:nth-child(6n+1) .card-description .moretag:hover {
+  color: #34b5b8;
+}
+.hestia-blogs article:nth-child(6n+2) .category a, .hestia-blogs article:nth-child(6n+2) .card-description .moretag {
+  color: #51bcda;
+}
+.hestia-blogs article:nth-child(6n+2) .category a:hover, .hestia-blogs article:nth-child(6n+2) .card-description .moretag:hover {
+  color: #2ba9cd;
+}
+.hestia-blogs article:nth-child(6n+3) .category a, .hestia-blogs article:nth-child(6n+3) .card-description .moretag {
+  color: #f5593d;
+}
+.hestia-blogs article:nth-child(6n+3) .category a:hover, .hestia-blogs article:nth-child(6n+3) .card-description .moretag:hover {
+  color: #f33816;
+}
+.hestia-blogs article:nth-child(6n+4) .category a, .hestia-blogs article:nth-child(6n+4) .card-description .moretag {
+  color: #fbc658;
+}
+.hestia-blogs article:nth-child(6n+4) .category a:hover, .hestia-blogs article:nth-child(6n+4) .card-description .moretag:hover {
+  color: #fab526;
+}
+.hestia-blogs article:nth-child(6n+5) .category a, .hestia-blogs article:nth-child(6n+5) .card-description .moretag {
+  color: #e91e63;
+}
+.hestia-blogs article:nth-child(6n+5) .category a:hover, .hestia-blogs article:nth-child(6n+5) .card-description .moretag:hover {
+  color: #C11F64;
+}
+
+.hestia-blogs {
+  padding: 0;
+}
+.hestia-blogs .card-blog {
+  margin-top: 5px;
+  text-align: center;
+}
+.hestia-blogs .card-image {
+  box-shadow: none;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+.hestia-blogs .content h6.category {
+  font-weight: 600;
+}
+.hestia-blogs .content .card-description .moretag {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #51cbce;
+  border-color: #51cbce;
+  color: #FFFFFF;
+  opacity: 1;
+  box-sizing: border-box;
+  border-width: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 0.5rem 18px;
+  line-height: 1.75;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin-top: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

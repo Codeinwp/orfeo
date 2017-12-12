@@ -38,3 +38,37 @@ function christmas_hestia_customize_register( $wp_customize ) {
     }
 }
 add_action( 'customize_register', 'christmas_hestia_customize_register', 99 );
+
+/**
+ * Change features defaults.
+ *
+ * @since 1.0.0
+ */
+function orfeo_features_defaults() {
+    return json_encode(
+        array(
+            array(
+                'icon_value' => 'fa-th-large',
+                'title'      => esc_html__( 'Feature 1', 'christmas-hestia' ),
+                'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum molestie sagittis.', 'christmas-hestia' ),
+                'link'       => '',
+                'color'      => '#e91e63',
+            ),
+            array(
+                'icon_value' => 'fa-archive',
+                'title'      => esc_html__( 'Feature 2', 'christmas-hestia' ),
+                'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum molestie sagittis.', 'christmas-hestia' ),
+                'link'       => '',
+                'color'      => '#00bcd4',
+            ),
+            array(
+                'icon_value' => 'fa-th',
+                'title'      => esc_html__( 'Feature 3', 'christmas-hestia' ),
+                'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum molestie sagittis.', 'christmas-hestia' ),
+                'link'       => '',
+                'color'      => '#4caf50',
+            ),
+        )
+    );
+}
+add_filter( 'hestia_features_default_content', 'orfeo_features_defaults' );

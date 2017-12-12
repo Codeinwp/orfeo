@@ -53,6 +53,12 @@
   }
 }
 
+@mixin team-border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
 //Footer - Social Icons
 @mixin footer-menu-social-icons( $network, $color, $icon ){
   .footer-big .footer-menu li a[href*="#{$network}.com"]{

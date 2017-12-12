@@ -1,0 +1,95 @@
+.hestia-blogs article {
+  &:nth-child(6n) .category a,
+  &:nth-child(6n) .card-description .moretag {
+    color: $color-success;
+  }
+  &:nth-child(6n) .category a:hover,
+  &:nth-child(6n) .card-description .moretag:hover {
+    color: $color-success-hover;
+  }
+  &:nth-child(6n+1) .category a,
+  &:nth-child(6n+1) .card-description .moretag {
+       color: $color-primary-hover;
+  }
+  &:nth-child(6n+1) .category a:hover ,
+  &:nth-child(6n+1) .card-description .moretag:hover {
+    color: $color-primary-hover;
+  }
+  &:nth-child(6n+2) .category a,
+  &:nth-child(6n+2) .card-description .moretag {
+    color: $color-info;
+  }
+  &:nth-child(6n+2) .category a:hover,
+  &:nth-child(6n+2) .card-description .moretag:hover {
+    color: $color-info-hover;
+  }
+  &:nth-child(6n+3) .category a,
+  &:nth-child(6n+3) .card-description .moretag {
+    color: $color-danger;
+  }
+  &:nth-child(6n+3) .category a:hover,
+  &:nth-child(6n+3) .card-description .moretag:hover {
+    color: $color-danger-hover;
+  }
+  &:nth-child(6n+4) .category a,
+  &:nth-child(6n+4) .card-description .moretag {
+    color: $color-warning;
+  }
+  &:nth-child(6n+4) .category a:hover,
+  &:nth-child(6n+4) .card-description .moretag:hover {
+    color: $color-warning-hover;
+  }
+  &:nth-child(6n+5) .category a,
+  &:nth-child(6n+5) .card-description .moretag {
+    color: $color-rose;
+  }
+  &:nth-child(6n+5) .category a:hover ,
+  &:nth-child(6n+5) .card-description .moretag:hover {
+    color: $color-rose-hover;
+  }
+}
+
+.hestia-blogs {
+
+  padding: 0;
+
+  .card-blog {
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .card-image {
+    box-shadow: none;
+    @include team-border-radius(12px);
+
+  }
+
+  .content {
+
+    h6.category {
+      font-weight: 600;
+    }
+
+    .card-description {
+
+      .moretag {
+        @include team-border-radius(30px);
+        background-color: #51cbce;
+        border-color: #51cbce;
+        color: #FFFFFF;
+        opacity: 1;
+        box-sizing: border-box;
+        border-width: 2px;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 0.5rem 18px;
+        line-height: 1.75;
+        cursor: pointer;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        margin-top: 20px;
+      }
+    }
+  }
+
+}
