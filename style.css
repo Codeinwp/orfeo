@@ -1,0 +1,365 @@
+/*
+Theme Name:     Orfeo
+Theme URI:      https://themeisle.com/themes/orfeo/
+Author:         ThemeIsle
+Author URI:     https://themeisle.com
+Description:    Orfeo TODO: Make desc.
+Version:        1.0.0
+License:        GNU General Public License v2 or later
+License URI:    http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:    orfeo
+Template:       hestia
+WordPress Available:  no
+Tags: blog, custom-logo, portfolio, e-commerce, rtl-language-support, post-formats, grid-layout, one-column, two-columns, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, flexible-header, full-width-template, sticky-post, theme-options, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Hestia Pro is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+*/
+a {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+body {
+  direction: ltr;
+  color: #333333;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+}
+
+a {
+  color: #51cbce;
+}
+a:hover, a:focus {
+  color: #34b5b8;
+  text-decoration: none;
+}
+
+blockquote p {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 53.2px;
+  line-height: 61.18px;
+}
+
+h2 {
+  font-size: 36.4px;
+  line-height: 54.6px;
+}
+
+h3 {
+  margin: 20px 0 10px;
+  font-size: 25.55px;
+  line-height: 35.77px;
+}
+
+h4 {
+  font-size: 18.2px;
+  line-height: 28.21px;
+}
+
+h5 {
+  margin-bottom: 15px;
+  font-size: 17.5px;
+  line-height: 27.125px;
+}
+
+h6 {
+  font-size: 12.6px;
+  line-height: 18.9px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.hestia-title, .title, .card-title, .info-title, .footer-brand, .footer-big h4, .footer-big h5, .media .media-heading, .woocommerce.archive .blog-post .products .product-category h2 {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-weight: 300;
+}
+.hestia-title, .hestia-title a, .title, .title a, .card-title, .card-title a, .info-title, .info-title a, .footer-brand, .footer-brand a, .footer-big h4, .footer-big h4 a, .footer-big h5, .footer-big h5 a, .media .media-heading, .media .media-heading a, .woocommerce.archive .blog-post .products .product-category h2, .woocommerce.archive .blog-post .products .product-category h2 a {
+  color: #333333;
+  text-decoration: none;
+  word-wrap: break-word;
+}
+
+h1.title,
+h1.hestia-title,
+.pricing h2.title,
+.pricing h2.hestia-title,
+.contactus h2.title,
+.contactus h2.hestia-title {
+  margin-bottom: 30px;
+}
+
+h2.title,
+h2.hestia-title {
+  margin-bottom: 10px;
+}
+
+.carousel h1.hestia-title,
+.carousel h2.title {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 67.2px;
+  line-height: 77.28px;
+}
+.carousel span.sub-title {
+  display: block;
+  margin: 10px 0 0;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 18.2px;
+  line-height: 25.48px;
+}
+.carousel .buttons {
+  margin-top: 60px;
+}
+.carousel .buttons a {
+  padding: 17px 35px;
+  font-size: 14px;
+}
+
+.description, .card-description, .footer-big {
+  color: #9A9A9A;
+}
+
+.subscribe-description {
+  color: #efefef;
+}
+
+.text-warning {
+  color: #fbc658;
+}
+
+.text-primary {
+  color: #51cbce;
+}
+
+.text-danger {
+  color: #f5593d;
+}
+
+.text-success {
+  color: #6bd098;
+}
+
+.text-info {
+  color: #51bcda;
+}
+
+.text-rose {
+  color: #e91e63;
+}
+
+.text-gray {
+  color: #9A9A9A;
+}
+
+.tooltip {
+  opacity: 0;
+  -webkit-transition: opacity,-webkit-transform 0.2s ease;
+  transition: opacity,-webkit-transform 0.2s ease;
+  transition: opacity,transform 0.2s ease;
+  transition: opacity,transform 0.2s ease,-webkit-transform 0.2s ease;
+  -webkit-transform: translate3d(0, 5px, 0);
+  -ms-transform: translate3d(0, 5px, 0);
+  transform: translate3d(0, 5px, 0);
+}
+.tooltip.in {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0px, 0);
+  -ms-transform: translate3d(0, 0px, 0);
+  transform: translate3d(0, 0px, 0);
+}
+.tooltip.left .tooltip-arrow {
+  border-left-color: #fff;
+}
+.tooltip.right .tooltip-arrow {
+  border-right-color: #fff;
+}
+.tooltip.top .tooltip-arrow {
+  border-top-color: #fff;
+}
+.tooltip.bottom .tooltip-arrow {
+  border-bottom-color: #fff;
+}
+
+.tooltip-inner {
+  min-width: 130px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  color: #555;
+  background: #fff;
+  -webkit-box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: none;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000;
+  /* Above WP toolbar. */
+}
+
+.container {
+  max-width: 100%;
+}
+
+@media (min-width: 749px) {
+  .container {
+    max-width: 748px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 2000px;
+  }
+}
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Features Section
+--------------------------------------------------------------*/
+.hestia-features, .features {
+  padding: 80px 0;
+  text-align: center;
+}
+.hestia-features .hestia-title,
+.hestia-features .title, .features .hestia-title,
+.features .title {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  min-height: 32px;
+}
+.hestia-features .hestia-info,
+.hestia-features .info, .features .hestia-info,
+.features .info {
+  padding: 30px 0 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+.hestia-features .hestia-info p,
+.hestia-features .info p, .features .hestia-info p,
+.features .info p {
+  font-size: 15px;
+}
+.hestia-features .feature-box .card, .features .feature-box .card {
+  width: auto;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+.hestia-features .feature-box img, .features .feature-box img {
+  max-width: 150px;
+}
+
+.hestia-info, .info {
+  max-width: 400px;
+}
+.hestia-info .icon, .info .icon {
+  color: #9A9A9A;
+}
+.hestia-info .icon > i, .info .icon > i {
+  font-size: 61.6px;
+}
+.hestia-info .info-title, .info .info-title {
+  margin: 15px 0;
+  color: #333333;
+}
+.hestia-info p, .info p {
+  color: #9A9A9A;
+}
+
+.info-horizontal .icon {
+  float: left;
+  margin-top: 24px;
+  margin-right: 10px;
+}
+.info-horizontal .icon > i {
+  font-size: 36.4px;
+}
+.info-horizontal .description {
+  overflow: hidden;
+}
+
+.icon.icon-primary {
+  color: #51cbce;
+}
+.icon.icon-success {
+  color: #6bd098;
+}
+.icon.icon-danger {
+  color: #f5593d;
+}
+.icon.icon-rose {
+  color: #e91e63;
+}
+
+.single-product .hestia-features,
+.single-product .features {
+  padding: 50px 0 0;
+}
+.single-product .hestia-features > div h2,
+.single-product .features > div h2 {
+  font-size: 25.55px;
+}
+.single-product .hestia-features > div h5,
+.single-product .features > div h5 {
+  font-size: 16px;
+}
+.single-product .hestia-features .hestia-info > p, .single-product .hestia-features .info > p,
+.single-product .features .hestia-info > p,
+.single-product .features .info > p {
+  margin-bottom: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */

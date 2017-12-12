@@ -1,0 +1,58 @@
+#Check code of the theme
+check:
+  - 'newer:imagemin'
+  - 'sass:style'
+  - 'sass:customizerStyle'
+  - 'sass:editorStyle'
+  - 'sass:pagebuilderStyle'
+  - 'rtlcss'
+  - 'phpcbf'
+  - 'newer:postcss:build'
+  - 'makepot'
+  - 'newer:addtextdomain:main'
+  - 'check:css'
+  - 'travis'
+
+check:php:
+  - 'phpunit'
+#Generate Lite
+generate:
+  - 'mkdir:lite'
+  - 'sync:syncWporg'
+  - 'sass:wporgStyle'
+  - 'sass:pagebuilderStyleLite'
+  - 'replace:liteRename'
+  - 'replace:wpmlLiteRename'
+  - 'replace:setupWpRename'
+  - 'replace:loadTextDomain'
+  - 'copy:potFile'
+  - 'addtextdomain:lite'
+
+#Generate Companion
+companion:
+  - 'mkdir:companion'
+  - 'sync:syncCompanion'
+  - 'copy:companion'
+  - 'addtextdomain:companion'
+
+version_pro_lite:
+  - 'version:style_ti:patch'
+  - 'version:scss_ti:patch'
+  - 'version:companion_ti:patch'
+  - 'version:package_ti:patch'
+  - 'version:functions:patch'
+
+### How To Version / Release ###
+deploy_lite:
+  - 'compress:full'
+  - 'copy:lite'
+  - 'compress:lite'
+# Version:
+#         1. grunt version::patch
+#         2. grunt generate
+#         3. commit & push for version update
+#         4. zip & upload to wordpress.org
+
+child:
+  - 'mkdir:childTheme'
+  - 'sass:childTheme'

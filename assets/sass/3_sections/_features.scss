@@ -1,0 +1,97 @@
+.hestia-features, .features {
+  padding: 80px 0;
+  text-align: center;
+
+  .hestia-title,
+  .title {
+    margin-top: 30px;
+    margin-bottom: 25px;
+    min-height: 32px;
+  }
+
+  .hestia-info,
+  .info {
+    padding: 30px 0 30px;
+    text-align: center;
+    margin: 0 auto;
+
+    p {
+      font-size: 15px;
+    }
+  }
+
+  .feature-box {
+    .card {
+      width: auto;
+      overflow: hidden;
+      margin-bottom: 0;
+    }
+    img {
+      max-width: 150px;
+    }
+  }
+}
+
+.hestia-info, .info {
+  max-width: 400px;
+  .icon {
+    color: $color-body-text;
+    > i {
+      font-size: 61.6px;
+    }
+  }
+  .info-title {
+    margin: 15px 0;
+    color: $color-secondary;
+  }
+  p {
+    color: $color-body-text;
+  }
+}
+
+.info-horizontal {
+  .icon {
+    float: left;
+    margin-top: 24px;
+    margin-right: 10px;
+    > i {
+      font-size: 36.4px;
+    }
+  }
+  .description {
+    overflow: hidden;
+  }
+}
+
+.icon {
+  &.icon-primary {
+    color: $color-primary;
+  }
+  &.icon-success {
+    color: $color-success;
+  }
+  &.icon-danger {
+    color: $color-danger;
+  }
+  &.icon-rose {
+    color: $color-rose;
+  }
+}
+
+.single-product .hestia-features,
+.single-product .features {
+  padding: 50px 0 0;
+  > div {
+    h2 {
+      font-size: 25.55px;
+    }
+    h5 {
+      font-size: 16px;
+    }
+  }
+  .hestia-info, .info {
+    > p {
+      margin-bottom: 10px;
+    }
+  }
+}
