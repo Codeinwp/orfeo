@@ -1,52 +1,101 @@
-.hestia-blogs article {
-  &:nth-child(6n) .category a,
-  &:nth-child(6n) .card-description .moretag {
-    color: $color-success;
+.hestia-blogs {
+
+  .row:nth-child(2n+1) article {
+
+    &:nth-child(3n+1) .category a {
+      color: $color-success;
+    }
+    &:nth-child(3n+1) .category a:hover {
+      color: $color-success-hover;
+    }
+    &:nth-child(3n+2) .category a {
+      color: $color-primary-hover;
+    }
+    &:nth-child(3n+2) .category a:hover {
+      color: $color-primary-hover;
+    }
+    &:nth-child(3n+3) .category a {
+      color: $color-info;
+    }
+    &:nth-child(3n+3) .category a:hover {
+      color: $color-info-hover;
+    }
+
+
+    &:nth-child(3n+1) .card-description a.moretag {
+      color: #fff;
+      background-color: $color-success;
+    }
+    &:nth-child(3n+1) .card-description a.moretag:hover {
+      color: #fff;
+      background-color: $color-success-hover;
+    }
+    &:nth-child(3n+2) .card-description a.moretag {
+      color: #fff;
+      background-color: $color-primary;
+    }
+    &:nth-child(3n+2) .card-description a.moretag:hover {
+      color: #fff;
+      background-color: $color-primary-hover;
+    }
+    &:nth-child(3n+3) .card-description a.moretag {
+      color: #fff;
+      background-color: $color-info;
+    }
+    &:nth-child(3n+3) .card-description a.moretag:hover {
+      color: #fff;
+      background-color: $color-info-hover;
+    }
   }
-  &:nth-child(6n) .category a:hover,
-  &:nth-child(6n) .card-description .moretag:hover {
-    color: $color-success-hover;
+
+  .row:nth-child(2n+2) article {
+
+    &:nth-child(3n+1) .category a {
+      color: $color-danger;
+    }
+    &:nth-child(3n+1) .category a:hover {
+      color: $color-danger-hover;
+    }
+    &:nth-child(3n+2) .category a {
+      color: $color-warning;
+    }
+    &:nth-child(3n+2) .category a:hover {
+      color: $color-warning-hover;
+    }
+    &:nth-child(3n+3) .category a {
+      color: $color-rose;
+    }
+    &:nth-child(3n+3) .category a:hover  {
+      color: $color-rose-hover;
+    }
+
+
+    &:nth-child(3n+1) .card-description a.moretag {
+      color: #fff;
+      background-color: $color-danger;
+    }
+    &:nth-child(3n+1) .card-description a.moretag:hover {
+      color: #fff;
+      background-color: $color-danger-hover;
+    }
+    &:nth-child(3n+2) .card-description a.moretag {
+      color: #fff;
+      background-color: $color-warning;
+    }
+    &:nth-child(3n+2) .card-description a.moretag:hover {
+      color: #fff;
+      background-color: $color-warning-hover;
+    }
+    &:nth-child(3n+3) .card-description a.moretag {
+      color: #fff;
+      background-color: $color-rose;
+    }
+    &:nth-child(3n+3) .card-description a.moretag:hover {
+      color: #fff;
+      background-color: $color-rose-hover;
+    }
   }
-  &:nth-child(6n+1) .category a,
-  &:nth-child(6n+1) .card-description .moretag {
-       color: $color-primary-hover;
-  }
-  &:nth-child(6n+1) .category a:hover ,
-  &:nth-child(6n+1) .card-description .moretag:hover {
-    color: $color-primary-hover;
-  }
-  &:nth-child(6n+2) .category a,
-  &:nth-child(6n+2) .card-description .moretag {
-    color: $color-info;
-  }
-  &:nth-child(6n+2) .category a:hover,
-  &:nth-child(6n+2) .card-description .moretag:hover {
-    color: $color-info-hover;
-  }
-  &:nth-child(6n+3) .category a,
-  &:nth-child(6n+3) .card-description .moretag {
-    color: $color-danger;
-  }
-  &:nth-child(6n+3) .category a:hover,
-  &:nth-child(6n+3) .card-description .moretag:hover {
-    color: $color-danger-hover;
-  }
-  &:nth-child(6n+4) .category a,
-  &:nth-child(6n+4) .card-description .moretag {
-    color: $color-warning;
-  }
-  &:nth-child(6n+4) .category a:hover,
-  &:nth-child(6n+4) .card-description .moretag:hover {
-    color: $color-warning-hover;
-  }
-  &:nth-child(6n+5) .category a,
-  &:nth-child(6n+5) .card-description .moretag {
-    color: $color-rose;
-  }
-  &:nth-child(6n+5) .category a:hover ,
-  &:nth-child(6n+5) .card-description .moretag:hover {
-    color: $color-rose-hover;
-  }
+
 }
 
 .hestia-blogs {

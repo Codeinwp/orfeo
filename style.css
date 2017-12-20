@@ -542,41 +542,89 @@ h2.hestia-title {
   color: #1ab7ea;
 }
 
-.hestia-blogs article:nth-child(6n) .category a, .hestia-blogs article:nth-child(6n) .card-description .moretag {
+.hestia-blogs .row:nth-child(2n+1) article:nth-child(3n+1) .category a {
   color: #6bd098;
 }
-.hestia-blogs article:nth-child(6n) .category a:hover, .hestia-blogs article:nth-child(6n) .card-description .moretag:hover {
+.hestia-blogs .row:nth-child(2n+1) article:nth-child(3n+1) .category a:hover {
   color: #44c47d;
 }
-.hestia-blogs article:nth-child(6n+1) .category a, .hestia-blogs article:nth-child(6n+1) .card-description .moretag {
+.hestia-blogs .row:nth-child(2n+1) article:nth-child(3n+2) .category a {
   color: #34b5b8;
 }
-.hestia-blogs article:nth-child(6n+1) .category a:hover, .hestia-blogs article:nth-child(6n+1) .card-description .moretag:hover {
+.hestia-blogs .row:nth-child(2n+1) article:nth-child(3n+2) .category a:hover {
   color: #34b5b8;
 }
-.hestia-blogs article:nth-child(6n+2) .category a, .hestia-blogs article:nth-child(6n+2) .card-description .moretag {
+.hestia-blogs .row:nth-child(2n+1) article:nth-child(3n+3) .category a {
   color: #51bcda;
 }
-.hestia-blogs article:nth-child(6n+2) .category a:hover, .hestia-blogs article:nth-child(6n+2) .card-description .moretag:hover {
+.hestia-blogs .row:nth-child(2n+1) article:nth-child(3n+3) .category a:hover {
   color: #2ba9cd;
 }
-.hestia-blogs article:nth-child(6n+3) .category a, .hestia-blogs article:nth-child(6n+3) .card-description .moretag {
+.hestia-blogs .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag {
+  color: #fff;
+  background-color: #6bd098;
+}
+.hestia-blogs .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag:hover {
+  color: #fff;
+  background-color: #44c47d;
+}
+.hestia-blogs .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag {
+  color: #fff;
+  background-color: #51cbce;
+}
+.hestia-blogs .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag:hover {
+  color: #fff;
+  background-color: #34b5b8;
+}
+.hestia-blogs .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag {
+  color: #fff;
+  background-color: #51bcda;
+}
+.hestia-blogs .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag:hover {
+  color: #fff;
+  background-color: #2ba9cd;
+}
+.hestia-blogs .row:nth-child(2n+2) article:nth-child(3n+1) .category a {
   color: #f5593d;
 }
-.hestia-blogs article:nth-child(6n+3) .category a:hover, .hestia-blogs article:nth-child(6n+3) .card-description .moretag:hover {
+.hestia-blogs .row:nth-child(2n+2) article:nth-child(3n+1) .category a:hover {
   color: #f33816;
 }
-.hestia-blogs article:nth-child(6n+4) .category a, .hestia-blogs article:nth-child(6n+4) .card-description .moretag {
+.hestia-blogs .row:nth-child(2n+2) article:nth-child(3n+2) .category a {
   color: #fbc658;
 }
-.hestia-blogs article:nth-child(6n+4) .category a:hover, .hestia-blogs article:nth-child(6n+4) .card-description .moretag:hover {
+.hestia-blogs .row:nth-child(2n+2) article:nth-child(3n+2) .category a:hover {
   color: #fab526;
 }
-.hestia-blogs article:nth-child(6n+5) .category a, .hestia-blogs article:nth-child(6n+5) .card-description .moretag {
+.hestia-blogs .row:nth-child(2n+2) article:nth-child(3n+3) .category a {
   color: #e91e63;
 }
-.hestia-blogs article:nth-child(6n+5) .category a:hover, .hestia-blogs article:nth-child(6n+5) .card-description .moretag:hover {
+.hestia-blogs .row:nth-child(2n+2) article:nth-child(3n+3) .category a:hover {
   color: #C11F64;
+}
+.hestia-blogs .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag {
+  color: #fff;
+  background-color: #f5593d;
+}
+.hestia-blogs .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag:hover {
+  color: #fff;
+  background-color: #f33816;
+}
+.hestia-blogs .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag {
+  color: #fff;
+  background-color: #fbc658;
+}
+.hestia-blogs .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag:hover {
+  color: #fff;
+  background-color: #fab526;
+}
+.hestia-blogs .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag {
+  color: #fff;
+  background-color: #e91e63;
+}
+.hestia-blogs .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag:hover {
+  color: #fff;
+  background-color: #C11F64;
 }
 
 .hestia-blogs {
