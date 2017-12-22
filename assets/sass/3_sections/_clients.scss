@@ -1,0 +1,40 @@
+.hestia-testimonials-content {
+
+  .row:nth-of-type(2n+1) {
+
+    .col-md-4:nth-of-type(3n+1) .card-testimonial {
+      background-color: $color-success;
+    }
+    .col-md-4:nth-of-type(3n+2) .card-testimonial {
+      background-color: $color-warning;
+    }
+    .col-md-4:nth-of-type(3n+3) .card-testimonial {
+      background-color: $color-rose;
+    }
+  }
+
+  .row:nth-of-type(2n+2) {
+
+    .col-md-4:nth-of-type(3n+1) .card-testimonial {
+      background-color: $color-danger;
+    }
+    .col-md-4:nth-of-type(3n+2) .card-testimonial {
+      background-color: $color-primary;
+    }
+    .col-md-4:nth-of-type(3n+3) .card-testimonial {
+      background-color: $color-info;
+    }
+  }
+
+  .row .col-md-4 .card-testimonial .content {
+    .card-title, .category, .card-description {
+      color: #fff;
+    }
+  }
+
+  .card-testimonial .card-avatar img {
+    margin: -76px auto 0;
+  }
+
+}
+

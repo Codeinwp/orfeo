@@ -9,7 +9,7 @@
       color: $color-success-hover;
     }
     &:nth-child(3n+2) .category a {
-      color: $color-primary-hover;
+      color: $color-primary;
     }
     &:nth-child(3n+2) .category a:hover {
       color: $color-primary-hover;
@@ -96,10 +96,6 @@
     }
   }
 
-}
-
-.hestia-blogs {
-
   padding: 0;
 
   .card-blog {
@@ -136,9 +132,12 @@
         cursor: pointer;
         text-transform: uppercase;
         padding: 10px 20px;
-        margin-top: 20px;
+        display: block;
+        max-width: 133px;
+        margin: 20px auto;
       }
     }
   }
 
 }
+
