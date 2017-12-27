@@ -1,0 +1,56 @@
+.blog .hestia-blogs {
+
+  .card-plain .card-image {
+    @include team-border-radius(12px);
+  }
+
+  .card-blog {
+
+    margin-top: 5px;
+    margin-bottom: 80px;
+
+    .col-sm-7,
+    .col-ms-7 {
+      //padding: 20px 20px;
+    }
+
+    .row .category {
+      font-weight: 600;
+    }
+
+    .card-description p {
+      margin: 15px 0 5px;
+    }
+
+    .author {
+      a > strong {
+        font-weight: bolder;
+      }
+    }
+
+  }
+
+  .card-blog:nth-of-type(2n+2) {
+
+    .row {
+      .col-ms-5,
+      .col-sm-5 {
+        float: right;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+
+  .blog .hestia-blogs {
+    .card-blog:nth-of-type(2n+2) {
+      .row {
+        .col-ms-5,
+        .col-sm-5 {
+          float: none;
+        }
+      }
+    }
+  }
+}
