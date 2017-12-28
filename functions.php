@@ -21,6 +21,10 @@ if ( !function_exists( 'hestia_child_parent_css' ) ):
 endif;
 add_action( 'wp_enqueue_scripts', 'hestia_child_parent_css', 10 );
 
+function orfeo_include_google_fonts() {
+    wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,600', false );
+}
+add_action( 'wp_enqueue_scripts', 'orfeo_include_google_fonts' );
 
 /**
  * Change default fonts.

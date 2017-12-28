@@ -1,97 +1,60 @@
-.hestia-features, .features {
-  padding: 80px 0;
-  text-align: center;
+.hestia-features {
 
-  .hestia-title,
-  .title {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  padding: 80px 0;
+
+  .hestia-title {
+    color: #333333;
+    font-family: $primary-font;
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 42px;
     margin-top: 30px;
     margin-bottom: 25px;
     min-height: 32px;
   }
 
-  .hestia-info,
-  .info {
-    padding: 30px 0 30px;
+  .description {
+    color: #9A9A9A;
+    font-family: $secondary-font;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0 0 5px;
+  }
+
+  .hestia-info {
+
     text-align: center;
+    padding: 30px 0 30px;
     margin: 0 auto;
 
+    .info-title {
+      font-family: $primary-font;
+      font-size: 23px;
+      font-weight: 300;
+      line-height:27px;
+      margin: 15px 0;
+    }
+
     p {
+      color: #9A9A9A;
+      font-family: $secondary-font;
       font-size: 15px;
+      font-weight: 300;
+      line-height: 22px;
+      margin: 0 0 5px;
+    }
+
+    .icon {
+      color: $color-danger !important;
+    }
+
+    .icon > i {
+      font-size: 48px;
     }
   }
 
-  .feature-box {
-    .card {
-      width: auto;
-      overflow: hidden;
-      margin-bottom: 0;
-    }
-    img {
-      max-width: 150px;
-    }
-  }
-}
-
-.hestia-info, .info {
-  max-width: 400px;
-  .icon {
-    color: $color-body-text;
-    > i {
-      font-size: 61.6px;
-    }
-  }
-  .info-title {
-    margin: 15px 0;
-    color: $color-secondary;
-  }
-  p {
-    color: $color-body-text;
-  }
-}
-
-.info-horizontal {
-  .icon {
-    float: left;
-    margin-top: 24px;
-    margin-right: 10px;
-    > i {
-      font-size: 36.4px;
-    }
-  }
-  .description {
-    overflow: hidden;
-  }
-}
-
-.icon {
-  &.icon-primary {
-    color: $color-primary;
-  }
-  &.icon-success {
-    color: $color-success;
-  }
-  &.icon-danger {
-    color: $color-danger;
-  }
-  &.icon-rose {
-    color: $color-rose;
-  }
-}
-
-.single-product .hestia-features,
-.single-product .features {
-  padding: 50px 0 0;
-  > div {
-    h2 {
-      font-size: 25.55px;
-    }
-    h5 {
-      font-size: 16px;
-    }
-  }
-  .hestia-info, .info {
-    > p {
-      margin-bottom: 10px;
-    }
-  }
 }

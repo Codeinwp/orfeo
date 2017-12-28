@@ -1,40 +1,84 @@
-.hestia-testimonials-content {
+.hestia-testimonials {
 
-  .row:nth-of-type(2n+1) {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 
-    .col-md-4:nth-of-type(3n+1) .card-testimonial {
-      background-color: $color-success;
-    }
-    .col-md-4:nth-of-type(3n+2) .card-testimonial {
-      background-color: $color-warning;
-    }
-    .col-md-4:nth-of-type(3n+3) .card-testimonial {
-      background-color: $color-rose;
-    }
+  .hestia-title {
+    color: #333;
+    font-family: $primary-font;
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 42px;
   }
 
-  .row:nth-of-type(2n+2) {
-
-    .col-md-4:nth-of-type(3n+1) .card-testimonial {
-      background-color: $color-danger;
-    }
-    .col-md-4:nth-of-type(3n+2) .card-testimonial {
-      background-color: $color-primary;
-    }
-    .col-md-4:nth-of-type(3n+3) .card-testimonial {
-      background-color: $color-info;
-    }
+  .description {
+    color: #9A9A9A;
+    font-family: $secondary-font;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0 0 40px;
   }
 
-  .row .col-md-4 .card-testimonial .content {
-    .card-title, .category, .card-description {
-      color: #fff;
-    }
-  }
+  .hestia-testimonials-content {
 
-  .card-testimonial .card-avatar img {
-    margin: -76px auto 0;
+    .row:nth-of-type(2n+1) {
+
+      .col-md-4:nth-of-type(3n+1) .card-testimonial {
+        background-color: $color-success;
+      }
+      .col-md-4:nth-of-type(3n+2) .card-testimonial {
+        background-color: $color-warning;
+      }
+      .col-md-4:nth-of-type(3n+3) .card-testimonial {
+        background-color: $color-rose;
+      }
+    }
+
+    .row:nth-of-type(2n+2) {
+
+      .col-md-4:nth-of-type(3n+1) .card-testimonial {
+        background-color: $color-danger;
+      }
+      .col-md-4:nth-of-type(3n+2) .card-testimonial {
+        background-color: $color-primary;
+      }
+      .col-md-4:nth-of-type(3n+3) .card-testimonial {
+        background-color: $color-info;
+      }
+    }
+
+    .row .col-md-4 .card-testimonial .content {
+      .card-title, .category, .card-description {
+        color: #fff;
+      }
+    }
+
+    .card-testimonial {
+
+      .card-avatar img {
+        margin: -76px auto 0;
+      }
+
+      .content {
+
+        .card-title {
+          font-family: $secondary-font;
+          font-weight: 600;
+        }
+
+        .category {
+          font-family: $secondary-font;
+          font-weight: 300;
+        }
+
+        .card-description {
+          font-family: $secondary-font;
+          font-weight: 300;
+        }
+      }
+    }
+
   }
 
 }
-
