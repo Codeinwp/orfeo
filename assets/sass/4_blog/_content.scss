@@ -1,18 +1,13 @@
 .blog .hestia-blogs {
 
   .card-plain .card-image {
-    @include team-border-radius(12px);
+    @include border-radius(12px);
   }
 
   .card-blog {
 
     margin-top: 5px;
     margin-bottom: 80px;
-
-    .col-sm-7,
-    .col-ms-7 {
-      //padding: 20px 20px;
-    }
 
     .row .category {
       font-weight: 600;

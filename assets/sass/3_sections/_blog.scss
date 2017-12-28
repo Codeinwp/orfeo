@@ -105,7 +105,7 @@
 
   .card-image {
     box-shadow: none;
-    @include team-border-radius(12px);
+    @include border-radius(12px);
 
   }
 
@@ -118,7 +118,7 @@
     .card-description {
 
       .moretag {
-        @include team-border-radius(30px);
+        @include border-radius(30px);
         background-color: #51cbce;
         border-color: #51cbce;
         color: #FFFFFF;
