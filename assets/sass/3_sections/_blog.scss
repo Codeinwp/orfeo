@@ -1,143 +1,189 @@
-.hestia-blog-content {
+.hestia-blogs {
 
-  .row:nth-child(2n+1) article {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 
-    &:nth-child(3n+1) .category a {
-      color: $color-success;
-    }
-    &:nth-child(3n+1) .category a:hover {
-      color: $color-success-hover;
-    }
-    &:nth-child(3n+2) .category a {
-      color: $color-primary;
-    }
-    &:nth-child(3n+2) .category a:hover {
-      color: $color-primary-hover;
-    }
-    &:nth-child(3n+3) .category a {
-      color: $color-info;
-    }
-    &:nth-child(3n+3) .category a:hover {
-      color: $color-info-hover;
-    }
-
-
-    &:nth-child(3n+1) .card-description a.moretag {
-      color: #fff;
-      background-color: $color-success;
-    }
-    &:nth-child(3n+1) .card-description a.moretag:hover {
-      color: #fff;
-      background-color: $color-success-hover;
-    }
-    &:nth-child(3n+2) .card-description a.moretag {
-      color: #fff;
-      background-color: $color-primary;
-    }
-    &:nth-child(3n+2) .card-description a.moretag:hover {
-      color: #fff;
-      background-color: $color-primary-hover;
-    }
-    &:nth-child(3n+3) .card-description a.moretag {
-      color: #fff;
-      background-color: $color-info;
-    }
-    &:nth-child(3n+3) .card-description a.moretag:hover {
-      color: #fff;
-      background-color: $color-info-hover;
-    }
+  .hestia-title {
+    color: #333333;
+    font-family: $primary-font;
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 41px;
   }
 
-  .row:nth-child(2n+2) article {
-
-    &:nth-child(3n+1) .category a {
-      color: $color-danger;
-    }
-    &:nth-child(3n+1) .category a:hover {
-      color: $color-danger-hover;
-    }
-    &:nth-child(3n+2) .category a {
-      color: $color-warning;
-    }
-    &:nth-child(3n+2) .category a:hover {
-      color: $color-warning-hover;
-    }
-    &:nth-child(3n+3) .category a {
-      color: $color-rose;
-    }
-    &:nth-child(3n+3) .category a:hover  {
-      color: $color-rose-hover;
-    }
-
-
-    &:nth-child(3n+1) .card-description a.moretag {
-      color: #fff;
-      background-color: $color-danger;
-    }
-    &:nth-child(3n+1) .card-description a.moretag:hover {
-      color: #fff;
-      background-color: $color-danger-hover;
-    }
-    &:nth-child(3n+2) .card-description a.moretag {
-      color: #fff;
-      background-color: $color-warning;
-    }
-    &:nth-child(3n+2) .card-description a.moretag:hover {
-      color: #fff;
-      background-color: $color-warning-hover;
-    }
-    &:nth-child(3n+3) .card-description a.moretag {
-      color: #fff;
-      background-color: $color-rose;
-    }
-    &:nth-child(3n+3) .card-description a.moretag:hover {
-      color: #fff;
-      background-color: $color-rose-hover;
-    }
+  .description {
+    color: #9A9A9A;
+    font-family: $secondary-font;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0 0 30px;
   }
 
-  padding: 0;
+  .hestia-blog-content {
 
-  .card-blog {
-    margin-top: 5px;
-    text-align: center;
-  }
+    .row:nth-child(2n+1) article {
 
-  .card-image {
-    box-shadow: none;
-    @include border-radius(12px);
+      &:nth-child(3n+1) .category a {
+        color: $color-success;
+      }
+      &:nth-child(3n+1) .category a:hover {
+        color: $color-success-hover;
+      }
+      &:nth-child(3n+2) .category a {
+        color: $color-primary;
+      }
+      &:nth-child(3n+2) .category a:hover {
+        color: $color-primary-hover;
+      }
+      &:nth-child(3n+3) .category a {
+        color: $color-info;
+      }
+      &:nth-child(3n+3) .category a:hover {
+        color: $color-info-hover;
+      }
 
-  }
 
-  .content {
-
-    h6.category {
-      font-weight: 600;
-    }
-
-    .card-description {
-
-      .moretag {
-        @include border-radius(30px);
-        background-color: #51cbce;
-        border-color: #51cbce;
-        color: #FFFFFF;
-        opacity: 1;
-        box-sizing: border-box;
-        border-width: 2px;
-        font-size: 12px;
-        font-weight: 600;
-        padding: 0.5rem 18px;
-        line-height: 1.75;
-        cursor: pointer;
-        text-transform: uppercase;
-        padding: 10px 20px;
-        display: block;
-        max-width: 133px;
-        margin: 20px auto;
+      &:nth-child(3n+1) .card-description a.moretag {
+        color: #fff;
+        background-color: $color-success;
+      }
+      &:nth-child(3n+1) .card-description a.moretag:hover {
+        color: #fff;
+        background-color: $color-success-hover;
+      }
+      &:nth-child(3n+2) .card-description a.moretag {
+        color: #fff;
+        background-color: $color-primary;
+      }
+      &:nth-child(3n+2) .card-description a.moretag:hover {
+        color: #fff;
+        background-color: $color-primary-hover;
+      }
+      &:nth-child(3n+3) .card-description a.moretag {
+        color: #fff;
+        background-color: $color-info;
+      }
+      &:nth-child(3n+3) .card-description a.moretag:hover {
+        color: #fff;
+        background-color: $color-info-hover;
       }
     }
-  }
 
+    .row:nth-child(2n+2) article {
+
+      &:nth-child(3n+1) .category a {
+        color: $color-danger;
+      }
+      &:nth-child(3n+1) .category a:hover {
+        color: $color-danger-hover;
+      }
+      &:nth-child(3n+2) .category a {
+        color: $color-warning;
+      }
+      &:nth-child(3n+2) .category a:hover {
+        color: $color-warning-hover;
+      }
+      &:nth-child(3n+3) .category a {
+        color: $color-rose;
+      }
+      &:nth-child(3n+3) .category a:hover  {
+        color: $color-rose-hover;
+      }
+
+
+      &:nth-child(3n+1) .card-description a.moretag {
+        color: #fff;
+        background-color: $color-danger;
+      }
+      &:nth-child(3n+1) .card-description a.moretag:hover {
+        color: #fff;
+        background-color: $color-danger-hover;
+      }
+      &:nth-child(3n+2) .card-description a.moretag {
+        color: #fff;
+        background-color: $color-warning;
+      }
+      &:nth-child(3n+2) .card-description a.moretag:hover {
+        color: #fff;
+        background-color: $color-warning-hover;
+      }
+      &:nth-child(3n+3) .card-description a.moretag {
+        color: #fff;
+        background-color: $color-rose;
+      }
+      &:nth-child(3n+3) .card-description a.moretag:hover {
+        color: #fff;
+        background-color: $color-rose-hover;
+      }
+    }
+
+    padding: 0;
+
+    .card-blog {
+
+      margin: 5px 0 20px;
+      text-align: center;
+
+      .card-image {
+        box-shadow: none;
+        @include border-radius(12px);
+
+      }
+
+      .content {
+
+        .category {
+          font-family: $secondary-font;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 18px;
+          padding: 10px 0 0;
+          margin: 0;
+        }
+
+        .card-title {
+          color: #444444;
+          font-family: $primary-font;
+          font-size: 26px;
+          font-weight: 300;
+          margin: 5px 0 0;
+        }
+
+        .card-description {
+
+          color: #9A9A9A;
+          font-family: $secondary-font;
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 22px;
+          margin: 15px 0 5px;
+
+          .moretag {
+            @include border-radius(30px);
+            background-color: #51cbce;
+            border-color: #51cbce;
+            color: #FFFFFF;
+            opacity: 1;
+            box-sizing: border-box;
+            border-width: 2px;
+            font-family: $secondary-font;
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.75;
+            cursor: pointer;
+            text-transform: uppercase;
+            padding: 10px 20px;
+            display: block;
+            max-width: 118px;
+            margin: 20px auto;
+          }
+        }
+      }
+    }
+
+  }
 }
+
+
 

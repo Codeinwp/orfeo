@@ -76,3 +76,25 @@ function orfeo_features_defaults() {
     );
 }
 add_filter( 'hestia_features_default_content', 'orfeo_features_defaults' );
+
+/**
+ * Remove parent theme actions
+ */
+function orfeo_remove_hestia_actions() {
+
+    remove_filter( 'excerpt_more', 'hestia_excerpt_more', 10 );
+}
+add_action( 'after_setup_theme', 'orfeo_remove_hestia_actions' );
+
+/**
+ * Replace excerpt "Read More" text with a link.
+ *
+ */
+function orfeo_excerpt_more( $more ) {
+    global $post;
+    if ( ( ( 'page' === get_option( 'show_on_front' ) ) ) || is_single() || is_archive() || is_home() ) {
+        return '<a class="moretag" href="' . esc_url( get_permalink( $post->ID ) ) . '"> ' . esc_html__( 'Read more', 'hestia-pro' ) . '</a>';
+    }
+    return $more;
+}
+add_filter( 'excerpt_more', 'orfeo_excerpt_more' );
