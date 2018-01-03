@@ -1,0 +1,29 @@
+.contactus {
+
+  font-family: $primary-font;
+
+  .hestia-title {
+    font-family: $primary-font;
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 36px;
+  }
+
+  .description {
+    font-family: $secondary-font;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+
+  .card-contact {
+
+    .card-title {
+      font-weight: 300;
+    }
+
+    .pirate-forms-submit-button {
+      font-weight: 600;
+    }
+  }
+}

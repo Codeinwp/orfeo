@@ -1,0 +1,36 @@
+.header {
+
+  .carousel {
+
+    .hestia-title {
+      font-family: $primary-font;
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 55px;
+      margin: 30px 0 25px;
+    }
+
+    .sub-title {
+      font-family: $secondary-font;
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 26px;
+      margin: 0 0 8px;
+    }
+
+    .buttons {
+
+      margin: 30px 0 0;
+
+      a {
+
+        @include border-radius(30px);
+        font-family: $primary-font;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 24px;
+      }
+    }
+
+  }
+}

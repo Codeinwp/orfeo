@@ -24,6 +24,33 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 /*--------------------------------------------------------------
 ## Features Section
 --------------------------------------------------------------*/
+.header .carousel .hestia-title {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 55px;
+  margin: 30px 0 25px;
+}
+.header .carousel .sub-title {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0 0 8px;
+}
+.header .carousel .buttons {
+  margin: 30px 0 0;
+}
+.header .carousel .buttons a {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
 .hestia-features {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -371,6 +398,28 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   display: block;
   max-width: 118px;
   margin: 20px auto;
+}
+
+.contactus {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+}
+.contactus .hestia-title {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 36px;
+}
+.contactus .description {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+}
+.contactus .card-contact .card-title {
+  font-weight: 300;
+}
+.contactus .card-contact .pirate-forms-submit-button {
+  font-weight: 600;
 }
 
 /*--------------------------------------------------------------
