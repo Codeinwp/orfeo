@@ -3,3 +3,9 @@
   -moz-border-radius: $radius;
   border-radius: $radius;
 }
+
+@mixin no-box-shadow() {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}

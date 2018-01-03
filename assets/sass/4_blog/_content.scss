@@ -1,39 +1,79 @@
-.blog .hestia-blogs {
+.blog {
 
-  .card-plain .card-image {
-    @include border-radius(12px);
+  .hestia-title {
+    font-family: $primary-font;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 44px;
   }
 
-  .card-blog {
+  .hestia-blogs {
 
-    margin-top: 5px;
-    margin-bottom: 80px;
-
-    .row .category {
-      font-weight: 600;
+    .sticky {
+      @include no-box-shadow();
+      padding: 0;
     }
 
-    .card-description p {
-      margin: 15px 0 5px;
+    .card-blog {
+
+      margin-top: 5px;
+      margin-bottom: 80px;
+
+      .card-image {
+        @include border-radius(12px);
+        @include no-box-shadow();
+      }
+
+      .category {
+        font-family: $secondary-font;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        padding: 10px 0 0;
+      }
+
+      .card-title {
+        font-family: $primary-font;
+        font-size: 26px;
+        font-weight: 300;
+        line-height: 36px;
+        margin: 5px 0 0;
+      }
+
+      .card-description {
+        font-family: $secondary-font;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 22px;
+        margin: 15px 0 5px;
+      }
+
+      .author {
+
+        font-family: $secondary-font;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 22px;
+        margin: 0 0 5px;
+
+        a > strong {
+          font-weight: bolder;
+        }
+      }
+
     }
 
-    .author {
-      a > strong {
-        font-weight: bolder;
+    .card-blog:nth-of-type(2n+2) {
+
+      .row {
+        .col-ms-5,
+        .col-sm-5 {
+          float: right;
+        }
       }
     }
-
   }
 
-  .card-blog:nth-of-type(2n+2) {
-
-    .row {
-      .col-ms-5,
-      .col-sm-5 {
-        float: right;
-      }
-    }
-  }
 }
 
 @media (max-width: 480px) {
@@ -49,3 +89,4 @@
     }
   }
 }
+
