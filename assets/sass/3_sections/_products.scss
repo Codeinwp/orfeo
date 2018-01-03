@@ -1,0 +1,22 @@
+.products {
+
+  .hestia-title {
+    color: #333333;
+    font-family: $primary-font;
+    font-size: 39px;
+    font-weight: 300;
+    line-height: 42px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    min-height: 32px;
+  }
+
+  .description {
+    color: #9A9A9A;
+    font-family: $secondary-font;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 26px;
+    margin: 0 0 5px;
+  }
+}

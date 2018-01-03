@@ -18,6 +18,12 @@ Use it to make something cool, have fun, and share what you've learned with othe
 Hestia Pro is based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc.
 Underscores is distributed under the terms of the GNU GPL v2 or later.
 */
+.main-raised {
+  margin: 0;
+  box-shadow: none;
+  border-radius: 0;
+}
+
 /*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
@@ -398,6 +404,25 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   display: block;
   max-width: 118px;
   margin: 20px auto;
+}
+
+.products .hestia-title {
+  color: #333333;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 42px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  min-height: 32px;
+}
+.products .description {
+  color: #9A9A9A;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0 0 5px;
 }
 
 .contactus {
