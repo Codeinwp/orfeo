@@ -19,4 +19,26 @@
     line-height: 26px;
     margin: 0 0 5px;
   }
+
+  .card-product {
+    background-color: #f0f0f0;
+  }
+
+  .shop-item:hover > .card > .card-image {
+    @include no-box-shadow();
+    @include no-transform();
+    opacity: .75;
+  }
+
+  .shop-item .card .card-image {
+    @include no-box-shadow();
+
+    a {
+      @include no-box-shadow();
+
+      img {
+        @include no-box-shadow();
+      }
+    }
+  }
 }

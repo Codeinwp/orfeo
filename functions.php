@@ -99,7 +99,11 @@ add_filter( 'hestia_features_default_content', 'orfeo_features_defaults' );
  */
 function orfeo_remove_hestia_actions() {
 
+	/* Remove three points from blog read more button */
 	remove_filter( 'excerpt_more', 'hestia_excerpt_more', 10 );
+
+	/* Remove excerpt from products */
+	add_filter( 'woocommerce_short_description', '__return_empty_string' );
 }
 add_action( 'after_setup_theme', 'orfeo_remove_hestia_actions' );
 

@@ -24,6 +24,11 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 @import "0_base/reset";
 
 /*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import "1_typography/typography-main";
+
+/*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
 @import "3_sections/sections-main";
@@ -32,3 +37,8 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Blog
 --------------------------------------------------------------*/
 @import "4_blog/blog-main";
+
+/*--------------------------------------------------------------
+# WooCommerce
+--------------------------------------------------------------*/
+@import "6_woocommerce/woocommerce";

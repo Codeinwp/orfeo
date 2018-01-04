@@ -25,6 +25,17 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 }
 
 /*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+}
+
+div, p, a, span, li, body {
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+}
+
+/*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -424,6 +435,35 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   line-height: 26px;
   margin: 0 0 5px;
 }
+.products .card-product {
+  background-color: #f0f0f0;
+}
+.products .shop-item:hover > .card > .card-image {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  opacity: .75;
+}
+.products .shop-item .card .card-image {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.products .shop-item .card .card-image a {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.products .shop-item .card .card-image a img {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 
 .contactus {
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
@@ -518,6 +558,107 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
   .blog .hestia-blogs .card-blog:nth-of-type(2n+2) .row .col-sm-5 {
     float: none;
   }
+}
+/*--------------------------------------------------------------
+# WooCommerce
+--------------------------------------------------------------*/
+.card-product {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.card-product .card-image {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin: 0;
+}
+.card-product .card-image a {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.card-product .card-image a img {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+}
+.card-product .content {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: table;
+  padding: 15px 5px 0;
+}
+.card-product .content .card-title {
+  display: table-header-group;
+  color: #333333;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.card-product .content .category {
+  color: #9A9A9A;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+  text-transform: none;
+  margin: 15px 0 5px;
+}
+.card-product .content .footer {
+  display: block;
+  width: 100%;
+  margin: 0;
+}
+.card-product .content .footer .price {
+  display: inline-block;
+  color: #333333;
+  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+.card-product .content .footer .stats {
+  display: inline-block;
+  /* position here is based on relative on li.product */
+  position: absolute;
+  bottom: -9px;
+  right: 10px;
+}
+
+.woocommerce.archive .wrapper .main {
+  background-color: #fff;
+}
+.woocommerce.archive .wrapper .main .card-product {
+  background-color: #fff;
+}
+.woocommerce.archive .products .product {
+  /* position here for cart icon on card-product */
+  position: relative;
+}
+.woocommerce.archive .products .product > .card > .card-image {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.woocommerce.archive .products .product:hover > .card > .card-image {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  opacity: .75;
 }
 
 /*# sourceMappingURL=style.css.map */

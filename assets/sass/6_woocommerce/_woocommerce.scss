@@ -1,0 +1,102 @@
+.card-product {
+  @include no-box-shadow();
+
+  .card-image {
+    @include no-box-shadow();
+    margin: 0;
+
+    a {
+      @include no-box-shadow();
+
+      img {
+        @include no-box-shadow();
+        @include border-radius(12px);
+      }
+    }
+  }
+
+  .content {
+
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: table;
+    padding: 15px 5px 0;
+
+    .card-title {
+      display: table-header-group;
+      color: #333333;
+      font-family: $primary-font;
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 26px;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+    }
+
+    .category {
+      color: #9A9A9A;
+      font-family: $secondary-font;
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 22px;
+      text-align: left;
+      text-transform: none;
+      margin: 15px 0 5px;
+    }
+
+    .footer {
+      display: block;
+      width: 100%;
+      margin: 0;
+
+      .price {
+        display: inline-block;
+        color: #333333;
+        font-family: $secondary-font;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 24px;
+      }
+
+      .stats {
+        display: inline-block;
+        /* position here is based on relative on li.product */
+        position: absolute;
+        bottom: -9px;
+        right: 10px;
+      }
+    }
+  }
+}
+
+.woocommerce.archive {
+
+  .wrapper .main {
+    background-color: #fff;
+
+    .card-product {
+      background-color: #fff;
+    }
+  }
+
+  .products {
+
+    .product {
+      /* position here for cart icon on card-product */
+      position: relative;
+
+      > .card > .card-image {
+        @include no-box-shadow();
+      }
+    }
+
+    .product:hover > .card > .card-image {
+      @include no-box-shadow();
+      @include no-transform();
+      opacity: .75;
+    }
+
+  }
+
+}
