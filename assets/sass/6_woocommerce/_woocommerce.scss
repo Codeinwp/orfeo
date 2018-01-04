@@ -1,5 +1,6 @@
 .card-product {
   @include no-box-shadow();
+  background: transparent;
 
   .card-image {
     @include no-box-shadow();
@@ -42,7 +43,11 @@
       line-height: 22px;
       text-align: left;
       text-transform: none;
-      margin: 15px 0 5px;
+      margin: 15px 0 0;
+
+      a {
+        color: #9A9A9A;
+      }
     }
 
     .footer {
@@ -65,6 +70,23 @@
         position: absolute;
         bottom: -9px;
         right: 10px;
+
+        .tooltip {
+          .tooltip-arrow {
+            border-top-color: #e2e2e2 !important;
+          }
+          .tooltip-inner {
+            @include no-box-shadow();
+            -moz-osx-font-smoothing: grayscale;
+            -webkit-font-smoothing: antialiased;
+          }
+        }
+
+        .hestia-view-cart-wrapper {
+          .added_to_cart {
+            @include no-box-shadow();
+          }
+        }
       }
     }
   }
@@ -98,5 +120,15 @@
     }
 
   }
+
+  .blog-post .products li:nth-of-type(6n) .category a,
+  .blog-post .products li:nth-of-type(6n+1) .category a,
+  .blog-post .products li:nth-of-type(6n+2) .category a,
+  .blog-post .products li:nth-of-type(6n+3) .category a,
+  .blog-post .products li:nth-of-type(6n+4) .category a,
+  .blog-post .products li:nth-of-type(6n+5) .category a {
+    color: #9A9A9A !important;
+  }
+
 
 }

@@ -566,6 +566,7 @@ div, p, a, span, li, body {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  background: transparent;
 }
 .card-product .card-image {
   -webkit-box-shadow: none;
@@ -611,7 +612,10 @@ div, p, a, span, li, body {
   line-height: 22px;
   text-align: left;
   text-transform: none;
-  margin: 15px 0 5px;
+  margin: 15px 0 0;
+}
+.card-product .content .category a {
+  color: #9A9A9A;
 }
 .card-product .content .footer {
   display: block;
@@ -632,6 +636,21 @@ div, p, a, span, li, body {
   position: absolute;
   bottom: -9px;
   right: 10px;
+}
+.card-product .content .footer .stats .tooltip .tooltip-arrow {
+  border-top-color: #e2e2e2 !important;
+}
+.card-product .content .footer .stats .tooltip .tooltip-inner {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.card-product .content .footer .stats .hestia-view-cart-wrapper .added_to_cart {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 .woocommerce.archive .wrapper .main {
@@ -659,6 +678,14 @@ div, p, a, span, li, body {
   -o-transform: none;
   transform: none;
   opacity: .75;
+}
+.woocommerce.archive .blog-post .products li:nth-of-type(6n) .category a,
+.woocommerce.archive .blog-post .products li:nth-of-type(6n+1) .category a,
+.woocommerce.archive .blog-post .products li:nth-of-type(6n+2) .category a,
+.woocommerce.archive .blog-post .products li:nth-of-type(6n+3) .category a,
+.woocommerce.archive .blog-post .products li:nth-of-type(6n+4) .category a,
+.woocommerce.archive .blog-post .products li:nth-of-type(6n+5) .category a {
+  color: #9A9A9A !important;
 }
 
 /*# sourceMappingURL=style.css.map */
