@@ -57,6 +57,7 @@
     .card-testimonial {
 
       .card-avatar img {
+        @include no-box-shadow();
         margin: -76px auto 0;
       }
 

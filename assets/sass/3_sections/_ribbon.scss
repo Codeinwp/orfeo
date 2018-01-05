@@ -1,0 +1,17 @@
+.hestia-ribbon {
+
+  .hestia-title {
+    font-family: inherit;
+    font-weight: 300;
+  }
+
+  .btn.btn-primary {
+    @include no-box-shadow();
+    font-family: inherit;
+    font-weight: 600;
+  }
+
+  .btn.btn-primary:hover {
+    @include no-box-shadow();
+  }
+}

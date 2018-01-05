@@ -30,6 +30,11 @@
         font-weight: 600;
         line-height: 24px;
       }
+
+      .btn.btn-primary,
+      .btn.btn-primary:hover {
+        @include no-box-shadow();
+      }
     }
 
   }

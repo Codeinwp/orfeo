@@ -67,6 +67,12 @@ div, p, a, span, li, body {
   font-weight: 600;
   line-height: 24px;
 }
+.header .carousel .buttons .btn.btn-primary,
+.header .carousel .buttons .btn.btn-primary:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 
 .hestia-features {
   -moz-osx-font-smoothing: grayscale;
@@ -241,6 +247,9 @@ div, p, a, span, li, body {
   color: #fff;
 }
 .hestia-testimonials .hestia-testimonials-content .card-testimonial .card-avatar img {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   margin: -76px auto 0;
 }
 .hestia-testimonials .hestia-testimonials-content .card-testimonial .content .card-title {
@@ -497,6 +506,37 @@ section.products .shop-item .card .card-image a img {
 }
 .contactus .card-contact .pirate-forms-submit-button {
   font-weight: 600;
+}
+
+.hestia-ribbon .hestia-title {
+  font-family: inherit;
+  font-weight: 300;
+}
+.hestia-ribbon .btn.btn-primary {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: inherit;
+  font-weight: 600;
+}
+.hestia-ribbon .btn.btn-primary:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.subscribe-line .title {
+  font-family: inherit;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 42px;
+}
+.subscribe-line .subscribe-description {
+  font-family: inherit;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0 0 40px;
 }
 
 /*--------------------------------------------------------------
