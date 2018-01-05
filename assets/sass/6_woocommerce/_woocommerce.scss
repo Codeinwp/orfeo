@@ -73,7 +73,7 @@
 
         .tooltip {
           .tooltip-arrow {
-            border-top-color: #e2e2e2 !important;
+            border-top-color: #e2e2e2;
           }
           .tooltip-inner {
             @include no-box-shadow();

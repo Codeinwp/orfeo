@@ -417,7 +417,7 @@ div, p, a, span, li, body {
   margin: 20px auto;
 }
 
-.products .hestia-title {
+section.products .hestia-title {
   color: #333333;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 39px;
@@ -427,7 +427,7 @@ div, p, a, span, li, body {
   margin-bottom: 25px;
   min-height: 32px;
 }
-.products .description {
+section.products .description {
   color: #9A9A9A;
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 19px;
@@ -435,10 +435,22 @@ div, p, a, span, li, body {
   line-height: 26px;
   margin: 0 0 5px;
 }
-.products .card-product {
+section.products .card-product {
   background-color: #f0f0f0;
 }
-.products .shop-item:hover > .card > .card-image {
+section.products .card-product .content .footer .stats .tooltip .tooltip-arrow {
+  border-top-color: #9A9A9A;
+}
+section.products .card-product .content .footer .stats .tooltip .tooltip-inner {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #f0f0f0;
+  color: #9A9A9A;
+}
+section.products .shop-item:hover > .card > .card-image {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -449,17 +461,17 @@ div, p, a, span, li, body {
   transform: none;
   opacity: .75;
 }
-.products .shop-item .card .card-image {
+section.products .shop-item .card .card-image {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.products .shop-item .card .card-image a {
+section.products .shop-item .card .card-image a {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.products .shop-item .card .card-image a img {
+section.products .shop-item .card .card-image a img {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -638,7 +650,7 @@ div, p, a, span, li, body {
   right: 10px;
 }
 .card-product .content .footer .stats .tooltip .tooltip-arrow {
-  border-top-color: #e2e2e2 !important;
+  border-top-color: #e2e2e2;
 }
 .card-product .content .footer .stats .tooltip .tooltip-inner {
   -webkit-box-shadow: none;
