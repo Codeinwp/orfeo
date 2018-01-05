@@ -28,11 +28,11 @@ Underscores is distributed under the terms of the GNU GPL v2 or later.
 # Typography
 --------------------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
 }
 
 div, p, a, span, li, body {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
 }
 
 /*--------------------------------------------------------------
@@ -42,14 +42,14 @@ div, p, a, span, li, body {
 ## Features Section
 --------------------------------------------------------------*/
 .header .carousel .hestia-title {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 50px;
   font-weight: 300;
   line-height: 55px;
   margin: 30px 0 25px;
 }
 .header .carousel .sub-title {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -62,7 +62,7 @@ div, p, a, span, li, body {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
@@ -76,7 +76,7 @@ div, p, a, span, li, body {
 }
 .hestia-features .hestia-title {
   color: #333333;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 39px;
   font-weight: 300;
   line-height: 42px;
@@ -86,7 +86,7 @@ div, p, a, span, li, body {
 }
 .hestia-features .description {
   color: #9A9A9A;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -98,7 +98,7 @@ div, p, a, span, li, body {
   margin: 0 auto;
 }
 .hestia-features .hestia-info .info-title {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 23px;
   font-weight: 300;
   line-height: 27px;
@@ -106,7 +106,7 @@ div, p, a, span, li, body {
 }
 .hestia-features .hestia-info p {
   color: #9A9A9A;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 15px;
   font-weight: 300;
   line-height: 22px;
@@ -125,7 +125,7 @@ div, p, a, span, li, body {
 }
 .hestia-team .hestia-title {
   color: #333333;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 39px;
   font-weight: 300;
   line-height: 43px;
@@ -134,7 +134,7 @@ div, p, a, span, li, body {
 }
 .hestia-team .description {
   color: #9A9A9A;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -174,7 +174,7 @@ div, p, a, span, li, body {
 }
 .hestia-team .card .content .card-title {
   color: #333333;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 22px;
   font-weight: 300;
   line-height: 26px;
@@ -182,7 +182,7 @@ div, p, a, span, li, body {
 }
 .hestia-team .card .content .category {
   color: #868e96;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
@@ -190,7 +190,7 @@ div, p, a, span, li, body {
 }
 .hestia-team .card .content .card-description {
   color: #9A9A9A;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 15px;
   font-weight: 300;
   line-height: 22px;
@@ -206,14 +206,14 @@ div, p, a, span, li, body {
 }
 .hestia-testimonials .hestia-title {
   color: #333;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 39px;
   font-weight: 300;
   line-height: 42px;
 }
 .hestia-testimonials .description {
   color: #9A9A9A;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -244,15 +244,15 @@ div, p, a, span, li, body {
   margin: -76px auto 0;
 }
 .hestia-testimonials .hestia-testimonials-content .card-testimonial .content .card-title {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-weight: 600;
 }
 .hestia-testimonials .hestia-testimonials-content .card-testimonial .content .category {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-weight: 300;
 }
 .hestia-testimonials .hestia-testimonials-content .card-testimonial .content .card-description {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-weight: 300;
 }
 
@@ -262,14 +262,14 @@ div, p, a, span, li, body {
 }
 .hestia-blogs .hestia-title {
   color: #333333;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 39px;
   font-weight: 300;
   line-height: 41px;
 }
 .hestia-blogs .description {
   color: #9A9A9A;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -373,7 +373,7 @@ div, p, a, span, li, body {
   border-radius: 12px;
 }
 .hestia-blogs .hestia-blog-content .card-blog .content .category {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
@@ -382,14 +382,14 @@ div, p, a, span, li, body {
 }
 .hestia-blogs .hestia-blog-content .card-blog .content .card-title {
   color: #444444;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 26px;
   font-weight: 300;
   margin: 5px 0 0;
 }
 .hestia-blogs .hestia-blog-content .card-blog .content .card-description {
   color: #9A9A9A;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 15px;
   font-weight: 300;
   line-height: 22px;
@@ -405,7 +405,7 @@ div, p, a, span, li, body {
   opacity: 1;
   box-sizing: border-box;
   border-width: 2px;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 12px;
   font-weight: 600;
   line-height: 1.75;
@@ -419,7 +419,7 @@ div, p, a, span, li, body {
 
 section.products .hestia-title {
   color: #333333;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 39px;
   font-weight: 300;
   line-height: 42px;
@@ -429,7 +429,7 @@ section.products .hestia-title {
 }
 section.products .description {
   color: #9A9A9A;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -478,16 +478,16 @@ section.products .shop-item .card .card-image a img {
 }
 
 .contactus {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
 }
 .contactus .hestia-title {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 26px;
   font-weight: 300;
   line-height: 36px;
 }
 .contactus .description {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -506,7 +506,7 @@ section.products .shop-item .card .card-image a img {
 ## Content
 --------------------------------------------------------------*/
 .blog .hestia-title {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 40px;
   font-weight: 300;
   line-height: 44px;
@@ -530,28 +530,28 @@ section.products .shop-item .card .card-image a img {
   box-shadow: none;
 }
 .blog .hestia-blogs .card-blog .category {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
   padding: 10px 0 0;
 }
 .blog .hestia-blogs .card-blog .card-title {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 26px;
   font-weight: 300;
   line-height: 36px;
   margin: 5px 0 0;
 }
 .blog .hestia-blogs .card-blog .card-description {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 15px;
   font-weight: 300;
   line-height: 22px;
   margin: 15px 0 5px;
 }
 .blog .hestia-blogs .card-blog .author {
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 15px;
   font-weight: 300;
   line-height: 22px;
@@ -608,7 +608,7 @@ section.products .shop-item .card .card-image a img {
 .card-product .content .card-title {
   display: table-header-group;
   color: #333333;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -618,7 +618,7 @@ section.products .shop-item .card .card-image a img {
 }
 .card-product .content .category {
   color: #9A9A9A;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 15px;
   font-weight: 300;
   line-height: 22px;
@@ -637,7 +637,7 @@ section.products .shop-item .card .card-image a img {
 .card-product .content .footer .price {
   display: inline-block;
   color: #333333;
-  font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;

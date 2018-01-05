@@ -3,7 +3,7 @@
   .carousel {
 
     .hestia-title {
-      font-family: $primary-font;
+      font-family: inherit;
       font-size: 50px;
       font-weight: 300;
       line-height: 55px;
@@ -11,7 +11,7 @@
     }
 
     .sub-title {
-      font-family: $secondary-font;
+      font-family: inherit;
       font-size: 19px;
       font-weight: 300;
       line-height: 26px;
@@ -25,7 +25,7 @@
       a {
 
         @include border-radius(30px);
-        font-family: $primary-font;
+        font-family: inherit;
         font-size: 14px;
         font-weight: 600;
         line-height: 24px;

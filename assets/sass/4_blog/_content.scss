@@ -1,7 +1,7 @@
 .blog {
 
   .hestia-title {
-    font-family: $primary-font;
+    font-family: inherit;
     font-size: 40px;
     font-weight: 300;
     line-height: 44px;
@@ -25,7 +25,7 @@
       }
 
       .category {
-        font-family: $secondary-font;
+        font-family: inherit;
         font-size: 12px;
         font-weight: 600;
         line-height: 18px;
@@ -33,7 +33,7 @@
       }
 
       .card-title {
-        font-family: $primary-font;
+        font-family: inherit;
         font-size: 26px;
         font-weight: 300;
         line-height: 36px;
@@ -41,7 +41,7 @@
       }
 
       .card-description {
-        font-family: $secondary-font;
+        font-family: inherit;
         font-size: 15px;
         font-weight: 300;
         line-height: 22px;
@@ -50,7 +50,7 @@
 
       .author {
 
-        font-family: $secondary-font;
+        font-family: inherit;
         font-size: 15px;
         font-weight: 300;
         line-height: 22px;
