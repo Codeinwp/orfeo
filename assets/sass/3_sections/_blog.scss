@@ -4,7 +4,7 @@
   -webkit-font-smoothing: antialiased;
 
   .hestia-title {
-    color: #333333;
+    color: $color-secondary;
     font-family: inherit;
     font-size: 39px;
     font-weight: 300;
@@ -143,7 +143,7 @@
         }
 
         .card-title {
-          color: #444444;
+          color: $color-secondary;
           font-family: inherit;
           font-size: 26px;
           font-weight: 300;

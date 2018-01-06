@@ -4,7 +4,7 @@
   -webkit-font-smoothing: antialiased;
 
   .hestia-title {
-    color: #333;
+    color: $color-secondary;
     font-family: inherit;
     font-size: 39px;
     font-weight: 300;
@@ -56,9 +56,22 @@
 
     .card-testimonial {
 
-      .card-avatar img {
-        @include no-box-shadow();
-        margin: -76px auto 0;
+      text-align: left;
+      padding: 20px 20px 0;
+      -webkit-box-shadow: 0 10px 40px -5px rgba(0, 0, 0, 0.25);
+      -moz-box-shadow: 0 10px 40px -5px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 10px 40px -5px rgba(0, 0, 0, 0.25);
+
+      .card-avatar {
+
+        margin: 0;
+        max-width: 60px;
+        max-height: 60px;
+
+        img {
+          @include no-box-shadow();
+          margin: 0 0 -20px;
+        }
       }
 
       .content {

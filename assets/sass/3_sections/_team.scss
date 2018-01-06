@@ -4,7 +4,7 @@
   -webkit-font-smoothing: antialiased;
 
   .hestia-title {
-    color: #333333;
+    color: $color-secondary;
     font-family: inherit;
     font-size: 39px;
     font-weight: 300;
@@ -32,6 +32,7 @@
       float: none;
       text-align: center;
       margin: 0 auto;
+      width: auto;
       
       .card-image {
         display: block;
@@ -39,8 +40,10 @@
         height: 120px;
         margin: 0 auto;
         @include border-radius(50%);
+        @include no-box-shadow();
 
         img {
+          @include no-box-shadow();
           @include border-radius(12px);
           max-width: 100%;
           height: auto;
@@ -55,12 +58,13 @@
       margin: 0 auto;
       padding-top: 20px;
       padding-bottom: 20px;
+      width: auto;
     }
 
     .content {
 
       .card-title {
-        color: #333333;
+        color: $color-secondary;
         font-family: inherit;
         font-size: 22px;
         font-weight: 300;

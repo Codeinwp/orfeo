@@ -36,10 +36,23 @@ div, p, a, span, li, body {
 }
 
 /*--------------------------------------------------------------
+# Widgets
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Widgets
+--------------------------------------------------------------*/
+.blog-sidebar {
+  font-family: inherit;
+}
+.blog-sidebar .widget h5 {
+  font-weight: 300;
+}
+
+/*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-## Features Section
+## Big Title Section
 --------------------------------------------------------------*/
 .header .carousel .hestia-title {
   font-family: inherit;
@@ -74,6 +87,9 @@ div, p, a, span, li, body {
   box-shadow: none;
 }
 
+/*--------------------------------------------------------------
+## Features Section
+--------------------------------------------------------------*/
 .hestia-features {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -81,7 +97,7 @@ div, p, a, span, li, body {
   padding: 80px 0;
 }
 .hestia-features .hestia-title {
-  color: #333333;
+  color: #444444;
   font-family: inherit;
   font-size: 39px;
   font-weight: 300;
@@ -104,6 +120,7 @@ div, p, a, span, li, body {
   margin: 0 auto;
 }
 .hestia-features .hestia-info .info-title {
+  color: #444444;
   font-family: inherit;
   font-size: 23px;
   font-weight: 300;
@@ -125,12 +142,15 @@ div, p, a, span, li, body {
   font-size: 48px;
 }
 
+/*--------------------------------------------------------------
+## Team Section
+--------------------------------------------------------------*/
 .hestia-team {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
 .hestia-team .hestia-title {
-  color: #333333;
+  color: #444444;
   font-family: inherit;
   font-size: 39px;
   font-weight: 300;
@@ -154,6 +174,7 @@ div, p, a, span, li, body {
   float: none;
   text-align: center;
   margin: 0 auto;
+  width: auto;
 }
 .hestia-team .card .col-md-5 .card-image {
   display: block;
@@ -163,8 +184,14 @@ div, p, a, span, li, body {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 .hestia-team .card .col-md-5 .card-image img {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
@@ -177,9 +204,10 @@ div, p, a, span, li, body {
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 20px;
+  width: auto;
 }
 .hestia-team .card .content .card-title {
-  color: #333333;
+  color: #444444;
   font-family: inherit;
   font-size: 22px;
   font-weight: 300;
@@ -206,12 +234,15 @@ div, p, a, span, li, body {
   opacity: 0.8;
 }
 
+/*--------------------------------------------------------------
+## Testimonials Section
+--------------------------------------------------------------*/
 .hestia-testimonials {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
 .hestia-testimonials .hestia-title {
-  color: #333;
+  color: #444444;
   font-family: inherit;
   font-size: 39px;
   font-weight: 300;
@@ -246,11 +277,23 @@ div, p, a, span, li, body {
 .hestia-testimonials .hestia-testimonials-content .row .col-md-4 .card-testimonial .content .card-title, .hestia-testimonials .hestia-testimonials-content .row .col-md-4 .card-testimonial .content .category, .hestia-testimonials .hestia-testimonials-content .row .col-md-4 .card-testimonial .content .card-description {
   color: #fff;
 }
+.hestia-testimonials .hestia-testimonials-content .card-testimonial {
+  text-align: left;
+  padding: 20px 20px 0;
+  -webkit-box-shadow: 0 10px 40px -5px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 10px 40px -5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 40px -5px rgba(0, 0, 0, 0.25);
+}
+.hestia-testimonials .hestia-testimonials-content .card-testimonial .card-avatar {
+  margin: 0;
+  max-width: 60px;
+  max-height: 60px;
+}
 .hestia-testimonials .hestia-testimonials-content .card-testimonial .card-avatar img {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  margin: -76px auto 0;
+  margin: 0 0 -20px;
 }
 .hestia-testimonials .hestia-testimonials-content .card-testimonial .content .card-title {
   font-family: inherit;
@@ -265,12 +308,15 @@ div, p, a, span, li, body {
   font-weight: 300;
 }
 
+/*--------------------------------------------------------------
+## Blog Section
+--------------------------------------------------------------*/
 .hestia-blogs {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
 .hestia-blogs .hestia-title {
-  color: #333333;
+  color: #444444;
   font-family: inherit;
   font-size: 39px;
   font-weight: 300;
@@ -426,8 +472,11 @@ div, p, a, span, li, body {
   margin: 20px auto;
 }
 
+/*--------------------------------------------------------------
+## Products Section
+--------------------------------------------------------------*/
 section.products .hestia-title {
-  color: #333333;
+  color: #444444;
   font-family: inherit;
   font-size: 39px;
   font-weight: 300;
@@ -446,6 +495,9 @@ section.products .description {
 }
 section.products .card-product {
   background-color: #f0f0f0;
+}
+section.products .card-product .content .card-title {
+  color: #444444;
 }
 section.products .card-product .content .footer .stats .tooltip .tooltip-arrow {
   border-top-color: #9A9A9A;
@@ -486,6 +538,9 @@ section.products .shop-item .card .card-image a img {
   box-shadow: none;
 }
 
+/*--------------------------------------------------------------
+## Contact Section
+--------------------------------------------------------------*/
 .contactus {
   font-family: inherit;
 }
@@ -508,16 +563,32 @@ section.products .shop-item .card .card-image a img {
   font-weight: 600;
 }
 
+/*--------------------------------------------------------------
+## Ribbon Section
+--------------------------------------------------------------*/
+.hestia-ribbon {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  padding: 35px 0;
+}
 .hestia-ribbon .hestia-title {
   font-family: inherit;
   font-weight: 300;
+  font-size: 26px;
+  line-height: 54px;
 }
 .hestia-ribbon .btn.btn-primary {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
   font-family: inherit;
   font-weight: 600;
+  font-size: 12px;
+  line-height: 21px;
+  padding: 8px 18px;
 }
 .hestia-ribbon .btn.btn-primary:hover {
   -webkit-box-shadow: none;
@@ -525,6 +596,13 @@ section.products .shop-item .card .card-image a img {
   box-shadow: none;
 }
 
+/*--------------------------------------------------------------
+## Subscribe Section
+--------------------------------------------------------------*/
+.subscribe-line {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
 .subscribe-line .title {
   font-family: inherit;
   font-size: 39px;
@@ -577,6 +655,7 @@ section.products .shop-item .card .card-image a img {
   padding: 10px 0 0;
 }
 .blog .hestia-blogs .card-blog .card-title {
+  color: #444444;
   font-family: inherit;
   font-size: 26px;
   font-weight: 300;

@@ -1,7 +1,7 @@
 section.products {
 
   .hestia-title {
-    color: #333333;
+    color: $color-secondary;
     font-family: inherit;
     font-size: 39px;
     font-weight: 300;
@@ -22,6 +22,10 @@ section.products {
 
   .card-product {
     background-color: #f0f0f0;
+
+    .content .card-title {
+      color: $color-secondary;
+    }
 
     .content .footer .stats {
       .tooltip {
