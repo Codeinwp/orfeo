@@ -44,6 +44,7 @@
     }
     .btn.btn-primary:hover {
       @include no-box-shadow();
+      opacity: 0.75;
     }
 
   }

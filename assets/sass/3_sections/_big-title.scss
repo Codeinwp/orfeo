@@ -35,6 +35,9 @@
       .btn.btn-primary:hover {
         @include no-box-shadow();
       }
+      .btn.btn-primary:hover {
+        opacity: 0.75;
+      }
     }
 
   }

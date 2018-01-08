@@ -23,15 +23,6 @@ if ( ! function_exists( 'orfeo_parent_css' ) ):
 endif;
 add_action( 'wp_enqueue_scripts', 'orfeo_parent_css', 10 );
 
-/**
- * Include Google Fonts
- *
- *  @since 1.0.0
- */
-function orfeo_include_google_fonts() {
-	wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Montserrat:300,600', false );
-}
-add_action( 'wp_enqueue_scripts', 'orfeo_include_google_fonts' );
 
 /**
  * Change default fonts.
@@ -49,14 +40,37 @@ function orfeo_change_defaults( $wp_customize ) {
 	if ( ! empty( $orfeo_body_font ) ) {
 		$orfeo_body_font->default = 'Montserrat';
 	}
-
-	/* Change default accent color */
-	$orfeo_accent_color = $wp_customize->get_setting( 'accent_color' );
-	if ( ! empty( $orfeo_accent_color ) ) {
-		$orfeo_accent_color->default = '#f5593d';
-	}
 }
 add_action( 'customize_register', 'orfeo_change_defaults', 99 );
+
+/**
+ * Change default value of accent color
+ *
+ * @since
+ */
+function orfeo_accent_color() {
+	return '#f5593d';
+}
+add_filter( 'hestia_accent_color_default', 'orfeo_accent_color' );
+
+function orfeo_inline_style() {
+
+	$color_accent = get_theme_mod( 'accent_color', apply_filters( 'hestia_accent_color_default', '#f5593d' ) );
+
+	$custom_css = '';
+
+	if ( ! empty( $color_accent ) ) {
+
+		$custom_css .= '.pagination .nav-links .page-numbers { color: ' . $color_accent . '; border-color: ' . $color_accent . '; }';
+		$custom_css .= '.pagination .nav-links .page-numbers.current { border-color: ' . $color_accent . '; }';
+
+		$custom_css .= '.pagination .nav-links .page-numbers:hover { background-color: ' . $color_accent . '; }';
+		$custom_css .= '.pagination .nav-links .page-numbers:hover { border-color: ' . $color_accent . '; }';
+	}
+
+	wp_add_inline_style( 'orfeo_parent', $custom_css );
+}
+add_action( 'wp_enqueue_scripts', 'orfeo_inline_style', 10 );
 
 /**
  * Change features defaults.
@@ -67,21 +81,21 @@ function orfeo_features_defaults() {
 	return json_encode(
 		array(
 			array(
-				'icon_value' => 'fa-th-large',
+				'icon_value' => 'fa-star-o',
 				'title'      => esc_html__( 'Feature 1', 'orfeo' ),
 				'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum molestie sagittis.', 'orfeo' ),
 				'link'       => '',
 				'color'      => '#e91e63',
 			),
 			array(
-				'icon_value' => 'fa-archive',
+				'icon_value' => 'fa-diamond',
 				'title'      => esc_html__( 'Feature 2', 'orfeo' ),
 				'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum molestie sagittis.', 'orfeo' ),
 				'link'       => '',
 				'color'      => '#00bcd4',
 			),
 			array(
-				'icon_value' => 'fa-th',
+				'icon_value' => 'fa-envelope-o',
 				'title'      => esc_html__( 'Feature 3', 'orfeo' ),
 				'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum molestie sagittis.', 'orfeo' ),
 				'link'       => '',
@@ -147,3 +161,4 @@ function orfeo_get_lite_options() {
 	}
 }
 add_action( 'after_switch_theme', 'orfeo_get_lite_options' );
+

@@ -3,7 +3,7 @@ Theme Name:     Orfeo
 Theme URI:      https://themeisle.com/themes/orfeo/
 Author:         ThemeIsle
 Author URI:     https://themeisle.com
-Description:    Orfeo is a responsive WordPress theme with multipurpose design. It is a good fit for both small businesses and corporate businesses, as it is highly customizable via the Live Customizer. You can use Orfeo for restaurants, startups, freelancer resume, creative agencies, portfolios, WooCommerce, or niches like sports, medical, blogging, fashion, lawyer sites etc. It has a one-page design, Sendinblue newsletter integration, widgetized footer, and a clean appearance. The theme is compatible with Elementor Page Builder, Photo Gallery, Flat Parallax Slider, and Travel Map; it is mobile friendly and optimized for SEO.
+Description:    Orfeo TODO: Make desc.
 Version:        1.0.0
 License:        GNU General Public License v2 or later
 License URI:    http://www.gnu.org/licenses/gpl-2.0.html
@@ -76,6 +76,61 @@ div, p, a, span, li, body {
 }
 
 /*--------------------------------------------------------------
+## Pagination
+--------------------------------------------------------------*/
+.pagination .nav-links .page-numbers {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  text-transform: capitalize;
+  border: 2px solid;
+}
+.pagination .nav-links .page-numbers:hover {
+  color: #fff;
+}
+.pagination .nav-links .page-numbers.dots {
+  display: none;
+}
+.pagination .nav-links .prev:before,
+.pagination .nav-links .next:after {
+  display: none;
+}
+.pagination .nav-links .current {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+  border: 2px solid;
+}
+.pagination .nav-links .current:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/*--------------------------------------------------------------
+## Search button
+--------------------------------------------------------------*/
+.widget_search .search-submit {
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.widget_search .search-submit:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.75;
+}
+.widget_search .search-form:after {
+  top: -2px;
+  width: 18px;
+}
+
+/*--------------------------------------------------------------
 # Sections
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
@@ -112,6 +167,9 @@ div, p, a, span, li, body {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+.header .carousel .buttons .btn.btn-primary:hover {
+  opacity: 0.75;
 }
 
 /*--------------------------------------------------------------
@@ -161,9 +219,6 @@ div, p, a, span, li, body {
   font-weight: 300;
   line-height: 22px;
   margin: 0 0 5px;
-}
-.hestia-features .hestia-info .icon {
-  color: #f5593d !important;
 }
 .hestia-features .hestia-info .icon > i {
   font-size: 48px;
@@ -259,6 +314,9 @@ div, p, a, span, li, body {
 }
 .hestia-team .card .content .footer a.btn {
   opacity: 0.8;
+}
+.hestia-team .card .content .footer a.btn:hover {
+  opacity: 0.65;
 }
 
 /*--------------------------------------------------------------
@@ -605,6 +663,7 @@ section.products .shop-item .card .card-image a img {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  opacity: 0.75;
 }
 
 /*--------------------------------------------------------------
@@ -638,6 +697,7 @@ section.products .shop-item .card .card-image a img {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+  opacity: 0.75;
 }
 
 /*--------------------------------------------------------------

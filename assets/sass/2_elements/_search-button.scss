@@ -1,0 +1,15 @@
+.widget_search {
+
+  .search-submit {
+    @include border-radius(50px);
+    @include no-box-shadow();
+  }
+  .search-submit:hover {
+    @include no-box-shadow();
+    opacity: 0.75;
+  }
+  .search-form:after {
+    top: -2px;
+    width: 18px;
+  }
+}

@@ -20,8 +20,8 @@
     line-height: 21px;
     padding: 8px 18px;
   }
-
   .btn.btn-primary:hover {
     @include no-box-shadow();
+    opacity: 0.75;
   }
 }
