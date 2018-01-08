@@ -1,5 +1,7 @@
 section.products {
 
+  background-color: #ffffff;
+
   .hestia-title {
     color: $color-secondary;
     font-family: inherit;
@@ -21,25 +23,50 @@ section.products {
   }
 
   .card-product {
-    background-color: #f0f0f0;
+    background: transparent;
 
     .content .card-title {
       color: $color-secondary;
     }
 
+    .content .footer .stats .tooltip .tooltip-arrow:before {
+      border-top: 11px solid #FFFFFF;
+      border-left: 11px solid transparent;
+      border-right: 11px solid transparent;
+      left: -8px;
+      right: auto;
+      top: -12px;
+      margin-left: -3px;
+      content: "";
+      border-width: 10px 11px 0;
+      border-top-color: #fff;
+      position: absolute;
+    }
+    .content .footer .stats .tooltip .tooltip-arrow {
+      border-top: 11px solid rgba(0, 0, 0, 0.2);
+      border-left: 11px solid transparent;
+      border-right: 11px solid transparent;
+      right: auto;
+      margin-right: 0;
+      top: 43px;
+      position: absolute;
+      display: block;
+      width: 5px;
+      height: 5px;
+      bottom:0;
+    }
+    .content .footer .stats .tooltip .tooltip-inner {
+      background-color: #FFFFFF;
+      border-radius: 4px;
+      box-shadow: 0 1px 13px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(115, 71, 38, 0.23);
+      color: #66615B;
+      max-width: 200px;
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+    }
     .content .footer .stats {
-      .tooltip {
-        .tooltip-arrow {
-          border-top-color: #9A9A9A;
-        }
-        .tooltip-inner {
-          @include no-box-shadow();
-          -moz-osx-font-smoothing: grayscale;
-          -webkit-font-smoothing: antialiased;
-          background-color: #f0f0f0;
-          color: #9A9A9A;
-        }
-      }
+      z-index: 100;
     }
   }
 

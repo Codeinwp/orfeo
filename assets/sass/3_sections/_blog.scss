@@ -1,7 +1,8 @@
-.hestia-blogs {
+.home .hestia-blogs {
 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  background-color: #eeeeee;
 
   .hestia-title {
     color: $color-secondary;
@@ -45,28 +46,28 @@
 
 
       &:nth-child(3n+1) .card-description a.moretag {
-        color: #fff;
-        background-color: $color-success;
+        //color: #fff;
+        //background-color: $color-success;
       }
       &:nth-child(3n+1) .card-description a.moretag:hover {
-        color: #fff;
-        background-color: $color-success-hover;
+        //color: #fff;
+        //background-color: $color-success-hover;
       }
       &:nth-child(3n+2) .card-description a.moretag {
-        color: #fff;
-        background-color: $color-primary;
+        //color: #fff;
+        //background-color: $color-primary;
       }
       &:nth-child(3n+2) .card-description a.moretag:hover {
-        color: #fff;
-        background-color: $color-primary-hover;
+        //color: #fff;
+        //background-color: $color-primary-hover;
       }
       &:nth-child(3n+3) .card-description a.moretag {
-        color: #fff;
-        background-color: $color-info;
+        //color: #fff;
+        //background-color: $color-info;
       }
       &:nth-child(3n+3) .card-description a.moretag:hover {
-        color: #fff;
-        background-color: $color-info-hover;
+        //color: #fff;
+        //background-color: $color-info-hover;
       }
     }
 
@@ -93,28 +94,28 @@
 
 
       &:nth-child(3n+1) .card-description a.moretag {
-        color: #fff;
-        background-color: $color-danger;
+        //color: #fff;
+        //background-color: $color-danger;
       }
       &:nth-child(3n+1) .card-description a.moretag:hover {
-        color: #fff;
-        background-color: $color-danger-hover;
+        //color: #fff;
+        //background-color: $color-danger-hover;
       }
       &:nth-child(3n+2) .card-description a.moretag {
-        color: #fff;
-        background-color: $color-warning;
+        //color: #fff;
+        //background-color: $color-warning;
       }
       &:nth-child(3n+2) .card-description a.moretag:hover {
-        color: #fff;
-        background-color: $color-warning-hover;
+        //color: #fff;
+        //background-color: $color-warning-hover;
       }
       &:nth-child(3n+3) .card-description a.moretag {
-        color: #fff;
-        background-color: $color-rose;
+        //color: #fff;
+        //background-color: $color-rose;
       }
       &:nth-child(3n+3) .card-description a.moretag:hover {
-        color: #fff;
-        background-color: $color-rose-hover;
+        //color: #fff;
+        //background-color: $color-rose-hover;
       }
     }
 
@@ -122,16 +123,36 @@
 
     .card-blog {
 
+      background-color: #fff;
       margin: 5px 0 20px;
       text-align: center;
+      @include border-radius(12px);
 
       .card-image {
-        box-shadow: none;
-        @include border-radius(12px);
+        @include no-box-shadow();
+        -webkit-border-radius: 12px;
+        -webkit-border-bottom-right-radius: 0;
+        -webkit-border-bottom-left-radius: 0;
+        -moz-border-radius: 12px;
+        -moz-border-radius-bottomright: 0;
+        -moz-border-radius-bottomleft: 0;
+        border-radius: 12px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
 
+        a {
+          @include border-radius(0);
+
+          img {
+            @include border-radius(0);
+          }
+        }
       }
 
       .content {
+
+        text-align: left;
+        padding: 20px;
 
         .category {
           font-family: inherit;
@@ -145,39 +166,19 @@
         .card-title {
           color: $color-secondary;
           font-family: inherit;
-          font-size: 26px;
+          font-size: 19px;
           font-weight: 300;
+          line-height: 26px;
           margin: 5px 0 0;
         }
 
         .card-description {
-
           color: #9A9A9A;
           font-family: inherit;
           font-size: 15px;
           font-weight: 300;
           line-height: 22px;
           margin: 15px 0 5px;
-
-          .moretag {
-            @include border-radius(30px);
-            background-color: #51cbce;
-            border-color: #51cbce;
-            color: #FFFFFF;
-            opacity: 1;
-            box-sizing: border-box;
-            border-width: 2px;
-            font-family: inherit;
-            font-size: 12px;
-            font-weight: 600;
-            line-height: 1.75;
-            cursor: pointer;
-            text-transform: uppercase;
-            padding: 10px 20px;
-            display: block;
-            max-width: 118px;
-            margin: 20px auto;
-          }
         }
       }
     }
