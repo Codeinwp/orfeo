@@ -1,4 +1,4 @@
-# Tiny Hestia
+# Orfeo
 
 **Requires at least:** WordPress 4.4  
 **Tested up to:** WordPress 4.8.1  
@@ -10,7 +10,7 @@
 
 ## Description
 
-Tiny Hestia is a child-theme for Hestia. It removes all scripts that are not mandatory for this this theme to work, making it clean and fast.
+Orfeo is a responsive WordPress theme with multipurpose design. It is a good fit for both small businesses and corporate businesses, as it is highly customizable via the Live Customizer. You can use Orfeo for restaurants, startups, freelancer resume, creative agencies, portfolios, WooCommerce, or niches like sports, medical, blogging, fashion, lawyer sites etc. It has a one-page design, Sendinblue newsletter integration, widgetized footer, and a clean appearance. The theme is compatible with Elementor Page Builder, Photo Gallery, Flat Parallax Slider, and Travel Map; it is mobile friendly and optimized for SEO.
 
 ## Frequently Asked Questions
 
@@ -27,10 +27,10 @@ There are no changes of style. In this child theme we removed all scripts that a
 
 ## Copyright
 
-Tiny Hestia Child Theme by Themeisle, Copyright 2017 WordPress.org
-Tiny Hestia is distributed under the terms of the GNU GPL
+Orfeo Child Theme by Themeisle, Copyright 2017 WordPress.org
+Orfeo is distributed under the terms of the GNU GPL
 
-Tiny Hestia bundles the following third-party resources:
+Orfeo bundles the following third-party resources:
 
 ### Scripts
 Bootstrap, http://getbootstrap.com/ Copyright 2011-2015 Twitter, Inc  
