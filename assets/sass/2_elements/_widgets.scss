@@ -1,10 +1,15 @@
-.blog-sidebar {
+.widget {
 
+  color: $color-secondary;
   font-family: inherit;
+  font-weight: 300;
 
-  .widget {
-    h5 {
-      font-weight: 300;
-    }
+  a {
+    font-weight: inherit;
+  }
+
+  h5 {
+    font-family: inherit;
+    font-weight: 300;
   }
 }

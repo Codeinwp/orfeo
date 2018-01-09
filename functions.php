@@ -18,7 +18,6 @@ if ( ! function_exists( 'orfeo_parent_css' ) ):
 		if ( is_rtl() ) {
 			wp_enqueue_style( 'orfeo_parent_rtl', trailingslashit( get_template_directory_uri() ) . 'style-rtl.css', array( 'bootstrap' ) );
 		}
-
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'orfeo_parent_css', 10 );
@@ -41,7 +40,22 @@ function orfeo_change_defaults( $wp_customize ) {
 		$orfeo_body_font->default = 'Montserrat';
 	}
 }
-add_action( 'customize_register', 'orfeo_change_defaults', 99 );
+add_action( 'customize_register', 'orfeo_change_defaults', 0 );
+
+
+/**
+ * Change default font family for front end display.
+ *
+ * @return string
+ *
+ * @since 1.0.0
+ */
+function orfeo_font_default_frontend() {
+	return 'Montserrat';
+}
+
+add_filter( 'hestia_headings_default', 'orfeo_font_default_frontend' );
+add_filter( 'hestia_body_font_default', 'orfeo_font_default_frontend' );
 
 /**
  * Change default value of accent color

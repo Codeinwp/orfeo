@@ -41,10 +41,16 @@ div, p, a, span, li, body {
 /*--------------------------------------------------------------
 ## Widgets
 --------------------------------------------------------------*/
-.blog-sidebar {
+.widget {
+  color: #444444;
   font-family: inherit;
+  font-weight: 300;
 }
-.blog-sidebar .widget h5 {
+.widget a {
+  font-weight: inherit;
+}
+.widget h5 {
+  font-family: inherit;
   font-weight: 300;
 }
 
@@ -128,6 +134,22 @@ div, p, a, span, li, body {
 .widget_search .search-form:after {
   top: -2px;
   width: 18px;
+}
+
+/*--------------------------------------------------------------
+## Social link buttons
+--------------------------------------------------------------*/
+.btn.btn-just-icon {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn.btn-just-icon:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.75;
 }
 
 /*--------------------------------------------------------------
@@ -794,6 +816,187 @@ section.products .shop-item .card .card-image a img {
     float: none;
   }
 }
+/*--------------------------------------------------------------
+# Page
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Single Post Page
+--------------------------------------------------------------*/
+.single-post .related-posts {
+  font-family: inherit;
+}
+.single-post .related-posts .hestia-title {
+  color: #444444;
+  font-family: inherit;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 41px;
+}
+.single-post .related-posts .card-blog {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+  margin: 5px 0 20px;
+  text-align: center;
+}
+.single-post .related-posts .card-blog .card-image {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 12px;
+  -webkit-border-bottom-right-radius: 0;
+  -webkit-border-bottom-left-radius: 0;
+  -moz-border-radius: 12px;
+  -moz-border-radius-bottomright: 0;
+  -moz-border-radius-bottomleft: 0;
+  border-radius: 12px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  margin: 0;
+}
+.single-post .related-posts .card-blog .card-image a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.single-post .related-posts .card-blog .card-image a img {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.single-post .related-posts .card-blog .content {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  text-align: left;
+  padding: 20px;
+}
+.single-post .related-posts .card-blog .content .category {
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 10px 0 0;
+  margin: 0;
+}
+.single-post .related-posts .card-blog .content .card-title {
+  color: #444444;
+  font-family: inherit;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 5px 0 0;
+}
+.single-post .related-posts .card-blog .content .card-description {
+  color: #9A9A9A;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 15px 0 5px;
+}
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.section-comments {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: inherit;
+}
+.section-comments .hestia-title {
+  color: #444444;
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 36px;
+}
+.section-comments .comment .comment-author {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.section-comments .comment .media-body {
+  /* For aligning the reply button */
+  position: relative;
+}
+.section-comments .comment .media-body .media-heading a {
+  display: inline-block;
+  color: #444444;
+  font-family: inherit;
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 26px;
+  margin: 5px 0 10px;
+}
+.section-comments .comment .media-body .media-heading small {
+  color: #868e96;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin: 0 0 8px;
+}
+.section-comments .comment .media-body .media-heading small .comment-edit-link {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+}
+.section-comments .comment .media-body p {
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0 0 5px;
+}
+.section-comments .comment .media-body .media-footer {
+  /* Container here is .media-body */
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+}
+.section-comments .comment .media-body .media-footer a {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+.section-comments .comment .media-body .media-footer a:hover {
+  opacity: 0.75;
+}
+.section-comments .comment-respond .avatar {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.section-comments .comment-respond .logged-in-as {
+  font-weight: 600;
+}
+.section-comments .btn.btn-primary {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+}
+.section-comments .btn.btn-primary:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.75;
+}
+
 /*--------------------------------------------------------------
 # WooCommerce
 --------------------------------------------------------------*/
