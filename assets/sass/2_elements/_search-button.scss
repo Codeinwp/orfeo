@@ -8,8 +8,12 @@
     @include no-box-shadow();
     opacity: 0.75;
   }
+  .search-submit:after,
   .search-form:after {
     top: -2px;
     width: 18px;
+  }
+  .search-form > input[type=submit] {
+    will-change: unset;
   }
 }

@@ -34,6 +34,10 @@
         .content .card-title {
           color: $color-secondary;
         }
+        
+        .card-description {
+          display: none;
+        }
 
         .content .footer .stats .tooltip .tooltip-arrow:before {
           border-top: 11px solid #FFFFFF;

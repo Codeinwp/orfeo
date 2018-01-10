@@ -23,12 +23,6 @@ if ( ! function_exists( 'orfeo_parent_css' ) ):
 endif;
 add_action( 'wp_enqueue_scripts', 'orfeo_parent_css', 10 );
 
-//function orfeo_scripts() {
-//
-//	wp_enqueue_script( 'orfeo-scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), ORFEO_VERSION );
-//}
-//add_action( 'wp_enqueue_scripts', 'orfeo_scripts' );
-
 /**
  * Change default fonts.
  *
@@ -86,6 +80,14 @@ function orfeo_inline_style() {
 
 		$custom_css .= '.pagination .nav-links .page-numbers:hover { background-color: ' . $color_accent . '; }';
 		$custom_css .= '.pagination .nav-links .page-numbers:hover { border-color: ' . $color_accent . '; }';
+
+		$custom_css .= '.woocommerce-pagination ul.page-numbers .page-numbers { color: ' . $color_accent . '; border-color: ' . $color_accent . '; } ';
+		$custom_css .= '.woocommerce-pagination ul.page-numbers li > span.current { border-color: ' . $color_accent . ' !important; }';
+		$custom_css .= '.woocommerce-pagination ul.page-numbers .page-numbers:hover { background-color: ' . $color_accent . '; }';
+		$custom_css .= '.woocommerce-pagination ul.page-numbers .page-numbers:hover { border-color: ' . $color_accent . '; }';
+
+		/* Categories */
+		$custom_css .= '.entry-categories .label { background-color: ' . $color_accent . ';}';
 	}
 
 	wp_add_inline_style( 'orfeo_parent', $custom_css );
@@ -136,10 +138,23 @@ function orfeo_remove_hestia_actions() {
 	/* Remove three points from blog read more button */
 	remove_filter( 'excerpt_more', 'hestia_excerpt_more', 10 );
 
-	/* Remove excerpt from products */
-	add_filter( 'woocommerce_short_description', '__return_empty_string' );
 }
 add_action( 'after_setup_theme', 'orfeo_remove_hestia_actions' );
+
+/**
+ * Remove product description except from Single Product Page
+ *
+ * @since 1.0.0
+ */
+function orfeo_remove_product_description() {
+
+	if ( class_exists( 'WooCommerce' ) ) {
+		if ( ! is_product() ) {
+			add_filter( 'woocommerce_short_description', '__return_empty_string' );
+		}
+	}
+}
+add_action( 'template_redirect', 'orfeo_remove_product_description' );
 
 /**
  * Replace excerpt "Read More" text with a link.
