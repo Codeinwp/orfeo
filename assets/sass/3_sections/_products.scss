@@ -1,6 +1,8 @@
 section.products {
 
   background-color: #ffffff;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 
   .hestia-title {
     color: $color-secondary;

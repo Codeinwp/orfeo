@@ -18,10 +18,16 @@ if ( ! function_exists( 'orfeo_parent_css' ) ):
 		if ( is_rtl() ) {
 			wp_enqueue_style( 'orfeo_parent_rtl', trailingslashit( get_template_directory_uri() ) . 'style-rtl.css', array( 'bootstrap' ) );
 		}
+
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'orfeo_parent_css', 10 );
 
+//function orfeo_scripts() {
+//
+//	wp_enqueue_script( 'orfeo-scripts', get_stylesheet_directory_uri() . '/assets/js/scripts.js', array( 'jquery' ), ORFEO_VERSION );
+//}
+//add_action( 'wp_enqueue_scripts', 'orfeo_scripts' );
 
 /**
  * Change default fonts.
