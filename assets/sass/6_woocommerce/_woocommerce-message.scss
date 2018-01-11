@@ -1,3 +1,4 @@
+/* Success message */
 .woocommerce-page .woocommerce-message {
   @include no-font-smooth();
   color: #ffffff;
@@ -11,5 +12,35 @@
   margin-right: -100%;
 }
 .woocommerce-page .woocommerce-message:before {
+  display: none;
+}
+
+/* Error message */
+.woocommerce-page .woocommerce-error {
+  color: #ffffff;
+  background-color: #f7765f;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: center;
+  /* This is for breaking the container width */
+  margin-left: -100%;
+  margin-right: -100%;
+}
+.woocommerce-page .woocommerce-error:before {
+  display: none;
+}
+
+/* Info message */
+.woocommerce-page .woocommerce-info {
+  color: #ffffff;
+  background-color: #6ec7e0;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+.woocommerce-page .woocommerce-info:before {
   display: none;
 }

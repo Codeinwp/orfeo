@@ -81,6 +81,12 @@ div, p, a, span, li, body {
   line-height: inherit;
 }
 
+.navbar {
+  -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+}
+
 /*--------------------------------------------------------------
 ## Pagination
 --------------------------------------------------------------*/
@@ -478,9 +484,9 @@ div, p, a, span, li, body {
 .hestia-testimonials .hestia-testimonials-content .card-testimonial {
   text-align: left;
   padding: 20px 20px 0;
-  -webkit-box-shadow: 0 10px 40px -5px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0 10px 40px -5px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 10px 40px -5px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 }
 .hestia-testimonials .hestia-testimonials-content .card-testimonial .card-avatar {
   margin: 0;
@@ -504,6 +510,11 @@ div, p, a, span, li, body {
 .hestia-testimonials .hestia-testimonials-content .card-testimonial .content .card-description {
   font-family: inherit;
   font-weight: 300;
+}
+.hestia-testimonials .hestia-testimonials-content .card-testimonial:hover {
+  -webkit-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
 }
 
 /*--------------------------------------------------------------
@@ -617,12 +628,15 @@ div, p, a, span, li, body {
   background-color: #C11F64;
 }
 .home .hestia-blogs .hestia-blog-content .card-blog {
-  background-color: #fff;
-  margin: 5px 0 20px;
-  text-align: center;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
+  background-color: #fff;
+  margin: 5px 0 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 }
 .home .hestia-blogs .hestia-blog-content .card-blog .card-image {
   -webkit-box-shadow: none;
@@ -696,6 +710,11 @@ div, p, a, span, li, body {
   display: block;
   max-width: 133px;
   margin: 20px auto 0 0;
+}
+.home .hestia-blogs .hestia-blog-content .card-blog:hover {
+  -webkit-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
 }
 
 /*--------------------------------------------------------------
@@ -1910,9 +1929,37 @@ section.products .shop-item .card .card-image a img {
 /*--------------------------------------------------------------
 ## WooCommerce Checkout Page
 --------------------------------------------------------------*/
+.woocommerce-checkout {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.woocommerce-checkout .hestia-title {
+  font-family: inherit;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 27px;
+}
+.woocommerce-checkout #payment #place_order {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 11px 10px;
+}
+.woocommerce-checkout #payment #place_order:hover {
+  opacity: 0.75;
+}
+
 /*--------------------------------------------------------------
 ## WooCommerce Message
 --------------------------------------------------------------*/
+/* Success message */
 .woocommerce-page .woocommerce-message {
   -moz-osx-font-smoothing: initial;
   -webkit-font-smoothing: initial;
@@ -1929,6 +1976,100 @@ section.products .shop-item .card .card-image a img {
 
 .woocommerce-page .woocommerce-message:before {
   display: none;
+}
+
+/* Error message */
+.woocommerce-page .woocommerce-error {
+  color: #ffffff;
+  background-color: #f7765f;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: center;
+  /* This is for breaking the container width */
+  margin-left: -100%;
+  margin-right: -100%;
+}
+
+.woocommerce-page .woocommerce-error:before {
+  display: none;
+}
+
+/* Info message */
+.woocommerce-page .woocommerce-info {
+  color: #ffffff;
+  background-color: #6ec7e0;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.woocommerce-page .woocommerce-info:before {
+  display: none;
+}
+
+/*--------------------------------------------------------------
+## WooCommerce My Account
+--------------------------------------------------------------*/
+.woocommerce-MyAccount-navigation {
+  font-weight: 300;
+}
+
+.woocommerce-MyAccount-content {
+  font-weight: 300;
+}
+.woocommerce-MyAccount-content .woocommerce-Message .woocommerce-Button:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.75;
+}
+.woocommerce-MyAccount-content .woocommerce-EditAccountForm input.woocommerce-Button {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.woocommerce-MyAccount-content .woocommerce-EditAccountForm input.woocommerce-Button:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.75;
+}
+
+/*--------------------------------------------------------------
+## WooCommerce My Order Tracking
+--------------------------------------------------------------*/
+.track_order {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: inherit;
+  font-weight: 300;
+}
+.track_order label {
+  font-weight: 400;
+}
+.track_order input[type=submit] {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 11px 20px;
+  border: none;
+}
+.track_order input[type=submit]:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.75;
 }
 
 /*# sourceMappingURL=style.css.map */

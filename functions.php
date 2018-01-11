@@ -102,6 +102,10 @@ function orfeo_inline_style() {
 
 		/* WooCommerce message */
 		$custom_css .= '.woocommerce-page .woocommerce-message { background-color: ' . $color_accent . '; }';
+
+		/* WooCommerce My Order Tracking Page */
+		$custom_css .= '.track_order input[type=submit] { background-color: ' . $color_accent . '; }';
+		$custom_css .= '.track_order input[type=submit]:hover { background-color: ' . $color_accent . '; }';
 	}
 
 	wp_add_inline_style( 'orfeo_parent', $custom_css );
