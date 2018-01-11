@@ -95,6 +95,13 @@ function orfeo_inline_style() {
 
 		/* Single Product Page Rating */
 		$custom_css .= '.woocommerce div.product p.stars span a:before { color: ' . $color_accent . '; }';
+
+		/* Cart action buttons */
+		$custom_css .= '.woocommerce-cart table.shop_table tr td.actions input[type=submit] { background-color: ' . $color_accent . '; }';
+		$custom_css .= '.woocommerce-cart table.shop_table tr td.actions input[type=submit]:hover { background-color: ' . $color_accent . '; }';
+
+		/* WooCommerce message */
+		$custom_css .= '.woocommerce-page .woocommerce-message { background-color: ' . $color_accent . '; }';
 	}
 
 	wp_add_inline_style( 'orfeo_parent', $custom_css );

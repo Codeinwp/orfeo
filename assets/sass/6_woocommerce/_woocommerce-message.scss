@@ -1,0 +1,18 @@
+.woocommerce-page .woocommerce-message {
+
+  -moz-osx-font-smoothing: initial;
+  -webkit-font-smoothing: initial;
+
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  text-align: center;
+
+  margin-left: -100%;
+  margin-right: -100%;
+}
+.woocommerce-page .woocommerce-message:before {
+  display: none;
+}
