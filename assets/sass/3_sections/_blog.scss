@@ -1,7 +1,6 @@
 .home .hestia-blogs {
 
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  @include font-smooth();
   background-color: #eeeeee;
 
   .hestia-title {

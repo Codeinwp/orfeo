@@ -1,7 +1,6 @@
 .section-comments {
 
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  @include font-smooth();
   font-family: inherit;
 
   .hestia-title {

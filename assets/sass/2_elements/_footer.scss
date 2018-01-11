@@ -1,8 +1,7 @@
 .footer-big {
 
   background-color: #252422;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  @include font-smooth();
 
   .footer-menu {
     .page_item,

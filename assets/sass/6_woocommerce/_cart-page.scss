@@ -1,7 +1,6 @@
 .woocommerce-cart {
 
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  @include font-smooth();
 
   .hestia-title {
     font-family: inherit;
@@ -69,8 +68,7 @@
   } /* End of Shop Table */
   .cart_totals {
 
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+    @include font-smooth();
 
     .card {
       @include no-box-shadow();

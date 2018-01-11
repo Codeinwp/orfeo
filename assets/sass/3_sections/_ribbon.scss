@@ -1,7 +1,6 @@
 .hestia-ribbon {
 
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  @include font-smooth();
   padding: 35px 0;
 
   .hestia-title {

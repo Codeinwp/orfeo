@@ -1922,6 +1922,7 @@ section.products .shop-item .card .card-image a img {
   font-weight: 300;
   line-height: 21px;
   text-align: center;
+  /* This is for breaking the container width */
   margin-left: -100%;
   margin-right: -100%;
 }

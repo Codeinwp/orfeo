@@ -2,8 +2,7 @@
 
   .related.products {
 
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+    @include font-smooth();
 
     h2 {
       color: $color-secondary;

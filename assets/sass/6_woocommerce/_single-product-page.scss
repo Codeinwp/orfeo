@@ -27,8 +27,7 @@
 
           .summary {
 
-            -moz-osx-font-smoothing: grayscale;
-            -webkit-font-smoothing: antialiased;
+            @include font-smooth();
 
             .product_title {
               color: $color-secondary;
@@ -185,8 +184,7 @@
                 } /* End of comments list */
                 .comment-respond {
 
-                  -moz-osx-font-smoothing: grayscale;
-                  -webkit-font-smoothing: antialiased;
+                  @include font-smooth();
 
                   .comment-reply-title {
                     font-family: inherit;

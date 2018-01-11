@@ -17,3 +17,13 @@
   -o-transform: none;
   transform: none;
 }
+
+@mixin font-smooth() {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin no-font-smooth() {
+  -moz-osx-font-smoothing: initial;
+  -webkit-font-smoothing: initial;
+}

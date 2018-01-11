@@ -1,7 +1,6 @@
 .hestia-features {
 
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  @include font-smooth();
   text-align: center;
   padding: 80px 0;
 

@@ -1,7 +1,6 @@
 .subscribe-line {
 
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  @include font-smooth();
 
   .title {
     font-family: inherit;

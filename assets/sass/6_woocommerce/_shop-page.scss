@@ -18,8 +18,7 @@
 
   .content {
 
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+    @include font-smooth();
     display: table;
     padding: 15px 5px 0;
 
