@@ -299,6 +299,7 @@ div, p, a, span, li, body {
   -webkit-font-smoothing: antialiased;
   text-align: center;
   padding: 80px 0;
+  /* End of .hestia-features-content */
 }
 .hestia-features .hestia-title {
   color: #444444;
@@ -316,14 +317,17 @@ div, p, a, span, li, body {
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
-  margin: 0 0 5px;
+  margin: 0;
 }
-.hestia-features .hestia-info {
+.hestia-features .hestia-features-content {
+  margin: 30px;
+}
+.hestia-features .hestia-features-content .hestia-info {
   text-align: center;
   padding: 30px 0 30px;
   margin: 0 auto;
 }
-.hestia-features .hestia-info .info-title {
+.hestia-features .hestia-features-content .hestia-info .info-title {
   color: #444444;
   font-family: inherit;
   font-size: 23px;
@@ -331,7 +335,7 @@ div, p, a, span, li, body {
   line-height: 27px;
   margin: 15px 0;
 }
-.hestia-features .hestia-info p {
+.hestia-features .hestia-features-content .hestia-info p {
   color: #9A9A9A;
   font-family: inherit;
   font-size: 15px;
@@ -339,7 +343,7 @@ div, p, a, span, li, body {
   line-height: 22px;
   margin: 0 0 5px;
 }
-.hestia-features .hestia-info .icon > i {
+.hestia-features .hestia-features-content .hestia-info .icon > i {
   font-size: 48px;
 }
 
@@ -349,6 +353,7 @@ div, p, a, span, li, body {
 .hestia-team {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  /* End of .hestia-team-content */
 }
 .hestia-team .hestia-title {
   color: #444444;
@@ -359,25 +364,28 @@ div, p, a, span, li, body {
   margin: 30px 0 25px;
   min-height: 32px;
 }
-.hestia-team .description {
+.hestia-team h5.description {
   color: #9A9A9A;
   font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
-  margin: 0 0 8px;
+  margin: 0;
 }
-.hestia-team .card {
+.hestia-team .hestia-team-content {
+  margin: 30px 0 0;
+}
+.hestia-team .hestia-team-content .card {
   margin: 30px 0 20px;
   text-align: center;
 }
-.hestia-team .card .col-md-5 {
+.hestia-team .hestia-team-content .card .col-md-5 {
   float: none;
   text-align: center;
   margin: 0 auto;
   width: auto;
 }
-.hestia-team .card .col-md-5 .card-image {
+.hestia-team .hestia-team-content .card .col-md-5 .card-image {
   display: block;
   width: 120px;
   height: 120px;
@@ -389,7 +397,7 @@ div, p, a, span, li, body {
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.hestia-team .card .col-md-5 .card-image img {
+.hestia-team .hestia-team-content .card .col-md-5 .card-image img {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -399,7 +407,7 @@ div, p, a, span, li, body {
   max-width: 100%;
   height: auto;
 }
-.hestia-team .card .col-md-7 {
+.hestia-team .hestia-team-content .card .col-md-7 {
   float: none;
   text-align: center;
   margin: 0 auto;
@@ -407,7 +415,7 @@ div, p, a, span, li, body {
   padding-bottom: 20px;
   width: auto;
 }
-.hestia-team .card .content .card-title {
+.hestia-team .hestia-team-content .card .content .card-title {
   color: #444444;
   font-family: inherit;
   font-size: 22px;
@@ -415,7 +423,7 @@ div, p, a, span, li, body {
   line-height: 26px;
   margin: 5px 0 0;
 }
-.hestia-team .card .content .category {
+.hestia-team .hestia-team-content .card .content .category {
   color: #868e96;
   font-family: inherit;
   font-size: 12px;
@@ -423,7 +431,7 @@ div, p, a, span, li, body {
   line-height: 18px;
   margin: 5px 0;
 }
-.hestia-team .card .content .card-description {
+.hestia-team .hestia-team-content .card .content .card-description {
   color: #9A9A9A;
   font-family: inherit;
   font-size: 15px;
@@ -431,10 +439,10 @@ div, p, a, span, li, body {
   line-height: 22px;
   margin: 15px 0 5px;
 }
-.hestia-team .card .content .footer a.btn {
+.hestia-team .hestia-team-content .card .content .footer a.btn {
   opacity: 0.8;
 }
-.hestia-team .card .content .footer a.btn:hover {
+.hestia-team .hestia-team-content .card .content .footer a.btn:hover {
   opacity: 0.65;
 }
 
@@ -444,6 +452,7 @@ div, p, a, span, li, body {
 .hestia-testimonials {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  /* End of .hestia-team-content */
 }
 .hestia-testimonials .hestia-title {
   color: #444444;
@@ -458,7 +467,10 @@ div, p, a, span, li, body {
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
-  margin: 0 0 40px;
+  margin: 0;
+}
+.hestia-testimonials .hestia-testimonials-content {
+  margin: 30px 0 0;
 }
 .hestia-testimonials .hestia-testimonials-content .row:nth-of-type(2n+1) .col-md-4:nth-of-type(3n+1) .card-testimonial {
   background-color: #6bd098;
@@ -524,6 +536,7 @@ div, p, a, span, li, body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background-color: #eeeeee;
+  /* End of .hestia-blog-content */
 }
 .home .hestia-blogs .hestia-title {
   color: #444444;
@@ -538,9 +551,10 @@ div, p, a, span, li, body {
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
-  margin: 0 0 30px;
+  margin: 0;
 }
 .home .hestia-blogs .hestia-blog-content {
+  margin: 60px 0 0;
   padding: 0;
 }
 .home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .category a {
@@ -724,6 +738,7 @@ section.products {
   background-color: #ffffff;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  /* End of .hestia-shop-content */
 }
 section.products .hestia-title {
   color: #444444;
@@ -741,15 +756,18 @@ section.products .description {
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
-  margin: 0 0 5px;
+  margin: 0;
 }
-section.products .card-product {
+section.products .hestia-shop-content {
+  margin: 0;
+}
+section.products .hestia-shop-content .card-product {
   background: transparent;
 }
-section.products .card-product .content .card-title {
+section.products .hestia-shop-content .card-product .content .card-title {
   color: #444444;
 }
-section.products .card-product .content .footer .stats .tooltip .tooltip-arrow:before {
+section.products .hestia-shop-content .card-product .content .footer .stats .tooltip .tooltip-arrow:before {
   border-top: 11px solid #FFFFFF;
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
@@ -762,7 +780,7 @@ section.products .card-product .content .footer .stats .tooltip .tooltip-arrow:b
   border-top-color: #fff;
   position: absolute;
 }
-section.products .card-product .content .footer .stats .tooltip .tooltip-arrow {
+section.products .hestia-shop-content .card-product .content .footer .stats .tooltip .tooltip-arrow {
   border-top: 11px solid rgba(0, 0, 0, 0.2);
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
@@ -775,7 +793,7 @@ section.products .card-product .content .footer .stats .tooltip .tooltip-arrow {
   height: 5px;
   bottom: 0;
 }
-section.products .card-product .content .footer .stats .tooltip .tooltip-inner {
+section.products .hestia-shop-content .card-product .content .footer .stats .tooltip .tooltip-inner {
   background-color: #FFFFFF;
   border-radius: 4px;
   box-shadow: 0 1px 13px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(115, 71, 38, 0.23);
@@ -785,10 +803,10 @@ section.products .card-product .content .footer .stats .tooltip .tooltip-inner {
   text-align: center;
   text-decoration: none;
 }
-section.products .card-product .content .footer .stats {
+section.products .hestia-shop-content .card-product .content .footer .stats {
   z-index: 100;
 }
-section.products .shop-item:hover > .card > .card-image {
+section.products .hestia-shop-content .shop-item:hover > .card > .card-image {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -799,17 +817,17 @@ section.products .shop-item:hover > .card > .card-image {
   transform: none;
   opacity: .75;
 }
-section.products .shop-item .card .card-image {
+section.products .hestia-shop-content .shop-item .card .card-image {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-section.products .shop-item .card .card-image a {
+section.products .hestia-shop-content .shop-item .card .card-image a {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-section.products .shop-item .card .card-image a img {
+section.products .hestia-shop-content .shop-item .card .card-image a img {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;

@@ -17,10 +17,12 @@
     font-size: 19px;
     font-weight: 300;
     line-height: 26px;
-    margin: 0 0 30px;
+    margin: 0;
   }
 
   .hestia-blog-content {
+
+    margin: 60px 0 0;
 
     .row:nth-child(2n+1) article {
 
@@ -210,7 +212,7 @@
       box-shadow: 0 12px 19px -7px rgba( 0, 0, 0, 0.3 );
     }
 
-  }
+  } /* End of .hestia-blog-content */
 }
 
 
