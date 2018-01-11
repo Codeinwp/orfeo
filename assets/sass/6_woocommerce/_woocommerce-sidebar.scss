@@ -1,0 +1,40 @@
+.shop-sidebar {
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  @include no-box-shadow();
+
+  .widget {
+    h5 {
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 19px;
+      padding: 12px 12px 12px 0;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    li > a {
+      color: $color-secondary;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 26px;
+    }
+
+    .button {
+      @include no-box-shadow();
+      @include border-radius(30px);
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 21px;
+      padding: 8px 18px;
+    }
+    .button:hover {
+      @include no-box-shadow();
+      opacity: 0.75;
+    }
+
+  }
+}

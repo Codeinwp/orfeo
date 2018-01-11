@@ -16,7 +16,6 @@
       min-height: 32px;
     }
 
-
     .product:hover > .card > .card-image {
       @include no-box-shadow();
       @include no-transform();

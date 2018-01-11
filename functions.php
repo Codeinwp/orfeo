@@ -75,12 +75,13 @@ function orfeo_inline_style() {
 
 	if ( ! empty( $color_accent ) ) {
 
+		/* Pagination on Blog */
 		$custom_css .= '.pagination .nav-links .page-numbers { color: ' . $color_accent . '; border-color: ' . $color_accent . '; }';
 		$custom_css .= '.pagination .nav-links .page-numbers.current { border-color: ' . $color_accent . '; }';
-
 		$custom_css .= '.pagination .nav-links .page-numbers:hover { background-color: ' . $color_accent . '; }';
 		$custom_css .= '.pagination .nav-links .page-numbers:hover { border-color: ' . $color_accent . '; }';
 
+		/* Pagination ons Shop */
 		$custom_css .= '.woocommerce-pagination ul.page-numbers .page-numbers { color: ' . $color_accent . '; border-color: ' . $color_accent . '; } ';
 		$custom_css .= '.woocommerce-pagination ul.page-numbers li > span.current { border-color: ' . $color_accent . ' !important; }';
 		$custom_css .= '.woocommerce-pagination ul.page-numbers .page-numbers:hover { background-color: ' . $color_accent . '; }';
@@ -88,6 +89,12 @@ function orfeo_inline_style() {
 
 		/* Categories */
 		$custom_css .= '.entry-categories .label { background-color: ' . $color_accent . ';}';
+
+		/* Shop Sidebar Rating*/
+		$custom_css .= '.woocommerce .star-rating { color: ' . $color_accent . '; }';
+
+		/* Single Product Page Rating */
+		$custom_css .= '.woocommerce div.product p.stars span a:before { color: ' . $color_accent . '; }';
 	}
 
 	wp_add_inline_style( 'orfeo_parent', $custom_css );

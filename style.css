@@ -1278,6 +1278,25 @@ section.products .shop-item .card .card-image a img {
   text-align: center;
   text-decoration: none;
 }
+.card-product .content .footer .stats .added_to_cart {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+  padding: 8px 18px;
+}
+.card-product .content .footer .stats .added_to_cart:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.75;
+}
 
 .woocommerce.archive .wrapper .main {
   background-color: #fff;
@@ -1614,6 +1633,99 @@ section.products .shop-item .card .card-image a img {
 }
 
 /*--------------------------------------------------------------
+## Upsells
+--------------------------------------------------------------*/
+.cross-sells,
+.upsells {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.cross-sells h2,
+.upsells h2 {
+  color: #444444;
+  font-family: inherit;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 42px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  min-height: 32px;
+}
+.cross-sells .product:hover > .card > .card-image,
+.upsells .product:hover > .card > .card-image {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  opacity: .75;
+}
+.cross-sells .product .card-product,
+.upsells .product .card-product {
+  background: transparent;
+}
+.cross-sells .product .card-product .card-image,
+.upsells .product .card-product .card-image {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.cross-sells .product .card-product .content .card-title,
+.upsells .product .card-product .content .card-title {
+  color: #444444;
+}
+.cross-sells .product .card-product .card-description,
+.upsells .product .card-product .card-description {
+  display: none;
+}
+.cross-sells .product .card-product .content .footer .stats .tooltip .tooltip-arrow:before,
+.upsells .product .card-product .content .footer .stats .tooltip .tooltip-arrow:before {
+  border-top: 11px solid #FFFFFF;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  left: -8px;
+  right: auto;
+  top: -12px;
+  margin-left: -3px;
+  content: "";
+  border-width: 10px 11px 0;
+  border-top-color: #fff;
+  position: absolute;
+}
+.cross-sells .product .card-product .content .footer .stats .tooltip .tooltip-arrow,
+.upsells .product .card-product .content .footer .stats .tooltip .tooltip-arrow {
+  border-top: 11px solid rgba(0, 0, 0, 0.2);
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  right: auto;
+  margin-right: 0;
+  top: 43px;
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 5px;
+  bottom: 0;
+}
+.cross-sells .product .card-product .content .footer .stats .tooltip .tooltip-inner,
+.upsells .product .card-product .content .footer .stats .tooltip .tooltip-inner {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(115, 71, 38, 0.23);
+  color: #66615B;
+  max-width: 200px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+.cross-sells .product .card-product .content .footer .stats,
+.upsells .product .card-product .content .footer .stats {
+  z-index: 100;
+}
+
+/*--------------------------------------------------------------
 ## WooCommerce Pagination
 --------------------------------------------------------------*/
 .woocommerce-pagination ul.page-numbers .page-numbers {
@@ -1635,6 +1747,51 @@ section.products .shop-item .card .card-image a img {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+
+/*--------------------------------------------------------------
+## WooCommerce Sidebar
+--------------------------------------------------------------*/
+.shop-sidebar {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.shop-sidebar .widget h5 {
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 19px;
+  padding: 12px 12px 12px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.shop-sidebar .widget li > a {
+  color: #444444;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 26px;
+}
+.shop-sidebar .widget .button {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+  padding: 8px 18px;
+}
+.shop-sidebar .widget .button:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.75;
 }
 
 /*# sourceMappingURL=style.css.map */
