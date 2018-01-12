@@ -35,6 +35,12 @@ div, p, a, span, li, body {
   font-family: inherit;
 }
 
+.btn:focus, .btn:active, .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
@@ -199,7 +205,7 @@ div, p, a, span, li, body {
 }
 
 /*--------------------------------------------------------------
-## Tgas
+## Tags
 --------------------------------------------------------------*/
 /* Categories */
 .entry-categories .label {
@@ -247,6 +253,19 @@ div, p, a, span, li, body {
 }
 .entry-tags .entry-tag:nth-of-type(4n+4) {
   background-color: #f5593d;
+}
+
+/*--------------------------------------------------------------
+## Page Header Height
+--------------------------------------------------------------*/
+/* Page header height on default page template */
+.page-template-default .boxed-layout-header {
+  padding-bottom: 0;
+}
+
+/* Page title */
+.hestia-title {
+  font-weight: 300;
 }
 
 /*--------------------------------------------------------------
@@ -948,6 +967,12 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 /*--------------------------------------------------------------
 ## Content
 --------------------------------------------------------------*/
+.blog {
+  /* Page header */
+}
+.blog .boxed-layout-header {
+  padding-bottom: 0;
+}
 .blog .hestia-title {
   font-family: inherit;
   font-size: 40px;
@@ -1333,6 +1358,15 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   -moz-box-shadow: none;
   box-shadow: none;
   opacity: 0.75;
+}
+.card-product .content .footer .stats .added_to_cart:focus,
+.card-product .content .footer .stats .added_to_cart:active {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.card-product .content .footer .stats .hestia-view-cart-wrapper {
+  bottom: -45px;
 }
 
 .woocommerce.archive .wrapper .main {

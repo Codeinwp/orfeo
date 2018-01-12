@@ -6,3 +6,6 @@ div, p, a, span, li, body {
   font-family: inherit;
 }
 
+.btn:focus, .btn:active, .btn.btn-default:hover, .btn.btn-default:focus, .btn.btn-default:active {
+  @include no-box-shadow();
+}

@@ -121,6 +121,13 @@
           @include no-box-shadow();
           opacity: 0.75;
         }
+        .added_to_cart:focus,
+        .added_to_cart:active {
+          @include no-box-shadow();
+        }
+        .hestia-view-cart-wrapper {
+          bottom: -45px;
+        }
       }
     }
   }
