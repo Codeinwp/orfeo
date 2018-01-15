@@ -60,6 +60,14 @@ div, p, a, span, li, body {
   font-weight: 300;
 }
 
+/* Blog and default pages sidebar */
+aside .widget a {
+  color: #444444;
+}
+aside .widget ul {
+  padding: 0;
+}
+
 /*--------------------------------------------------------------
 ## Navigation Navbar
 --------------------------------------------------------------*/
@@ -91,6 +99,13 @@ div, p, a, span, li, body {
   -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+}
+
+/* Very top bar */
+.hestia-top-bar .quantity,
+.hestia-top-bar .woocommerce-mini-cart__total,
+.hestia-top-bar .woocommerce-Price-amount {
+  color: #ffffff;
 }
 
 /*--------------------------------------------------------------

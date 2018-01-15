@@ -12,4 +12,20 @@
     font-family: inherit;
     font-weight: 300;
   }
+
+}
+
+/* Blog and default pages sidebar */
+aside {
+
+  .widget {
+
+    a {
+      color: $color-secondary;
+    }
+
+    ul {
+      padding: 0;
+    }
+  }
 }
