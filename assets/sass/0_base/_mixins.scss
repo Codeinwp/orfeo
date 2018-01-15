@@ -27,3 +27,17 @@
   -moz-osx-font-smoothing: initial;
   -webkit-font-smoothing: initial;
 }
+
+@mixin widgets-button() {
+  @include no-box-shadow();
+  @include border-radius(30px);
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 21px;
+  padding: 8px 18px
+}
+@mixin widgets-button-hover() {
+  @include no-box-shadow();
+  opacity: 0.75;
+}

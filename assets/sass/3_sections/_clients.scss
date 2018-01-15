@@ -97,6 +97,15 @@
       -webkit-box-shadow: 0 12px 19px -7px rgba( 0, 0, 0, 0.3 );
       -moz-box-shadow: 0 12px 19px -7px rgba( 0, 0, 0, 0.3 );
       box-shadow: 0 12px 19px -7px rgba( 0, 0, 0, 0.3 );
+      -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+      -moz-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+      -ms-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+      -o-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+      transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+      transition-property: transform, box-shadow;
+      transition-duration: 300ms, 200ms;
+      transition-timing-function: cubic-bezier(0.34, 2, 0.6, 1), ease;
+      transition-delay: initial;
     }
   } /* End of .hestia-team-content */
 }

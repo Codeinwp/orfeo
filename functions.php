@@ -53,7 +53,6 @@ add_action( 'customize_register', 'orfeo_change_defaults', 99 );
 function orfeo_font_default_frontend() {
 	return 'Montserrat';
 }
-
 add_filter( 'hestia_headings_default', 'orfeo_font_default_frontend' );
 add_filter( 'hestia_body_font_default', 'orfeo_font_default_frontend' );
 
@@ -67,6 +66,11 @@ function orfeo_accent_color() {
 }
 add_filter( 'hestia_accent_color_default', 'orfeo_accent_color' );
 
+/**
+ * Add color_accent on some elements
+ *
+ * @since 1.0.0
+ */
 function orfeo_inline_style() {
 
 	$color_accent = get_theme_mod( 'accent_color', apply_filters( 'hestia_accent_color_default', '#f5593d' ) );
@@ -106,6 +110,13 @@ function orfeo_inline_style() {
 		/* WooCommerce My Order Tracking Page */
 		$custom_css .= '.track_order input[type=submit] { background-color: ' . esc_html( $color_accent ) . '; }';
 		$custom_css .= '.track_order input[type=submit]:hover { background-color: ' . esc_html( $color_accent ) . '; }';
+
+		/* WooCommerce tag widget */
+		$custom_css .= 'div[id^=woocommerce_product_tag_cloud].widget a { background-color: ' . esc_html( $color_accent ) . '; }';
+
+		/* WooCommerce Cart widget */
+		$custom_css .= '.woocommerce.widget_shopping_cart .buttons > a.button { background-color: ' . esc_html( $color_accent ) . '; }';
+		$custom_css .= '.woocommerce.widget_shopping_cart .buttons > a.button:hover { background-color: ' . esc_html( $color_accent ) . '; }';
 	}
 
 	wp_add_inline_style( 'orfeo_parent', $custom_css );
@@ -153,7 +164,7 @@ add_filter( 'hestia_features_default_content', 'orfeo_features_defaults' );
  * @return string - path to image
  */
 function orfeo_change_default_header_image() {
-	return get_template_directory_uri() . '/assets/img/sweets-castle.jpg';
+	return get_template_directory_uri() . '/assets/img/sweet-castle.jpg';
 }
 add_filter( 'hestia_big_title_background_default', 'orfeo_change_default_header_image' );
 
