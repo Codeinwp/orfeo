@@ -274,8 +274,15 @@ aside .widget ul {
 ## Page Header Height
 --------------------------------------------------------------*/
 /* Page header height on default page template */
+.archive .boxed-layout-header,
 .page-template-default .boxed-layout-header {
   padding-bottom: 0;
+}
+
+/* Page header height on search and shop page */
+.archive.woocommerce-page .boxed-layout-header,
+.search .boxed-layout-header {
+  padding-bottom: 60px;
 }
 
 /* Page title */

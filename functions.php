@@ -33,14 +33,14 @@ function orfeo_change_defaults( $wp_customize ) {
 	/* Change default fonts */
 	$orfeo_headings_font = $wp_customize->get_setting( 'hestia_headings_font' );
 	if ( ! empty( $orfeo_headings_font ) ) {
-		$orfeo_headings_font->default = 'Montserrat';
+		$orfeo_headings_font->default = orfeo_font_default_frontend();
 	}
 	$orfeo_body_font = $wp_customize->get_setting( 'hestia_body_font' );
 	if ( ! empty( $orfeo_body_font ) ) {
-		$orfeo_body_font->default = 'Montserrat';
+		$orfeo_body_font->default = orfeo_font_default_frontend();
 	}
 }
-add_action( 'customize_register', 'orfeo_change_defaults', 0 );
+add_action( 'customize_register', 'orfeo_change_defaults', 99 );
 
 
 /**
@@ -76,36 +76,36 @@ function orfeo_inline_style() {
 	if ( ! empty( $color_accent ) ) {
 
 		/* Pagination on Blog */
-		$custom_css .= '.pagination .nav-links .page-numbers { color: ' . $color_accent . '; border-color: ' . $color_accent . '; }';
-		$custom_css .= '.pagination .nav-links .page-numbers.current { border-color: ' . $color_accent . '; }';
-		$custom_css .= '.pagination .nav-links .page-numbers:hover { background-color: ' . $color_accent . '; }';
-		$custom_css .= '.pagination .nav-links .page-numbers:hover { border-color: ' . $color_accent . '; }';
+		$custom_css .= '.pagination .nav-links .page-numbers { color: ' . esc_html( $color_accent ) . '; border-color: ' . esc_html( $color_accent ) . '; }';
+		$custom_css .= '.pagination .nav-links .page-numbers.current { border-color: ' . esc_html( $color_accent ) . '; }';
+		$custom_css .= '.pagination .nav-links .page-numbers:hover { background-color: ' . esc_html( $color_accent ) . '; }';
+		$custom_css .= '.pagination .nav-links .page-numbers:hover { border-color: ' . esc_html( $color_accent ) . '; }';
 
 		/* Pagination ons Shop */
-		$custom_css .= '.woocommerce-pagination ul.page-numbers .page-numbers { color: ' . $color_accent . '; border-color: ' . $color_accent . '; } ';
-		$custom_css .= '.woocommerce-pagination ul.page-numbers li > span.current { border-color: ' . $color_accent . ' !important; }';
-		$custom_css .= '.woocommerce-pagination ul.page-numbers .page-numbers:hover { background-color: ' . $color_accent . '; }';
-		$custom_css .= '.woocommerce-pagination ul.page-numbers .page-numbers:hover { border-color: ' . $color_accent . '; }';
+		$custom_css .= '.woocommerce-pagination ul.page-numbers .page-numbers { color: ' . esc_html( $color_accent ) . '; border-color: ' . esc_html( $color_accent ) . '; } ';
+		$custom_css .= '.woocommerce-pagination ul.page-numbers li > span.current { border-color: ' . esc_html( $color_accent ) . ' !important; }';
+		$custom_css .= '.woocommerce-pagination ul.page-numbers .page-numbers:hover { background-color: ' . esc_html( $color_accent ) . '; }';
+		$custom_css .= '.woocommerce-pagination ul.page-numbers .page-numbers:hover { border-color: ' . esc_html( $color_accent ) . '; }';
 
 		/* Categories */
-		$custom_css .= '.entry-categories .label { background-color: ' . $color_accent . ';}';
+		$custom_css .= '.entry-categories .label { background-color: ' . esc_html( $color_accent ) . ';}';
 
 		/* Shop Sidebar Rating*/
-		$custom_css .= '.woocommerce .star-rating { color: ' . $color_accent . '; }';
+		$custom_css .= '.woocommerce .star-rating { color: ' . esc_html( $color_accent ) . '; }';
 
 		/* Single Product Page Rating */
-		$custom_css .= '.woocommerce div.product p.stars span a:before { color: ' . $color_accent . '; }';
+		$custom_css .= '.woocommerce div.product p.stars span a:before { color: ' . esc_html( $color_accent ) . '; }';
 
 		/* Cart action buttons */
-		$custom_css .= '.woocommerce-cart table.shop_table tr td.actions input[type=submit] { background-color: ' . $color_accent . '; }';
-		$custom_css .= '.woocommerce-cart table.shop_table tr td.actions input[type=submit]:hover { background-color: ' . $color_accent . '; }';
+		$custom_css .= '.woocommerce-cart table.shop_table tr td.actions input[type=submit] { background-color: ' . esc_html( $color_accent ) . '; }';
+		$custom_css .= '.woocommerce-cart table.shop_table tr td.actions input[type=submit]:hover { background-color: ' . esc_html( $color_accent ) . '; }';
 
 		/* WooCommerce message */
-		$custom_css .= '.woocommerce-page .woocommerce-message { background-color: ' . $color_accent . '; }';
+		$custom_css .= '.woocommerce-page .woocommerce-message { background-color: ' . esc_html( $color_accent ) . '; }';
 
 		/* WooCommerce My Order Tracking Page */
-		$custom_css .= '.track_order input[type=submit] { background-color: ' . $color_accent . '; }';
-		$custom_css .= '.track_order input[type=submit]:hover { background-color: ' . $color_accent . '; }';
+		$custom_css .= '.track_order input[type=submit] { background-color: ' . esc_html( $color_accent ) . '; }';
+		$custom_css .= '.track_order input[type=submit]:hover { background-color: ' . esc_html( $color_accent ) . '; }';
 	}
 
 	wp_add_inline_style( 'orfeo_parent', $custom_css );
@@ -145,6 +145,17 @@ function orfeo_features_defaults() {
 	);
 }
 add_filter( 'hestia_features_default_content', 'orfeo_features_defaults' );
+
+/**
+ * Change default header image in Big Title Section
+ *
+ * @since 1.0.0
+ * @return string - path to image
+ */
+function orfeo_change_default_header_image() {
+	return get_template_directory_uri() . '/assets/img/sweets-castle.jpg';
+}
+add_filter( 'hestia_big_title_background_default', 'orfeo_change_default_header_image' );
 
 /**
  * Remove parent theme actions
