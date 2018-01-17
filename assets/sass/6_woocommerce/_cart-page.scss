@@ -89,6 +89,22 @@
       }
     }
   } /* End of Cart Totals */
+
+  /* Cart is empty */
+  .cart-empty {
+
+    strong {
+      font-weight: 300;
+    }
+  }
+
+  /* WooCommerce Info that checkout is not available without products */
+  .woocommerce-info {
+    /* This is for breaking the container width */
+    margin-left: -100%;
+    margin-right: -100%;
+    text-align: center;
+  }
 }
 
 /* Cart action buttons */
@@ -118,7 +134,7 @@
     font-size: 14px;
     font-weight: 600;
     line-height: 24px;
-    padding: 11px 5px;
+    padding: 11px 15px;
     border: none;
   }
   .button.wc-backward:hover {
