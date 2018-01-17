@@ -1,7 +1,7 @@
 # Orfeo
 
 **Requires at least:** WordPress 4.4  
-**Tested up to:** WordPress 4.8.1  
+**Tested up to:** WordPress 4.9.1  
 **Stable tag:** 1.0.1  
 **Version:** 1.0.0  
 **License:** GNU General Public License v2 or later  
@@ -38,5 +38,7 @@ Source: http://www.opensource.org/licenses/MIT
 License: All mystock.photos images are licensed under the terms of the Creative Commons Zero, http://creativecommons.org/publicdomain/zero/1.0/  
 
 **Images from screenshot:**
-- http://mystock.photos/teddy/
-
+- http://mystock.photos/sunset/
+- http://mystock.photos/citylights/
+- http://mystock.photos/street-blur/
+- http://mystock.photos/bucharest-at-night/
