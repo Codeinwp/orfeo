@@ -1166,6 +1166,9 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   box-shadow: none;
   padding: 0;
 }
+.blog .hestia-blogs .sticky .card-image {
+  margin-top: 0;
+}
 .blog .hestia-blogs .card-blog {
   margin-top: 5px;
   margin-bottom: 80px;

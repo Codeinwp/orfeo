@@ -16,6 +16,10 @@
     .sticky {
       @include no-box-shadow();
       padding: 0;
+
+      .card-image {
+        margin-top: 0;
+      }
     }
 
     .card-blog {
