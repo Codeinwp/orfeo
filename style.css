@@ -21,6 +21,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   border-radius: 0;
 }
 
+.single-post .main-raised {
+  margin-bottom: 0;
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
