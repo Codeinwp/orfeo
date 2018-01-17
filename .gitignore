@@ -1,8 +1,8 @@
 .idea
+*.iml
+out
+gen
 node_modules
 logs
-dist
-artifact
+npm-debug.log
 vendor
-bin
-composer.lock

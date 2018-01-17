@@ -12,7 +12,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
-if ( ! function_exists( 'orfeo_parent_css' ) ):
+if ( ! function_exists( 'orfeo_parent_css' ) ) :
+	/**
+	 * Enqueue parent style
+	 *
+	 * @since 1.0.0
+	 */
 	function orfeo_parent_css() {
 		wp_enqueue_style( 'orfeo_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array( 'bootstrap' ) );
 		if ( is_rtl() ) {
