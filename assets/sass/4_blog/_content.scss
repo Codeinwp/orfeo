@@ -6,7 +6,6 @@
   }
 
   .hestia-title {
-    font-family: inherit;
     font-size: 40px;
     font-weight: 300;
     line-height: 44px;
@@ -17,6 +16,10 @@
     .sticky {
       @include no-box-shadow();
       padding: 0;
+
+      .card-image {
+        margin-top: 0;
+      }
     }
 
     .card-blog {
@@ -30,7 +33,6 @@
       }
 
       .category {
-        font-family: inherit;
         font-size: 12px;
         font-weight: 600;
         line-height: 18px;
@@ -39,7 +41,6 @@
 
       .card-title {
         color: $color-secondary;
-        font-family: inherit;
         font-size: 26px;
         font-weight: 300;
         line-height: 36px;

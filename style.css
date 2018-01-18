@@ -25,6 +25,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   margin-bottom: 0;
 }
 
+.archive.woocommerce-page .main-raised {
+  margin-bottom: 0;
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -102,7 +106,6 @@ div, p, a, span, li, body {
 }
 .blog-sidebar .widget h5,
 .shop-sidebar .widget h5 {
-  font-family: inherit;
   font-weight: 300;
 }
 .blog-sidebar .widget.woocommerce li a img,
@@ -466,7 +469,6 @@ div, p, a, span, li, body {
   -webkit-font-smoothing: antialiased;
 }
 .header .carousel .hestia-title {
-  font-family: inherit;
   font-size: 50px;
   font-weight: 300;
   line-height: 55px;
@@ -513,7 +515,6 @@ div, p, a, span, li, body {
   /* End of .hestia-features-content */
 }
 .hestia-features .hestia-title {
-  color: #444444;
   font-size: 39px;
   font-weight: 300;
   line-height: 42px;
@@ -523,7 +524,6 @@ div, p, a, span, li, body {
 }
 .hestia-features .description {
   color: #9A9A9A;
-  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -539,7 +539,6 @@ div, p, a, span, li, body {
 }
 .hestia-features .hestia-features-content .hestia-info .info-title {
   color: #444444;
-  font-family: inherit;
   font-size: 23px;
   font-weight: 300;
   line-height: 27px;
@@ -567,7 +566,6 @@ div, p, a, span, li, body {
 }
 .hestia-team .hestia-title {
   color: #444444;
-  font-family: inherit;
   font-size: 39px;
   font-weight: 300;
   line-height: 43px;
@@ -576,7 +574,6 @@ div, p, a, span, li, body {
 }
 .hestia-team h5.description {
   color: #9A9A9A;
-  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -627,7 +624,6 @@ div, p, a, span, li, body {
 }
 .hestia-team .hestia-team-content .card .content .card-title {
   color: #444444;
-  font-family: inherit;
   font-size: 22px;
   font-weight: 300;
   line-height: 26px;
@@ -635,7 +631,6 @@ div, p, a, span, li, body {
 }
 .hestia-team .hestia-team-content .card .content .category {
   color: #868e96;
-  font-family: inherit;
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
@@ -666,14 +661,12 @@ div, p, a, span, li, body {
 }
 .hestia-testimonials .hestia-title {
   color: #444444;
-  font-family: inherit;
   font-size: 39px;
   font-weight: 300;
   line-height: 42px;
 }
 .hestia-testimonials .description {
   color: #9A9A9A;
-  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -722,11 +715,9 @@ div, p, a, span, li, body {
   margin: 0 0 -20px;
 }
 .hestia-testimonials .hestia-testimonials-content .card-testimonial .content .card-title {
-  font-family: inherit;
   font-weight: 600;
 }
 .hestia-testimonials .hestia-testimonials-content .card-testimonial .content .category {
-  font-family: inherit;
   font-weight: 300;
 }
 .hestia-testimonials .hestia-testimonials-content .card-testimonial .content .card-description {
@@ -759,14 +750,12 @@ div, p, a, span, li, body {
 }
 .home .hestia-blogs .hestia-title {
   color: #444444;
-  font-family: inherit;
   font-size: 39px;
   font-weight: 300;
   line-height: 41px;
 }
 .home .hestia-blogs .description {
   color: #9A9A9A;
-  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -900,7 +889,6 @@ div, p, a, span, li, body {
   padding: 20px;
 }
 .home .hestia-blogs .hestia-blog-content .card-blog .content .category {
-  font-family: inherit;
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
@@ -909,7 +897,6 @@ div, p, a, span, li, body {
 }
 .home .hestia-blogs .hestia-blog-content .card-blog .content .card-title {
   color: #444444;
-  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -970,7 +957,6 @@ section.products {
 }
 section.products .hestia-title {
   color: #444444;
-  font-family: inherit;
   font-size: 39px;
   font-weight: 300;
   line-height: 42px;
@@ -980,7 +966,6 @@ section.products .hestia-title {
 }
 section.products .description {
   color: #9A9A9A;
-  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -996,9 +981,6 @@ section.products .hestia-shop-content .card-product .content .card-title {
   color: #444444;
 }
 section.products .hestia-shop-content .card-product .content .footer .stats .tooltip .tooltip-arrow:before {
-  border-top: 11px solid #FFFFFF;
-  border-left: 11px solid transparent;
-  border-right: 11px solid transparent;
   left: -8px;
   right: auto;
   top: -12px;
@@ -1068,13 +1050,11 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   font-family: inherit;
 }
 .contactus .hestia-title {
-  font-family: inherit;
   font-size: 26px;
   font-weight: 300;
   line-height: 36px;
 }
 .contactus .description {
-  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -1124,7 +1104,6 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   padding: 35px 0;
 }
 .hestia-ribbon .hestia-title {
-  font-family: inherit;
   font-weight: 300;
   font-size: 26px;
   line-height: 54px;
@@ -1157,13 +1136,11 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   -webkit-font-smoothing: antialiased;
 }
 .subscribe-line .title {
-  font-family: inherit;
   font-size: 39px;
   font-weight: 300;
   line-height: 42px;
 }
 .subscribe-line .subscribe-description {
-  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -1183,7 +1160,6 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   padding-bottom: 0;
 }
 .blog .hestia-title {
-  font-family: inherit;
   font-size: 40px;
   font-weight: 300;
   line-height: 44px;
@@ -1193,6 +1169,9 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   -moz-box-shadow: none;
   box-shadow: none;
   padding: 0;
+}
+.blog .hestia-blogs .sticky .card-image {
+  margin-top: 0;
 }
 .blog .hestia-blogs .card-blog {
   margin-top: 5px;
@@ -1207,7 +1186,6 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   box-shadow: none;
 }
 .blog .hestia-blogs .card-blog .category {
-  font-family: inherit;
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
@@ -1215,7 +1193,6 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 }
 .blog .hestia-blogs .card-blog .card-title {
   color: #444444;
-  font-family: inherit;
   font-size: 26px;
   font-weight: 300;
   line-height: 36px;
@@ -1260,7 +1237,6 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 }
 .single-post .related-posts .hestia-title {
   color: #444444;
-  font-family: inherit;
   font-size: 39px;
   font-weight: 300;
   line-height: 41px;
@@ -1468,7 +1444,6 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 }
 .card-product .content .card-title {
   color: #9A9A9A;
-  font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
@@ -1478,7 +1453,6 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 }
 .card-product .content .category {
   color: #333333;
-  font-family: inherit;
   font-size: 15px;
   font-weight: 300;
   line-height: 22px;
@@ -1615,7 +1589,11 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 --------------------------------------------------------------*/
 /* Single Product Page */
 .woocommerce.single-product {
+  /* View cart notification */
   /* Remove Page Header */
+}
+.woocommerce.single-product .woocommerce-message .button {
+  float: none;
 }
 .woocommerce.single-product .page-header {
   display: none;
@@ -1836,7 +1814,6 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 }
 .woocommerce.single-product .related.products h2 {
   color: #444444;
-  font-family: inherit;
   font-size: 39px;
   font-weight: 300;
   line-height: 42px;
@@ -1920,7 +1897,6 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 .cross-sells h2,
 .upsells h2 {
   color: #444444;
-  font-family: inherit;
   font-size: 39px;
   font-weight: 300;
   line-height: 42px;
@@ -2032,14 +2008,19 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 .woocommerce-cart {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  /* Align cart table with cart totals on right side */
   /* End of Shop Table */
   /* End of Cart Totals */
+  /* Cart is empty */
+  /* WooCommerce Info that checkout is not available without products */
 }
 .woocommerce-cart .hestia-title {
-  font-family: inherit;
   font-size: 23px;
   font-weight: 300;
   line-height: 27px;
+}
+.woocommerce-cart .woocommerce-cart-form table.shop_table {
+  margin-top: 0;
 }
 .woocommerce-cart .shop_table {
   /* End of thead */
@@ -2116,6 +2097,15 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 .woocommerce-cart .cart_totals .card .content .wc-proceed-to-checkout .checkout-button:hover {
   opacity: 0.75;
 }
+.woocommerce-cart .cart-empty strong {
+  font-weight: 300;
+}
+.woocommerce-cart .woocommerce-info {
+  /* This is for breaking the container width */
+  margin-left: -100%;
+  margin-right: -100%;
+  text-align: center;
+}
 
 /* Cart action buttons */
 .woocommerce-cart table.shop_table tr td.actions input[type=submit] {
@@ -2130,7 +2120,7 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
-  padding: 11px 5px;
+  padding: 11px 15px;
   border: none;
 }
 
@@ -2152,7 +2142,7 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
-  padding: 11px 5px;
+  padding: 11px 15px;
   border: none;
 }
 .woocommerce .return-to-shop .button.wc-backward:hover {
@@ -2170,7 +2160,6 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   -webkit-font-smoothing: antialiased;
 }
 .woocommerce-checkout .hestia-title {
-  font-family: inherit;
   font-size: 23px;
   font-weight: 300;
   line-height: 27px;
@@ -2216,6 +2205,8 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 
 /* Error message */
 .woocommerce-page .woocommerce-error {
+  -moz-osx-font-smoothing: initial;
+  -webkit-font-smoothing: initial;
   color: #ffffff;
   background-color: #f7765f;
   font-family: inherit;
@@ -2234,6 +2225,8 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 
 /* Info message */
 .woocommerce-page .woocommerce-info {
+  -moz-osx-font-smoothing: initial;
+  -webkit-font-smoothing: initial;
   color: #ffffff;
   background-color: #6ec7e0;
   font-family: inherit;

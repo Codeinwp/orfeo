@@ -17,6 +17,7 @@
 
 /* Error message */
 .woocommerce-page .woocommerce-error {
+  @include no-font-smooth();
   color: #ffffff;
   background-color: #f7765f;
   font-family: inherit;
@@ -34,6 +35,7 @@
 
 /* Info message */
 .woocommerce-page .woocommerce-info {
+  @include no-font-smooth();
   color: #ffffff;
   background-color: #6ec7e0;
   font-family: inherit;

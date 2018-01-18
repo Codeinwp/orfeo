@@ -1,6 +1,11 @@
 /* Single Product Page */
 .woocommerce.single-product {
 
+  /* View cart notification */
+  .woocommerce-message .button {
+    float: none;
+  }
+
   /* Remove Page Header */
   .page-header {
     display: none;
