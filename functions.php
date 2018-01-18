@@ -259,4 +259,21 @@ function orfeo_header_background_default() {
 }
 add_filter( 'hestia_big_title_background_default', 'orfeo_header_background_default' );
 
+/**
+ * Change default welcome notice
+ */
+add_filter( 'hestia_welcome_notice_filter', 'orfeo_welcome_notice_filter' );
 
+function orfeo_welcome_notice_filter() {
+	
+	$theme = wp_get_theme();
+	
+	$theme_name = $theme->get( 'Name' );
+	$theme      = $theme->parent();
+	
+	$theme_slug    = $theme->get_template();
+	
+	$var = '<p>' . sprintf( 'Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our %2$swelcome page%3$s.', $theme_name, '<a href="' . esc_url( admin_url( 'themes.php?page=' . $theme_slug . '-welcome' ) ) . '">', '</a>' ) . '</p><p><a href="' . esc_url( admin_url( 'themes.php?page=' . $theme_slug . '-welcome' ) ) . '" class="button" style="text-decoration: none;">' . sprintf( 'Get started with %s', $theme_name ) . '</a></p>';
+	
+	return $var;
+}
