@@ -6,3 +6,5 @@ node_modules
 logs
 npm-debug.log
 vendor
+package-lock.json
+composer.lock
