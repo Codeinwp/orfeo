@@ -702,6 +702,11 @@ div, p, a, span, li, body {
   -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -moz-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -ms-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -o-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
 }
 .hestia-testimonials .hestia-testimonials-content .card-testimonial .card-avatar {
   margin: 0;
@@ -728,15 +733,6 @@ div, p, a, span, li, body {
   -webkit-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
   box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
-  -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -moz-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -ms-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -o-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  transition-property: transform, box-shadow;
-  transition-duration: 300ms, 200ms;
-  transition-timing-function: cubic-bezier(0.34, 2, 0.6, 1), ease;
-  transition-delay: initial;
 }
 
 /*--------------------------------------------------------------
@@ -859,6 +855,11 @@ div, p, a, span, li, body {
   -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -moz-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -ms-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -o-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
 }
 .home .hestia-blogs .hestia-blog-content .card-blog .card-image {
   -webkit-box-shadow: none;
@@ -935,15 +936,6 @@ div, p, a, span, li, body {
   -webkit-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
   box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
-  -webkit-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -moz-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -ms-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -o-transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  transition: transform 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  transition-property: transform, box-shadow;
-  transition-duration: 300ms, 200ms;
-  transition-timing-function: cubic-bezier(0.34, 2, 0.6, 1), ease;
-  transition-delay: initial;
 }
 
 /*--------------------------------------------------------------
@@ -1084,9 +1076,10 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  border-radius: 4px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  font-weight: 600;
 }
 .contactus .card-contact .btn.btn-primary:hover {
   -webkit-box-shadow: none;
@@ -1165,10 +1158,9 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   line-height: 44px;
 }
 .blog .hestia-blogs .sticky {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  padding: 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+  background-color: #ffffff;
 }
 .blog .hestia-blogs .sticky .card-image {
   margin-top: 0;
@@ -1481,10 +1473,16 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 .card-product .content .footer .stats {
   /* Add to cart icon */
 }
+.card-product .content .footer .stats .btn.btn-just-icon:hover {
+  opacity: 1;
+}
 .card-product .content .footer .stats a {
   margin: 0 0 10px !important;
 }
 .card-product .content .footer .stats .tooltip .tooltip-arrow:before {
+  border-top: 11px solid #FFFFFF;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
   left: -8px;
   right: auto;
   top: -12px;
@@ -1516,6 +1514,11 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
+  opacity: 1;
+}
+.card-product .content .footer .stats .add_to_cart_button {
+  position: relative;
+  z-index: 100;
 }
 .card-product .content .footer .stats .add_to_cart_button:active,
 .card-product .content .footer .stats .add_to_cart_button:focus {
@@ -1594,6 +1597,11 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 }
 .woocommerce.single-product .woocommerce-message .button {
   float: none;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px;
+  border-radius: 30px;
+  margin-right: 15px;
 }
 .woocommerce.single-product .page-header {
   display: none;
@@ -1680,6 +1688,9 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 }
 .woocommerce.single-product .main .blog-post .col-md-12 .product .summary .cart .variations .reset_variations {
   float: left;
+}
+.woocommerce.single-product .main .blog-post .col-md-12 .product .summary .quantity {
+  margin-right: 15px;
 }
 .woocommerce.single-product .main .blog-post .col-md-12 .product .summary .quantity .qty {
   -webkit-border-radius: 50px;
@@ -2299,6 +2310,10 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   -moz-box-shadow: none;
   box-shadow: none;
   opacity: 0.75;
+}
+
+button, input[type="submit"], input[type="button"], .btn {
+  border-radius: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
