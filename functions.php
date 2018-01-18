@@ -12,6 +12,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+$vendor_file = trailingslashit( get_stylesheet_directory() ) . 'vendor/autoload.php';
+if ( is_readable( $vendor_file ) ) {
+	require_once $vendor_file;
+}
+
 if ( ! function_exists( 'orfeo_parent_css' ) ) :
 	/**
 	 * Enqueue parent style
