@@ -11,3 +11,4 @@ logs
 package.json
 npm-debug.log
 bin
+key.enc
