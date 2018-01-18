@@ -25,6 +25,10 @@ Use it to make something cool, have fun, and share what you've learned with othe
   margin-bottom: 0;
 }
 
+.archive.woocommerce-page .main-raised {
+  margin-bottom: 0;
+}
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -2004,6 +2008,7 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 .woocommerce-cart {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  /* Align cart table with cart totals on right side */
   /* End of Shop Table */
   /* End of Cart Totals */
   /* Cart is empty */
@@ -2013,6 +2018,9 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   font-size: 23px;
   font-weight: 300;
   line-height: 27px;
+}
+.woocommerce-cart .woocommerce-cart-form table.shop_table {
+  margin-top: 0;
 }
 .woocommerce-cart .shop_table {
   /* End of thead */
@@ -2112,7 +2120,7 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   font-size: 14px;
   font-weight: 600;
   line-height: 24px;
-  padding: 11px 5px;
+  padding: 11px 15px;
   border: none;
 }
 
