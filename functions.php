@@ -69,12 +69,24 @@ add_filter( 'hestia_body_font_default', 'orfeo_font_default_frontend' );
 /**
  * Change default value of accent color
  *
- * @since
+ * @return string - default accent color
+ * @since 1.0.0
  */
 function orfeo_accent_color() {
 	return '#f5593d';
 }
 add_filter( 'hestia_accent_color_default', 'orfeo_accent_color' );
+
+/**
+ * Change default value of gradient color
+ *
+ * @return string - default gradient color
+ * @since 1.0.0
+ */
+function orfeo_gradient_color() {
+	return '#51bcda';
+}
+add_filter( 'hestia_header_gradient_default', 'orfeo_gradient_color' );
 
 /**
  * Add color_accent on some elements
@@ -247,35 +259,4 @@ function orfeo_header_background_default() {
 }
 add_filter( 'hestia_big_title_background_default', 'orfeo_header_background_default' );
 
-/**
- * Change default image in Ribbon Section
- *
- * @since 1.0.0
- * @return string - path to image
- */
-function orfeo_ribbon_background_default() {
-	return get_stylesheet_directory_uri() . '/assets/img/citylights.jpg';
-}
-add_filter( 'hestia_ribbon_background_default', 'orfeo_ribbon_background_default' );
 
-/**
- * Change default image in Subscribe Section
- *
- * @since 1.0.0
- * @return string - path to image
- */
-function orfeo_subscribe_background_default() {
-	return get_stylesheet_directory_uri() . '/assets/img/street-blur.jpg';
-}
-add_filter( 'hestia_subscribe_background_default', 'orfeo_subscribe_background_default' );
-
-/**
- * Change default image in Contact Section
- *
- * @since 1.0.0
- * @return string - path to image
- */
-function orfeo_contact_background_default() {
-	return get_stylesheet_directory_uri() . '/assets/img/bucharest-at-night.jpg';
-}
-add_filter( 'hestia_contact_background_default', 'orfeo_contact_background_default' );
