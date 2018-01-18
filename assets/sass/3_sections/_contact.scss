@@ -38,7 +38,8 @@
 
     .btn.btn-primary {
       @include no-box-shadow();
-      @include border-radius(4px);
+      @include border-radius(30px);
+      font-weight: 600;
     }
     .btn.btn-primary:hover {
       @include no-box-shadow();
