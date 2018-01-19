@@ -1,5 +1,5 @@
 .git
-.distignore
+.distignorecd ..
 .gitignore
 .travis.yml
 .jshintrc
