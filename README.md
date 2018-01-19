@@ -38,7 +38,4 @@ Source: http://www.opensource.org/licenses/MIT
 License: All mystock.photos images are licensed under the terms of the Creative Commons Zero, http://creativecommons.org/publicdomain/zero/1.0/  
 
 **Images from screenshot:**
-- http://mystock.photos/sunset/
-- http://mystock.photos/citylights/
-- http://mystock.photos/street-blur/
 - http://mystock.photos/bucharest-at-night/

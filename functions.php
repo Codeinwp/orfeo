@@ -40,6 +40,8 @@ add_action( 'wp_enqueue_scripts', 'orfeo_parent_css', 10 );
  */
 function orfeo_change_defaults( $wp_customize ) {
 
+	$selective_refresh = isset( $wp_customize->selective_refresh ) ? true : false;
+
 	/* Change default fonts */
 	$orfeo_headings_font = $wp_customize->get_setting( 'hestia_headings_font' );
 	if ( ! empty( $orfeo_headings_font ) ) {
@@ -49,9 +51,100 @@ function orfeo_change_defaults( $wp_customize ) {
 	if ( ! empty( $orfeo_body_font ) ) {
 		$orfeo_body_font->default = orfeo_font_default_frontend();
 	}
+
+	/* Add the second button in the Big Title section */
+
+	/**
+	 * Control for button text
+	 */
+	$wp_customize->add_setting(
+		'orfeo_big_title_second_button_text', array(
+			'sanitize_callback' => 'sanitize_text_field',
+			'transport'         => $selective_refresh ? 'postMessage' : 'refresh',
+		)
+	);
+	$wp_customize->add_control(
+		'orfeo_big_title_second_button_text', array(
+			'label'    => esc_html__( 'Second Button text', 'orfeo' ),
+			'section'  => 'hestia_big_title',
+			'priority' => 30,
+		)
+	);
+
+	/**
+	 * Control for button link
+	 */
+	$wp_customize->add_setting(
+		'orfeo_big_title_second_button_link', array(
+			'sanitize_callback' => 'esc_url_raw',
+			'transport'         => $selective_refresh ? 'postMessage' : 'refresh',
+		)
+	);
+	$wp_customize->add_control(
+		'orfeo_big_title_second_button_link', array(
+			'label'    => esc_html__( 'Second Button URL', 'orfeo' ),
+			'section'  => 'hestia_big_title',
+			'priority' => 30,
+		)
+	);
+
+	$wp_customize->selective_refresh->remove_partial( 'hestia_big_title_button' );
+
+	$wp_customize->selective_refresh->add_partial(
+		'orfeo_big_title_second_button', array(
+			'selector'        => '.carousel .buttons',
+			'settings'        => array( 'hestia_big_title_button_text', 'hestia_big_title_button_link', 'orfeo_big_title_second_button_text', 'orfeo_big_title_second_button_link' ),
+			'render_callback' => 'orfeo_big_title_buttons_callback',
+		)
+	);
+
 }
 add_action( 'customize_register', 'orfeo_change_defaults', 99 );
 
+/**
+ * Add a second button in Big Title section
+ *
+ * @since 1.0.0
+ */
+function orfeo_big_title_second_btn() {
+
+	$orfeo_big_title_second_btn_text = get_theme_mod( 'orfeo_big_title_second_button_text', __( 'Second button text', 'orfeo' ) );
+	$orfeo_big_title_second_btn_link = get_theme_mod( 'orfeo_big_title_second_button_link', '#' );
+
+	if ( ! empty( $orfeo_big_title_second_btn_text ) && ! empty( $orfeo_big_title_second_btn_text ) ) {
+		?>
+		<a href="<?php echo esc_url( $orfeo_big_title_second_btn_link ); ?>" title="<?php echo esc_html( $orfeo_big_title_second_btn_text ); ?>" class="btn btn-right btn-lg" <?php echo hestia_is_external_url( $orfeo_big_title_second_btn_link ); ?>><?php echo esc_html( $orfeo_big_title_second_btn_text ); ?></a>
+		<?php
+	}
+}
+add_action( 'hestia_big_title_section_buttons', 'orfeo_big_title_second_btn' );
+
+
+
+/**
+ * Render callback for buttons in Big Title section
+ *
+ * @since 1.0.0
+ */
+function orfeo_big_title_buttons_callback() {
+
+	$orfeo_big_title_first_btn_text  = get_theme_mod( 'hestia_big_title_button_text', __( 'First button text', 'orfeo' ) );
+	$orfeo_big_title_first_btn_link  = get_theme_mod( 'hestia_big_title_button_link', '#' );
+	$orfeo_big_title_second_btn_text = get_theme_mod( 'orfeo_big_title_second_button_text', __( 'Second button text', 'orfeo' ) );
+	$orfeo_big_title_second_btn_link = get_theme_mod( 'orfeo_big_title_second_button_link', '#' );
+
+	if ( ! empty( $orfeo_big_title_first_btn_text ) ) {
+		?>
+		<a href="<?php echo esc_url( $orfeo_big_title_first_btn_link ); ?>" title="<?php echo esc_html( $orfeo_big_title_first_btn_text ); ?>" class="btn btn-primary btn-lg" <?php echo hestia_is_external_url( $orfeo_big_title_first_btn_link ); ?>><?php echo esc_html( $orfeo_big_title_first_btn_text ); ?></a>
+		<?php
+	}
+
+	if ( ! empty( $orfeo_big_title_second_btn_text ) ) {
+		?>
+		<a href="<?php echo esc_url( $orfeo_big_title_second_btn_link ); ?>" title="<?php echo esc_html( $orfeo_big_title_second_btn_text ); ?>" class="btn btn-right btn-lg" <?php echo hestia_is_external_url( $orfeo_big_title_second_btn_link ); ?>><?php echo esc_html( $orfeo_big_title_second_btn_text ); ?></a>
+		<?php
+	}
+}
 
 /**
  * Change default font family for front end display.
@@ -255,8 +348,6 @@ add_action( 'after_switch_theme', 'orfeo_get_lite_options' );
  * @return string - path to image
  */
 function orfeo_header_background_default() {
-	return get_stylesheet_directory_uri() . '/assets/img/sunset.jpg';
+	return get_stylesheet_directory_uri() . '/assets/img/header.jpg';
 }
 add_filter( 'hestia_big_title_background_default', 'orfeo_header_background_default' );
-
-
