@@ -6,7 +6,7 @@
  * @since 1.0.0
  */
 
-define( 'ORFEO_VERSION', '1.0.0' );
+define( 'ORFEO_VERSION', '1.0.1' );
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -69,12 +69,24 @@ add_filter( 'hestia_body_font_default', 'orfeo_font_default_frontend' );
 /**
  * Change default value of accent color
  *
- * @since
+ * @return string - default accent color
+ * @since 1.0.0
  */
 function orfeo_accent_color() {
 	return '#f5593d';
 }
 add_filter( 'hestia_accent_color_default', 'orfeo_accent_color' );
+
+/**
+ * Change default value of gradient color
+ *
+ * @return string - default gradient color
+ * @since 1.0.0
+ */
+function orfeo_gradient_color() {
+	return '#51bcda';
+}
+add_filter( 'hestia_header_gradient_default', 'orfeo_gradient_color' );
 
 /**
  * Add color_accent on some elements
@@ -247,35 +259,55 @@ function orfeo_header_background_default() {
 }
 add_filter( 'hestia_big_title_background_default', 'orfeo_header_background_default' );
 
-/**
- * Change default image in Ribbon Section
- *
- * @since 1.0.0
- * @return string - path to image
- */
-function orfeo_ribbon_background_default() {
-	return get_stylesheet_directory_uri() . '/assets/img/citylights.jpg';
-}
-add_filter( 'hestia_ribbon_background_default', 'orfeo_ribbon_background_default' );
+add_filter( 'hestia_welcome_notice_filter', 'orfeo_welcome_notice_filter' );
 
 /**
- * Change default image in Subscribe Section
- *
- * @since 1.0.0
- * @return string - path to image
+ * Change default welcome notice that appears after theme first installed
  */
-function orfeo_subscribe_background_default() {
-	return get_stylesheet_directory_uri() . '/assets/img/street-blur.jpg';
+function orfeo_welcome_notice_filter() {
+
+	$theme = wp_get_theme();
+
+	$theme_name = $theme->get( 'Name' );
+	$theme      = $theme->parent();
+
+	$theme_slug = $theme->get_template();
+
+	$var = '<p>' . sprintf( 'Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our %2$swelcome page%3$s.', $theme_name, '<a href="' . esc_url( admin_url( 'themes.php?page=' . $theme_slug . '-welcome' ) ) . '">', '</a>' ) . '</p><p><a href="' . esc_url( admin_url( 'themes.php?page=' . $theme_slug . '-welcome' ) ) . '" class="button" style="text-decoration: none;">' . sprintf( 'Get started with %s', $theme_name ) . '</a></p>';
+
+	return $var;
 }
-add_filter( 'hestia_subscribe_background_default', 'orfeo_subscribe_background_default' );
+
+add_filter( 'hestia_about_page_filter', 'orfeo_about_page_filter', 0, 3 );
 
 /**
- * Change default image in Contact Section
+ * Change About page defaults
  *
- * @since 1.0.0
- * @return string - path to image
+ * @param string $old_value Old value beeing filtered.
+ * @param string $parameter Specific parameter for filtering.
  */
-function orfeo_contact_background_default() {
-	return get_stylesheet_directory_uri() . '/assets/img/bucharest-at-night.jpg';
+function orfeo_about_page_filter( $old_value, $parameter ) {
+
+	switch ( $parameter ) {
+		case 'menu_name':
+		case 'pro_menu_name':
+			$return = esc_html__( 'About Orfeo', 'orfeo' );
+			break;
+		case 'page_name':
+		case 'pro_page_name':
+			$return = esc_html__( 'About Orfeo', 'orfeo' );
+			break;
+		case 'welcome_title':
+		case 'pro_welcome_title':
+			/* translators: s - theme name */
+			$return = sprintf( esc_html__( 'Welcome to %s! - Version ', 'orfeo' ), 'Orfeo' );
+			break;
+		case 'welcome_content':
+		case 'pro_welcome_content':
+			$return = esc_html__( 'Orfeo is a responsive WordPress theme with multipurpose design. It is a good fit for both small businesses and corporate businesses, as it is highly customizable via the Live Customizer. You can use Orfeo for restaurants, startups, freelancer resume, creative agencies, portfolios, WooCommerce, or niches like sports, medical, blogging, fashion, lawyer sites etc. It has a one-page design, Sendinblue newsletter integration, widgetized footer, and a clean appearance. The theme is compatible with Elementor Page Builder, Photo Gallery, Flat Parallax Slider, and Travel Map; it is mobile friendly and optimized for SEO.', 'orfeo' );
+			break;
+		default:
+			$return = '';
+	}
+	return $return;
 }
-add_filter( 'hestia_contact_background_default', 'orfeo_contact_background_default' );
