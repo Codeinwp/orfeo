@@ -4,7 +4,7 @@ Theme URI:      https://themeisle.com/themes/orfeo/
 Author:         ThemeIsle
 Author URI:     https://themeisle.com
 Description:    Orfeo is a responsive WordPress theme with multipurpose design. It is a good fit for both small businesses and corporate businesses, as it is highly customizable via the Live Customizer. You can use Orfeo for restaurants, startups, freelancer resume, creative agencies, portfolios, WooCommerce, or niches like sports, medical, blogging, fashion, lawyer sites etc. It has a one-page design, Sendinblue newsletter integration, widgetized footer, and a clean appearance. The theme is compatible with Elementor Page Builder, Photo Gallery, Flat Parallax Slider, and Travel Map; it is mobile friendly and optimized for SEO.
-Version:        1.0.0
+Version:        1.0.2
 License:        GNU General Public License v2 or later
 License URI:    http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:    orfeo
@@ -291,6 +291,9 @@ div, p, a, span, li, body {
 }
 
 .navbar .navbar-collapse > .navbar-nav > li.menu-item {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
   font-size: 12px;
   font-weight: 600;
   line-height: 19px;
@@ -300,6 +303,15 @@ div, p, a, span, li, body {
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
+}
+
+#main-navigation ul.nav > li.btn.btn-primary a {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+#main-navigation ul.nav > li.btn.btn-primary:hover {
+  opacity: 0.75;
 }
 
 .navbar {
@@ -313,6 +325,22 @@ div, p, a, span, li, body {
 .hestia-top-bar .woocommerce-mini-cart__total,
 .hestia-top-bar .woocommerce-Price-amount {
   color: #ffffff;
+}
+
+/* Button in main menu with accent_color */
+.btn.btn-primary {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn.btn-primary:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
 }
 
 /*--------------------------------------------------------------
@@ -470,7 +498,7 @@ div, p, a, span, li, body {
 }
 .header .carousel .hestia-title {
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 800;
   line-height: 55px;
   margin: 30px 0 25px;
 }
@@ -502,6 +530,21 @@ div, p, a, span, li, body {
 }
 .header .carousel .buttons .btn.btn-primary:hover {
   opacity: 0.75;
+}
+.header .carousel .buttons .btn-right {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  color: #ffffff;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  padding: 9px 28px;
+}
+.header .carousel .buttons .btn-right:hover {
+  opacity: 0.75;
+}
+.header .carousel .buttons .btn-primary + .btn-right {
+  margin-left: 30px;
 }
 
 /*--------------------------------------------------------------
@@ -2310,10 +2353,6 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   -moz-box-shadow: none;
   box-shadow: none;
   opacity: 0.75;
-}
-
-button, input[type="submit"], input[type="button"], .btn {
-  border-radius: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

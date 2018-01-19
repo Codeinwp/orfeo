@@ -13,6 +13,12 @@ module.exports = {
 		},
 		src: 'style.css'
 	},
+	sscs: {
+		options: {
+			prefix: 'Version\\:\\s+'
+		},
+		src: 'assets/sass/style.scss'
+	},
 	functions: {
 		options: {
 			prefix: 'ORFEO_VERSION\', \''
