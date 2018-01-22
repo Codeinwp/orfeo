@@ -1,4 +1,8 @@
 
+ ### v1.0.2 - 2018-01-19 
+ **Changes:** 
+ * Option for second button in the big title section
+ 
  ### v1.0.1 - 2018-01-19 
  **Changes:** 
  * Updated screenshot
