@@ -405,3 +405,12 @@ function orfeo_about_page_filter( $old_value, $parameter ) {
 	}
 	return $return;
 }
+
+/**
+ * Declare textdomain for this child theme.
+ * Translations can be filed in the /languages/ directory.
+ */
+function orfeo_theme_setup() {
+    load_child_theme_textdomain( 'orfeo', get_stylesheet_directory() . '/languages' );
+}
+add_action( 'after_setup_theme', 'orfeo_theme_setup' );
