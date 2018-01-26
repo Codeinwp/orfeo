@@ -6,7 +6,7 @@
  * @since 1.0.0
  */
 
-define( 'ORFEO_VERSION', '1.0.3' );
+define( 'ORFEO_VERSION', '1.0.4' );
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -113,7 +113,7 @@ function orfeo_big_title_second_btn() {
 
 	if ( ! empty( $orfeo_big_title_second_btn_text ) && ! empty( $orfeo_big_title_second_btn_text ) ) {
 		?>
-		<a href="<?php echo esc_url( $orfeo_big_title_second_btn_link ); ?>" title="<?php echo esc_html( $orfeo_big_title_second_btn_text ); ?>" class="btn btn-right btn-lg" <?php echo hestia_is_external_url( $orfeo_big_title_second_btn_link ); ?>><?php echo esc_html( $orfeo_big_title_second_btn_text ); ?></a>
+		<a href="<?php echo esc_url( $orfeo_big_title_second_btn_link ); ?>" title="<?php echo esc_attr( $orfeo_big_title_second_btn_text ); ?>" class="btn btn-right btn-lg" <?php echo hestia_is_external_url( $orfeo_big_title_second_btn_link ); ?>><?php echo esc_html( $orfeo_big_title_second_btn_text ); ?></a>
 		<?php
 	}
 }
@@ -135,13 +135,13 @@ function orfeo_big_title_buttons_callback() {
 
 	if ( ! empty( $orfeo_big_title_first_btn_text ) ) {
 		?>
-		<a href="<?php echo esc_url( $orfeo_big_title_first_btn_link ); ?>" title="<?php echo esc_html( $orfeo_big_title_first_btn_text ); ?>" class="btn btn-primary btn-lg" <?php echo hestia_is_external_url( $orfeo_big_title_first_btn_link ); ?>><?php echo esc_html( $orfeo_big_title_first_btn_text ); ?></a>
+		<a href="<?php echo esc_url( $orfeo_big_title_first_btn_link ); ?>" title="<?php echo esc_attr( $orfeo_big_title_first_btn_text ); ?>" class="btn btn-primary btn-lg" <?php echo hestia_is_external_url( $orfeo_big_title_first_btn_link ); ?>><?php echo esc_html( $orfeo_big_title_first_btn_text ); ?></a>
 		<?php
 	}
 
 	if ( ! empty( $orfeo_big_title_second_btn_text ) ) {
 		?>
-		<a href="<?php echo esc_url( $orfeo_big_title_second_btn_link ); ?>" title="<?php echo esc_html( $orfeo_big_title_second_btn_text ); ?>" class="btn btn-right btn-lg" <?php echo hestia_is_external_url( $orfeo_big_title_second_btn_link ); ?>><?php echo esc_html( $orfeo_big_title_second_btn_text ); ?></a>
+		<a href="<?php echo esc_url( $orfeo_big_title_second_btn_link ); ?>" title="<?php echo esc_attr( $orfeo_big_title_second_btn_text ); ?>" class="btn btn-right btn-lg" <?php echo hestia_is_external_url( $orfeo_big_title_second_btn_link ); ?>><?php echo esc_html( $orfeo_big_title_second_btn_text ); ?></a>
 		<?php
 	}
 }
@@ -411,6 +411,6 @@ function orfeo_about_page_filter( $old_value, $parameter ) {
  * Translations can be filed in the /languages/ directory.
  */
 function orfeo_theme_setup() {
-    load_child_theme_textdomain( 'orfeo', get_stylesheet_directory() . '/languages' );
+	load_child_theme_textdomain( 'orfeo', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'orfeo_theme_setup' );
