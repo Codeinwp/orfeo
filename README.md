@@ -23,8 +23,8 @@ Orfeo is a responsive WordPress theme with multipurpose design. It is a good fit
 
 ## Copyright
 
-Orfeo Child Theme by Themeisle, Copyright 2017 WordPress.org
-Orfeo is distributed under the terms of the GNU GPL
+Orfeo WordPress Theme is a child theme of Hestia WordPress Theme, Copyright 2018 Themeisle
+Orfeo Wordpress Theme is distributed under the terms of the GNU GPL
 
 Orfeo bundles the following third-party resources:
 
