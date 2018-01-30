@@ -59,6 +59,7 @@ function orfeo_change_defaults( $wp_customize ) {
 	 */
 	$wp_customize->add_setting(
 		'orfeo_big_title_second_button_text', array(
+			'default'           => 'Second button text',
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => $selective_refresh ? 'postMessage' : 'refresh',
 		)
@@ -76,6 +77,7 @@ function orfeo_change_defaults( $wp_customize ) {
 	 */
 	$wp_customize->add_setting(
 		'orfeo_big_title_second_button_link', array(
+			'default'           => '#',
 			'sanitize_callback' => 'esc_url_raw',
 			'transport'         => $selective_refresh ? 'postMessage' : 'refresh',
 		)
@@ -111,15 +113,13 @@ function orfeo_big_title_second_btn() {
 	$orfeo_big_title_second_btn_text = get_theme_mod( 'orfeo_big_title_second_button_text', __( 'Second button text', 'orfeo' ) );
 	$orfeo_big_title_second_btn_link = get_theme_mod( 'orfeo_big_title_second_button_link', '#' );
 
-	if ( ! empty( $orfeo_big_title_second_btn_text ) && ! empty( $orfeo_big_title_second_btn_text ) ) {
+	if ( ! empty( $orfeo_big_title_second_btn_text ) && ! empty( $orfeo_big_title_second_btn_link ) ) {
 		?>
 		<a href="<?php echo esc_url( $orfeo_big_title_second_btn_link ); ?>" title="<?php echo esc_attr( $orfeo_big_title_second_btn_text ); ?>" class="btn btn-right btn-lg" <?php echo hestia_is_external_url( $orfeo_big_title_second_btn_link ); ?>><?php echo esc_html( $orfeo_big_title_second_btn_text ); ?></a>
 		<?php
 	}
 }
 add_action( 'hestia_big_title_section_buttons', 'orfeo_big_title_second_btn' );
-
-
 
 /**
  * Render callback for buttons in Big Title section
@@ -248,23 +248,14 @@ function orfeo_features_defaults() {
 		array(
 			array(
 				'icon_value' => 'fa-star-o',
-				'title'      => esc_html__( 'Feature 1', 'orfeo' ),
-				'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum molestie sagittis.', 'orfeo' ),
-				'link'       => '',
 				'color'      => '#e91e63',
 			),
 			array(
 				'icon_value' => 'fa-diamond',
-				'title'      => esc_html__( 'Feature 2', 'orfeo' ),
-				'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum molestie sagittis.', 'orfeo' ),
-				'link'       => '',
 				'color'      => '#00bcd4',
 			),
 			array(
 				'icon_value' => 'fa-envelope-o',
-				'title'      => esc_html__( 'Feature 3', 'orfeo' ),
-				'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum molestie sagittis.', 'orfeo' ),
-				'link'       => '',
 				'color'      => '#4caf50',
 			),
 		)
@@ -411,6 +402,6 @@ function orfeo_about_page_filter( $old_value, $parameter ) {
  * Translations can be filed in the /languages/ directory.
  */
 function orfeo_theme_setup() {
-    load_child_theme_textdomain( 'orfeo', get_stylesheet_directory() . '/languages' );
+	load_child_theme_textdomain( 'orfeo', get_stylesheet_directory() . '/languages' );
 }
 add_action( 'after_setup_theme', 'orfeo_theme_setup' );
