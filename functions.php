@@ -57,7 +57,7 @@ function orfeo_change_defaults( $wp_customize ) {
 	 */
 	$wp_customize->add_setting(
 		'orfeo_big_title_second_button_text', array(
-			'default'           => 'Second button text',
+			'default'           => esc_html__( 'Second Button text', 'orfeo' ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => $selective_refresh ? 'postMessage' : 'refresh',
 		)
