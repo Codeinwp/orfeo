@@ -1,4 +1,8 @@
 
+ ### v1.0.3 - 2018-01-22 
+ **Changes:** 
+ * Added grunt task for pot file
+ 
  ### v1.0.2 - 2018-01-19 
  **Changes:** 
  * Option for second button in the big title section
