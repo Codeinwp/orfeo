@@ -237,31 +237,6 @@ function orfeo_inline_style() {
 add_action( 'wp_enqueue_scripts', 'orfeo_inline_style', 10 );
 
 /**
- * Change features defaults.
- *
- * @since 1.0.0
- */
-function orfeo_features_defaults() {
-	return json_encode(
-		array(
-			array(
-				'icon_value' => 'fa-star-o',
-				'color'      => '#e91e63',
-			),
-			array(
-				'icon_value' => 'fa-diamond',
-				'color'      => '#00bcd4',
-			),
-			array(
-				'icon_value' => 'fa-envelope-o',
-				'color'      => '#4caf50',
-			),
-		)
-	);
-}
-add_filter( 'hestia_features_default_content', 'orfeo_features_defaults' );
-
-/**
  * Remove parent theme actions
  *
  * @since 1.0.0
