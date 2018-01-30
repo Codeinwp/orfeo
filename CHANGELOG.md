@@ -1,4 +1,9 @@
 
+ ### v1.0.4 - 2018-01-26 
+ **Changes:** 
+ * Improved the copyright mentioning the parent theme
+* Fixed some escaping issues
+ 
  ### v1.0.3 - 2018-01-22 
  **Changes:** 
  * Added grunt task for pot file
