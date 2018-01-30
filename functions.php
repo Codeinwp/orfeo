@@ -25,10 +25,8 @@ if ( ! function_exists( 'orfeo_parent_css' ) ) :
 	 */
 	function orfeo_parent_css() {
 		wp_enqueue_style( 'orfeo_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array( 'bootstrap' ) );
-		if ( is_rtl() ) {
-			wp_enqueue_style( 'orfeo_parent_rtl', trailingslashit( get_template_directory_uri() ) . 'style-rtl.css', array( 'bootstrap' ) );
-		}
-
+		wp_style_add_data( 'orfeo_parent', 'rtl', 'replace' );
+		wp_style_add_data( 'orfeo_style', 'rtl', 'replace' );
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'orfeo_parent_css', 10 );
