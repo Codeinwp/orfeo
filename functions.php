@@ -186,11 +186,15 @@ add_filter( 'hestia_header_gradient_default', 'orfeo_gradient_color' );
  */
 function orfeo_inline_style() {
 
-	$color_accent = get_theme_mod( 'accent_color', apply_filters( 'hestia_accent_color_default', '#f5593d' ) );
+	$color_accent = get_theme_mod( 'accent_color', '#f5593d' );
 
 	$custom_css = '';
 
 	if ( ! empty( $color_accent ) ) {
+
+		/* Pricing section */
+		$custom_css .= '.hestia-pricing .hestia-table-one .card-pricing .category { color: ' . esc_html( $color_accent ) . '; }';
+		$custom_css .= '.hestia-pricing .hestia-table-two .card-pricing { background-color: ' . esc_html( $color_accent ) . '; }';
 
 		/* Pagination on Blog */
 		$custom_css .= '.pagination .nav-links .page-numbers { color: ' . esc_html( $color_accent ) . '; border-color: ' . esc_html( $color_accent ) . '; }';
