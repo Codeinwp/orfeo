@@ -6,7 +6,7 @@
  * @since 1.0.0
  */
 
-define( 'ORFEO_VERSION', '1.0.4' );
+define( 'ORFEO_VERSION', '1.0.5' );
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -24,14 +24,25 @@ if ( ! function_exists( 'orfeo_parent_css' ) ) :
 	 * @since 1.0.0
 	 */
 	function orfeo_parent_css() {
-		wp_enqueue_style( 'orfeo_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array( 'bootstrap' ) );
-		if ( is_rtl() ) {
-			wp_enqueue_style( 'orfeo_parent_rtl', trailingslashit( get_template_directory_uri() ) . 'style-rtl.css', array( 'bootstrap' ) );
-		}
-
+		wp_enqueue_style( 'orfeo_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array( 'bootstrap' ), ORFEO_VERSION );
+		wp_style_add_data( 'orfeo_parent', 'rtl', 'replace' );
+		wp_style_add_data( 'hestia_style', 'rtl', 'replace' );
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'orfeo_parent_css', 10 );
+
+/**
+ * Enqueue orfeo scripts
+ */
+function orfeo_customizer_preview_js() {
+	wp_enqueue_script(
+		'orfeo_customizer', trailingslashit( get_stylesheet_directory_uri() ) . 'assets/js/scripts.js', array(
+			'jquery',
+			'customize-preview',
+		), ORFEO_VERSION
+	);
+}
+add_action( 'customize_preview_init', 'orfeo_customizer_preview_js', 10 );
 
 /**
  * Change default fonts.
@@ -59,6 +70,7 @@ function orfeo_change_defaults( $wp_customize ) {
 	 */
 	$wp_customize->add_setting(
 		'orfeo_big_title_second_button_text', array(
+			'default'           => esc_html__( 'Second Button text', 'orfeo' ),
 			'sanitize_callback' => 'sanitize_text_field',
 			'transport'         => $selective_refresh ? 'postMessage' : 'refresh',
 		)
@@ -76,6 +88,7 @@ function orfeo_change_defaults( $wp_customize ) {
 	 */
 	$wp_customize->add_setting(
 		'orfeo_big_title_second_button_link', array(
+			'default'           => '#',
 			'sanitize_callback' => 'esc_url_raw',
 			'transport'         => $selective_refresh ? 'postMessage' : 'refresh',
 		)
@@ -111,15 +124,13 @@ function orfeo_big_title_second_btn() {
 	$orfeo_big_title_second_btn_text = get_theme_mod( 'orfeo_big_title_second_button_text', __( 'Second button text', 'orfeo' ) );
 	$orfeo_big_title_second_btn_link = get_theme_mod( 'orfeo_big_title_second_button_link', '#' );
 
-	if ( ! empty( $orfeo_big_title_second_btn_text ) && ! empty( $orfeo_big_title_second_btn_text ) ) {
+	if ( ! empty( $orfeo_big_title_second_btn_text ) && ! empty( $orfeo_big_title_second_btn_link ) ) {
 		?>
 		<a href="<?php echo esc_url( $orfeo_big_title_second_btn_link ); ?>" title="<?php echo esc_attr( $orfeo_big_title_second_btn_text ); ?>" class="btn btn-right btn-lg" <?php echo hestia_is_external_url( $orfeo_big_title_second_btn_link ); ?>><?php echo esc_html( $orfeo_big_title_second_btn_text ); ?></a>
 		<?php
 	}
 }
 add_action( 'hestia_big_title_section_buttons', 'orfeo_big_title_second_btn' );
-
-
 
 /**
  * Render callback for buttons in Big Title section
@@ -188,11 +199,15 @@ add_filter( 'hestia_header_gradient_default', 'orfeo_gradient_color' );
  */
 function orfeo_inline_style() {
 
-	$color_accent = get_theme_mod( 'accent_color', apply_filters( 'hestia_accent_color_default', '#f5593d' ) );
+	$color_accent = get_theme_mod( 'accent_color', '#f5593d' );
 
 	$custom_css = '';
 
 	if ( ! empty( $color_accent ) ) {
+
+		/* Pricing section */
+		$custom_css .= '.hestia-pricing .hestia-table-one .card-pricing .category { color: ' . esc_html( $color_accent ) . '; }';
+		$custom_css .= '.hestia-pricing .hestia-table-two .card-pricing { background-color: ' . esc_html( $color_accent ) . '; }';
 
 		/* Pagination on Blog */
 		$custom_css .= '.pagination .nav-links .page-numbers { color: ' . esc_html( $color_accent ) . '; border-color: ' . esc_html( $color_accent ) . '; }';
@@ -237,40 +252,6 @@ function orfeo_inline_style() {
 	wp_add_inline_style( 'orfeo_parent', $custom_css );
 }
 add_action( 'wp_enqueue_scripts', 'orfeo_inline_style', 10 );
-
-/**
- * Change features defaults.
- *
- * @since 1.0.0
- */
-function orfeo_features_defaults() {
-	return json_encode(
-		array(
-			array(
-				'icon_value' => 'fa-star-o',
-				'title'      => esc_html__( 'Feature 1', 'orfeo' ),
-				'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum molestie sagittis.', 'orfeo' ),
-				'link'       => '',
-				'color'      => '#e91e63',
-			),
-			array(
-				'icon_value' => 'fa-diamond',
-				'title'      => esc_html__( 'Feature 2', 'orfeo' ),
-				'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum molestie sagittis.', 'orfeo' ),
-				'link'       => '',
-				'color'      => '#00bcd4',
-			),
-			array(
-				'icon_value' => 'fa-envelope-o',
-				'title'      => esc_html__( 'Feature 3', 'orfeo' ),
-				'text'       => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque rutrum molestie sagittis.', 'orfeo' ),
-				'link'       => '',
-				'color'      => '#4caf50',
-			),
-		)
-	);
-}
-add_filter( 'hestia_features_default_content', 'orfeo_features_defaults' );
 
 /**
  * Remove parent theme actions

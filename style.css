@@ -4,7 +4,7 @@ Theme URI:      https://themeisle.com/themes/orfeo/
 Author:         ThemeIsle
 Author URI:     https://themeisle.com
 Description:    Orfeo is a responsive WordPress theme with multipurpose design. It is a good fit for both small businesses and corporate businesses, as it is highly customizable via the Live Customizer. You can use Orfeo for restaurants, startups, freelancer resume, creative agencies, portfolios, WooCommerce, or niches like sports, medical, blogging, fashion, lawyer sites etc. It has a one-page design, Sendinblue newsletter integration, widgetized footer, and a clean appearance. The theme is compatible with Elementor Page Builder, Photo Gallery, Flat Parallax Slider, and Travel Map; it is mobile friendly and optimized for SEO.
-Version:        1.0.4
+Version:        1.0.5
 License:        GNU General Public License v2 or later
 License URI:    http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:    orfeo
@@ -600,6 +600,136 @@ div, p, a, span, li, body {
 }
 
 /*--------------------------------------------------------------
+## Products Section
+--------------------------------------------------------------*/
+section.products {
+  background-color: #ffffff;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  /* End of .hestia-shop-content */
+}
+section.products .hestia-title {
+  color: #444444;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 42px;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  min-height: 32px;
+}
+section.products .description {
+  color: #9A9A9A;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0;
+}
+section.products .hestia-shop-content {
+  margin: 0;
+}
+section.products .hestia-shop-content .card-product {
+  background: transparent;
+}
+section.products .hestia-shop-content .card-product .content .card-title {
+  color: #444444;
+}
+section.products .hestia-shop-content .card-product .content .footer .stats .tooltip .tooltip-arrow:before {
+  left: -8px;
+  right: auto;
+  top: -12px;
+  margin-left: -3px;
+  content: "";
+  border-width: 10px 11px 0;
+  border-top-color: #fff;
+  position: absolute;
+}
+section.products .hestia-shop-content .card-product .content .footer .stats .tooltip .tooltip-arrow {
+  border-top: 11px solid rgba(0, 0, 0, 0.2);
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+  right: auto;
+  margin-right: 0;
+  top: 43px;
+  position: absolute;
+  display: block;
+  width: 5px;
+  height: 5px;
+  bottom: 0;
+}
+section.products .hestia-shop-content .card-product .content .footer .stats .tooltip .tooltip-inner {
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(115, 71, 38, 0.23);
+  color: #66615B;
+  max-width: 200px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+}
+section.products .hestia-shop-content .card-product .content .footer .stats {
+  z-index: 100;
+}
+section.products .hestia-shop-content .shop-item:hover > .card > .card-image {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  opacity: .75;
+}
+section.products .hestia-shop-content .shop-item .card .card-image {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+section.products .hestia-shop-content .shop-item .card .card-image a {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+section.products .hestia-shop-content .shop-item .card .card-image a img {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+/*--------------------------------------------------------------
+## Portfolio Section
+--------------------------------------------------------------*/
+.hestia-work {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.hestia-work .hestia-title {
+  color: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 42px;
+  margin: 30px 0 25px;
+  min-height: 32px;
+}
+.hestia-work .description {
+  color: #9A9A9A;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0 0 8px;
+}
+.hestia-work .hestia-portfolio-content .card {
+  -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+}
+.hestia-work .hestia-portfolio-content .card .card-title {
+  -moz-osx-font-smoothing: initial;
+  -webkit-font-smoothing: initial;
+  font-weight: 300;
+}
+
+/*--------------------------------------------------------------
 ## Team Section
 --------------------------------------------------------------*/
 .hestia-team {
@@ -695,6 +825,145 @@ div, p, a, span, li, body {
 }
 
 /*--------------------------------------------------------------
+## Pricing Section
+--------------------------------------------------------------*/
+.hestia-pricing {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.hestia-pricing .hestia-title {
+  color: #444444;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 42px;
+  margin: 30px 0 25px;
+  min-height: 32px;
+}
+.hestia-pricing p.text-gray {
+  color: #9A9A9A;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0 0 5px;
+}
+.hestia-pricing .card-pricing {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -moz-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -ms-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -o-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+}
+.hestia-pricing .card-pricing .category {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.hestia-pricing .card-pricing .card-title {
+  font-size: 51px;
+  font-weight: 300;
+  line-height: 42px;
+  margin-top: 30px;
+}
+.hestia-pricing .card-pricing .card-title small:first-child {
+  color: inherit;
+  font-size: 51px;
+  font-weight: 300;
+  top: 0;
+}
+.hestia-pricing .card-pricing ul {
+  margin: 20px auto;
+  max-width: 240px;
+}
+.hestia-pricing .card-pricing ul li {
+  -moz-osx-font-smoothing: initial;
+  -webkit-font-smoothing: initial;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  padding: 5px 0;
+  border: none;
+}
+.hestia-pricing .card-pricing .btn {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 21px;
+  padding: 8px 18px;
+}
+.hestia-pricing .card-pricing .btn:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.75;
+}
+.hestia-pricing .card-pricing:hover {
+  -webkit-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.hestia-pricing .hestia-table-two .card-pricing .category,
+.hestia-pricing .hestia-table-two .card-pricing .card-title,
+.hestia-pricing .hestia-table-two .card-pricing .card-title small,
+.hestia-pricing .hestia-table-two .card-pricing ul li,
+.hestia-pricing .hestia-table-two .card-pricing ul li b {
+  color: #fff;
+}
+.hestia-pricing .hestia-table-two .card-pricing .btn {
+  color: #66615B;
+  background-color: white;
+}
+
+/*--------------------------------------------------------------
+## Ribbon Section
+--------------------------------------------------------------*/
+.hestia-ribbon {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  padding: 35px 0;
+}
+.hestia-ribbon .hestia-title {
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 54px;
+}
+.hestia-ribbon .btn.btn-primary {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 21px;
+  padding: 8px 18px;
+}
+.hestia-ribbon .btn.btn-primary:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.75;
+}
+
+/*--------------------------------------------------------------
 ## Testimonials Section
 --------------------------------------------------------------*/
 .hestia-testimonials {
@@ -776,6 +1045,25 @@ div, p, a, span, li, body {
   -webkit-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
   box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+}
+
+/*--------------------------------------------------------------
+## Subscribe Section
+--------------------------------------------------------------*/
+.subscribe-line {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.subscribe-line .title {
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 42px;
+}
+.subscribe-line .subscribe-description {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0 0 40px;
 }
 
 /*--------------------------------------------------------------
@@ -982,103 +1270,6 @@ div, p, a, span, li, body {
 }
 
 /*--------------------------------------------------------------
-## Products Section
---------------------------------------------------------------*/
-section.products {
-  background-color: #ffffff;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  /* End of .hestia-shop-content */
-}
-section.products .hestia-title {
-  color: #444444;
-  font-size: 39px;
-  font-weight: 300;
-  line-height: 42px;
-  margin-top: 30px;
-  margin-bottom: 25px;
-  min-height: 32px;
-}
-section.products .description {
-  color: #9A9A9A;
-  font-size: 19px;
-  font-weight: 300;
-  line-height: 26px;
-  margin: 0;
-}
-section.products .hestia-shop-content {
-  margin: 0;
-}
-section.products .hestia-shop-content .card-product {
-  background: transparent;
-}
-section.products .hestia-shop-content .card-product .content .card-title {
-  color: #444444;
-}
-section.products .hestia-shop-content .card-product .content .footer .stats .tooltip .tooltip-arrow:before {
-  left: -8px;
-  right: auto;
-  top: -12px;
-  margin-left: -3px;
-  content: "";
-  border-width: 10px 11px 0;
-  border-top-color: #fff;
-  position: absolute;
-}
-section.products .hestia-shop-content .card-product .content .footer .stats .tooltip .tooltip-arrow {
-  border-top: 11px solid rgba(0, 0, 0, 0.2);
-  border-left: 11px solid transparent;
-  border-right: 11px solid transparent;
-  right: auto;
-  margin-right: 0;
-  top: 43px;
-  position: absolute;
-  display: block;
-  width: 5px;
-  height: 5px;
-  bottom: 0;
-}
-section.products .hestia-shop-content .card-product .content .footer .stats .tooltip .tooltip-inner {
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 0 1px 13px rgba(0, 0, 0, 0.14), 0 0 0 1px rgba(115, 71, 38, 0.23);
-  color: #66615B;
-  max-width: 200px;
-  padding: 10px 10px;
-  text-align: center;
-  text-decoration: none;
-}
-section.products .hestia-shop-content .card-product .content .footer .stats {
-  z-index: 100;
-}
-section.products .hestia-shop-content .shop-item:hover > .card > .card-image {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
-  opacity: .75;
-}
-section.products .hestia-shop-content .shop-item .card .card-image {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-section.products .hestia-shop-content .shop-item .card .card-image a {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-section.products .hestia-shop-content .shop-item .card .card-image a img {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-
-/*--------------------------------------------------------------
 ## Contact Section
 --------------------------------------------------------------*/
 .contactus {
@@ -1129,58 +1320,6 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   -moz-box-shadow: none;
   box-shadow: none;
   opacity: 0.75;
-}
-
-/*--------------------------------------------------------------
-## Ribbon Section
---------------------------------------------------------------*/
-.hestia-ribbon {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  padding: 35px 0;
-}
-.hestia-ribbon .hestia-title {
-  font-weight: 300;
-  font-size: 26px;
-  line-height: 54px;
-}
-.hestia-ribbon .btn.btn-primary {
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 21px;
-  padding: 8px 18px;
-}
-.hestia-ribbon .btn.btn-primary:hover {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  opacity: 0.75;
-}
-
-/*--------------------------------------------------------------
-## Subscribe Section
---------------------------------------------------------------*/
-.subscribe-line {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
-.subscribe-line .title {
-  font-size: 39px;
-  font-weight: 300;
-  line-height: 42px;
-}
-.subscribe-line .subscribe-description {
-  font-size: 19px;
-  font-weight: 300;
-  line-height: 26px;
-  margin: 0 0 40px;
 }
 
 /*--------------------------------------------------------------
