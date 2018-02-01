@@ -13,7 +13,8 @@
                     $( '.hestia-pricing .hestia-table-one .card-pricing .category' ).css( 'color',  newval );
                     $( '.hestia-pricing .hestia-table-two .card-pricing' ).css( 'background-color', newval );
                     $( '.hestia-pricing .hestia-table-two .card-pricing .card-title small' ).css( 'color', '#fff' );
-                    $( '.hestia-pricing .hestia-table-two .card-pricing .btn ' ).css( 'background-color', 'rgb( 255, 255, 255)' );
+                    $( '.hestia-pricing .hestia-table-two .card-pricing .btn.btn-primary' ).css( 'background-color', '#fff' );
+                    $( '.hestia-pricing .hestia-table-two .card-pricing .btn.btn-primary:not(.no-js-color)' ).addClass('no-js-color');
                 }
             );
         }
