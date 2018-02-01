@@ -24,12 +24,25 @@ if ( ! function_exists( 'orfeo_parent_css' ) ) :
 	 * @since 1.0.0
 	 */
 	function orfeo_parent_css() {
-		wp_enqueue_style( 'orfeo_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array( 'bootstrap' ) );
+		wp_enqueue_style( 'orfeo_parent', trailingslashit( get_template_directory_uri() ) . 'style.css', array( 'bootstrap' ), ORFEO_VERSION );
 		wp_style_add_data( 'orfeo_parent', 'rtl', 'replace' );
 		wp_style_add_data( 'hestia_style', 'rtl', 'replace' );
 	}
 endif;
 add_action( 'wp_enqueue_scripts', 'orfeo_parent_css', 10 );
+
+/**
+ * Enqueue orfeo scripts
+ */
+function orfeo_customizer_preview_js() {
+	wp_enqueue_script(
+		'orfeo_customizer', trailingslashit( get_stylesheet_directory_uri() ) . 'assets/js/scripts.js', array(
+			'jquery',
+			'customize-preview',
+		), ORFEO_VERSION
+	);
+}
+add_action( 'customize_preview_init', 'orfeo_customizer_preview_js', 10 );
 
 /**
  * Change default fonts.

@@ -96,6 +96,7 @@
 
       .category,
       .card-title,
+      .card-title small,
       ul li,
       ul li b {
         color: #fff;
@@ -103,7 +104,7 @@
 
       .btn {
         color: #66615B;
-        background-color: #fff;
+        background-color: rgb( 255, 255, 255 );
       }
     }
   }
