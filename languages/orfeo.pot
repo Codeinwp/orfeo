@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Orfeo 1.0.4\n"
+"Project-Id-Version: Orfeo 1.0.5\n"
 "Report-Msgid-Bugs-To: https://github.com/Codeinwp/orfeo/issues\n"
-"POT-Creation-Date: 2018-01-26 15:35:11+00:00\n"
+"POT-Creation-Date: 2018-02-01 15:16:14+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -24,49 +24,31 @@ msgstr ""
 "X-Poedit-Bookmarks: \n"
 "X-Textdomain-Support: yes\n"
 
-#: functions.php:68
+#: functions.php:73 functions.php:80
 msgid "Second Button text"
 msgstr ""
 
-#: functions.php:85
+#: functions.php:98
 msgid "Second Button URL"
 msgstr ""
 
-#: functions.php:111 functions.php:133
+#: functions.php:124 functions.php:144
 msgid "Second button text"
 msgstr ""
 
-#: functions.php:131
+#: functions.php:142
 msgid "First button text"
 msgstr ""
 
-#: functions.php:251
-msgid "Feature 1"
-msgstr ""
-
-#: functions.php:252 functions.php:259 functions.php:266
-msgid ""
-"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque "
-"rutrum molestie sagittis."
-msgstr ""
-
-#: functions.php:258
-msgid "Feature 2"
-msgstr ""
-
-#: functions.php:265
-msgid "Feature 3"
-msgstr ""
-
-#: functions.php:311
+#: functions.php:292
 msgid "Read more"
 msgstr ""
 
-#: functions.php:388 functions.php:392
+#: functions.php:369 functions.php:373
 msgid "About Orfeo"
 msgstr ""
 
-#: functions.php:397
+#: functions.php:378
 #. translators: s - theme name
 msgid "Welcome to %s! - Version "
 msgstr ""

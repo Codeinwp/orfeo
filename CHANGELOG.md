@@ -1,4 +1,10 @@
 
+ ### v1.0.5 - 2018-02-01 
+ **Changes:** 
+ * Fixed RTL compatibility issues
+* Fixed compatibility with Portfolio and Pricing sections from Hestia PRO
+* Removed unnecessary strings
+ 
  ### v1.0.4 - 2018-01-26 
  **Changes:** 
  * Improved the copyright mentioning the parent theme
