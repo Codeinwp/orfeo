@@ -1069,114 +1069,114 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 /*--------------------------------------------------------------
 ## Blog Section
 --------------------------------------------------------------*/
-.home .hestia-blogs {
+.home:not(.blog) .hestia-blogs {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background-color: #eeeeee;
   /* End of .hestia-blog-content */
 }
-.home .hestia-blogs .hestia-title {
+.home:not(.blog) .hestia-blogs .hestia-title {
   color: #444444;
   font-size: 39px;
   font-weight: 300;
   line-height: 41px;
 }
-.home .hestia-blogs .description {
+.home:not(.blog) .hestia-blogs .description {
   color: #9A9A9A;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
   margin: 0;
 }
-.home .hestia-blogs .hestia-blog-content {
+.home:not(.blog) .hestia-blogs .hestia-blog-content {
   margin: 60px 0 0;
   padding: 0;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .category a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .category a {
   color: #6bd098;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .category a:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .category a:hover {
   color: #44c47d;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .category a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .category a {
   color: #51cbce;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .category a:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .category a:hover {
   color: #34b5b8;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .category a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .category a {
   color: #51bcda;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .category a:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .category a:hover {
   color: #2ba9cd;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag {
   color: #fff;
   background-color: #6bd098;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag:hover {
   color: #fff;
   background-color: #44c47d;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag {
   color: #fff;
   background-color: #51cbce;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag:hover {
   color: #fff;
   background-color: #34b5b8;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag {
   color: #fff;
   background-color: #51bcda;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag:hover {
   color: #fff;
   background-color: #2ba9cd;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .category a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .category a {
   color: #f5593d;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .category a:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .category a:hover {
   color: #f33816;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .category a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .category a {
   color: #fbc658;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .category a:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .category a:hover {
   color: #fab526;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .category a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .category a {
   color: #e91e63;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .category a:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .category a:hover {
   color: #C11F64;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag {
   color: #fff;
   background-color: #f5593d;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag:hover {
   color: #fff;
   background-color: #f33816;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag {
   color: #fff;
   background-color: #fbc658;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag:hover {
   color: #fff;
   background-color: #fab526;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag {
   color: #fff;
   background-color: #e91e63;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag:hover {
   color: #fff;
   background-color: #C11F64;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog {
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
@@ -1192,7 +1192,7 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   -o-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
   transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .card-image {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .card-image {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -1206,35 +1206,35 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .card-image a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .card-image a {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .card-image a img {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .card-image a img {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .content {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content {
   text-align: left;
   padding: 20px;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .content .category {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content .category {
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
   padding: 10px 0 0;
   margin: 0;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .content .card-title {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content .card-title {
   color: #444444;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
   margin: 5px 0 0;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .content .card-description {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content .card-description {
   color: #9A9A9A;
   font-family: inherit;
   font-size: 15px;
@@ -1242,7 +1242,7 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   line-height: 22px;
   margin: 15px 0 5px;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .content .card-description .moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content .card-description .moretag {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
@@ -1263,7 +1263,7 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   max-width: 133px;
   margin: 20px auto 0 0;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog:hover {
   -webkit-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
   box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);

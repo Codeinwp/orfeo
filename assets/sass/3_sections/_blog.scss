@@ -1,4 +1,4 @@
-.home .hestia-blogs {
+.home:not(.blog) .hestia-blogs {
 
   @include font-smooth();
   background-color: #eeeeee;
