@@ -2357,6 +2357,22 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   font-weight: 300;
   line-height: 27px;
 }
+.woocommerce-checkout #hestia-checkout-coupon .button {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 11px 10px;
+}
+.woocommerce-checkout #hestia-checkout-coupon .button:hover {
+  opacity: 0.75;
+}
 .woocommerce-checkout #payment #place_order {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -2414,6 +2430,12 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 
 .woocommerce-page .woocommerce-error:before {
   display: none;
+}
+
+.woocommerce-checkout #hestia-checkout-coupon .woocommerce-message,
+.woocommerce-checkout #hestia-checkout-coupon .woocommerce-error {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Info message */

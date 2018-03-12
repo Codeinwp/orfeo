@@ -32,6 +32,11 @@
 .woocommerce-page .woocommerce-error:before {
   display: none;
 }
+.woocommerce-checkout #hestia-checkout-coupon .woocommerce-message,
+.woocommerce-checkout #hestia-checkout-coupon .woocommerce-error {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Info message */
 .woocommerce-page .woocommerce-info {
