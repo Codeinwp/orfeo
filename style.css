@@ -543,9 +543,16 @@ div, p, a, span, li, body {
 .header .carousel .buttons .btn-right:hover {
   opacity: 0.75;
 }
-.header .carousel .buttons .btn,
-.header .carousel .buttons .btn-right {
+.header .carousel .big-title-slider-content .buttons .btn,
+.header .carousel .big-title-slider-content .buttons .btn-right {
+  display: inline-block;
   margin: 15px;
+}
+.header .carousel .big-title-slider-content.text-left .buttons .btn {
+  margin-left: auto;
+}
+.header .carousel .big-title-slider-content.text-right .buttons .btn {
+  margin-right: auto;
 }
 
 /*--------------------------------------------------------------
