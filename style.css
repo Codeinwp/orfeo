@@ -543,8 +543,9 @@ div, p, a, span, li, body {
 .header .carousel .buttons .btn-right:hover {
   opacity: 0.75;
 }
-.header .carousel .buttons .btn-primary + .btn-right {
-  margin-left: 30px;
+.header .carousel .buttons .btn,
+.header .carousel .buttons .btn-right {
+  margin: 15px;
 }
 
 /*--------------------------------------------------------------

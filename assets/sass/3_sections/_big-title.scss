@@ -52,8 +52,9 @@
         opacity: 0.75;
       }
 
-      .btn-primary + .btn-right {
-        margin-left: 30px;
+      .btn,
+      .btn-right {
+        margin: 15px;
       }
     }
 
