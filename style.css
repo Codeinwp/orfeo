@@ -492,27 +492,27 @@ div, p, a, span, li, body {
 /*--------------------------------------------------------------
 ## Big Title Section
 --------------------------------------------------------------*/
-.header .carousel {
+.carousel {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-.header .carousel .hestia-title {
+.carousel .hestia-title {
   font-size: 50px;
   font-weight: 800;
   line-height: 55px;
   margin: 30px 0 25px;
 }
-.header .carousel .sub-title {
+.carousel .sub-title {
   font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
   margin: 0 0 8px;
 }
-.header .carousel .buttons {
+.carousel .buttons {
   margin: 30px 0 0;
 }
-.header .carousel .buttons a {
+.carousel .buttons a {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
@@ -522,16 +522,16 @@ div, p, a, span, li, body {
   line-height: 24px;
   padding: 11px 30px;
 }
-.header .carousel .buttons .btn.btn-primary,
-.header .carousel .buttons .btn.btn-primary:hover {
+.carousel .buttons .btn.btn-primary,
+.carousel .buttons .btn.btn-primary:hover {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.header .carousel .buttons .btn.btn-primary:hover {
+.carousel .buttons .btn.btn-primary:hover {
   opacity: 0.75;
 }
-.header .carousel .buttons .btn-right {
+.carousel .buttons .btn-right {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -540,18 +540,18 @@ div, p, a, span, li, body {
   border: 2px solid #ffffff;
   padding: 9px 28px;
 }
-.header .carousel .buttons .btn-right:hover {
+.carousel .buttons .btn-right:hover {
   opacity: 0.75;
 }
-.header .carousel .big-title-slider-content .buttons .btn,
-.header .carousel .big-title-slider-content .buttons .btn-right {
+.carousel .big-title-slider-content .buttons .btn,
+.carousel .big-title-slider-content .buttons .btn-right {
   display: inline-block;
   margin: 15px;
 }
-.header .carousel .big-title-slider-content.text-left .buttons .btn {
+.carousel .big-title-slider-content.text-left .buttons .btn {
   margin-left: auto;
 }
-.header .carousel .big-title-slider-content.text-right .buttons .btn {
+.carousel .big-title-slider-content.text-right .buttons .btn {
   margin-right: auto;
 }
 
