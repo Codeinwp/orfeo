@@ -44,6 +44,24 @@ div, p, a, span, li, body {
 # Widgets
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+## Buttons
+--------------------------------------------------------------*/
+a,
+.btn,
+button,
+.button {
+  box-shadow: none !important;
+}
+
+a:hover,
+.btn:hover,
+button:hover,
+.button:hover {
+  box-shadow: none !important;
+  opacity: 0.75;
+}
+
+/*--------------------------------------------------------------
 ## Widgets
 --------------------------------------------------------------*/
 /* === General Widgets === */
@@ -2272,6 +2290,9 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   font-size: 80%;
   font-weight: 400;
   margin-right: 3px;
+}
+.woocommerce-cart .shop_table tbody button {
+  color: #ffffff !important;
 }
 .woocommerce-cart .cart_totals {
   -moz-osx-font-smoothing: grayscale;
