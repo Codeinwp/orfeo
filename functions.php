@@ -6,7 +6,7 @@
  * @since 1.0.0
  */
 
-define( 'ORFEO_VERSION', '1.0.5' );
+define( 'ORFEO_VERSION', '1.0.6' );
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -231,8 +231,14 @@ function orfeo_inline_style() {
 		$custom_css .= '.woocommerce div.product p.stars span a:before { color: ' . esc_html( $color_accent ) . '; }';
 
 		/* Cart action buttons */
-		$custom_css .= '.woocommerce-cart table.shop_table tr td.actions input[type=submit] { background-color: ' . esc_html( $color_accent ) . '; }';
-		$custom_css .= '.woocommerce-cart table.shop_table tr td.actions input[type=submit]:hover { background-color: ' . esc_html( $color_accent ) . '; }';
+		$custom_css .= '.woocommerce-cart table.shop_table button { 
+		    background-color: ' . esc_html( $color_accent ) . ' !important;
+		    border-color: ' . esc_html( $color_accent ) . ' !important; 
+        }';
+		$custom_css .= '.woocommerce-cart table.shop_table button:hover { 
+		    background-color: ' . esc_html( $color_accent ) . ' !important; 
+		    border-color: ' . esc_html( $color_accent ) . ' !important;
+        }';
 
 		/* WooCommerce message */
 		$custom_css .= '.woocommerce-page .woocommerce-message { background-color: ' . esc_html( $color_accent ) . '; }';

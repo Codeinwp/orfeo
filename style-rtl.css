@@ -44,6 +44,24 @@ div, p, a, span, li, body {
 # Widgets
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
+## Buttons
+--------------------------------------------------------------*/
+a,
+.btn,
+button,
+.button {
+  box-shadow: none !important;
+}
+
+a:hover,
+.btn:hover,
+button:hover,
+.button:hover {
+  box-shadow: none !important;
+  opacity: 0.75;
+}
+
+/*--------------------------------------------------------------
 ## Widgets
 --------------------------------------------------------------*/
 /* === General Widgets === */
@@ -492,27 +510,27 @@ div, p, a, span, li, body {
 /*--------------------------------------------------------------
 ## Big Title Section
 --------------------------------------------------------------*/
-.header .carousel {
+.carousel {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-.header .carousel .hestia-title {
+.carousel .hestia-title {
   font-size: 50px;
   font-weight: 800;
   line-height: 55px;
   margin: 30px 0 25px;
 }
-.header .carousel .sub-title {
+.carousel .sub-title {
   font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
   margin: 0 0 8px;
 }
-.header .carousel .buttons {
+.carousel .buttons {
   margin: 30px 0 0;
 }
-.header .carousel .buttons a {
+.carousel .buttons a {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
@@ -522,16 +540,16 @@ div, p, a, span, li, body {
   line-height: 24px;
   padding: 11px 30px;
 }
-.header .carousel .buttons .btn.btn-primary,
-.header .carousel .buttons .btn.btn-primary:hover {
+.carousel .buttons .btn.btn-primary,
+.carousel .buttons .btn.btn-primary:hover {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.header .carousel .buttons .btn.btn-primary:hover {
+.carousel .buttons .btn.btn-primary:hover {
   opacity: 0.75;
 }
-.header .carousel .buttons .btn-right {
+.carousel .buttons .btn-right {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -540,11 +558,19 @@ div, p, a, span, li, body {
   border: 2px solid #ffffff;
   padding: 9px 28px;
 }
-.header .carousel .buttons .btn-right:hover {
+.carousel .buttons .btn-right:hover {
   opacity: 0.75;
 }
-.header .carousel .buttons .btn-primary + .btn-right {
-  margin-right: 30px;
+.carousel .big-title-slider-content .buttons .btn,
+.carousel .big-title-slider-content .buttons .btn-right {
+  display: inline-block;
+  margin: 15px;
+}
+.carousel .big-title-slider-content.text-left .buttons .btn {
+  margin-right: auto;
+}
+.carousel .big-title-slider-content.text-right .buttons .btn {
+  margin-left: auto;
 }
 
 /*--------------------------------------------------------------
@@ -597,388 +623,6 @@ div, p, a, span, li, body {
 }
 .hestia-features .hestia-features-content .hestia-info .icon > i {
   font-size: 48px;
-}
-
-/*--------------------------------------------------------------
-## Team Section
---------------------------------------------------------------*/
-.hestia-team {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  /* End of .hestia-team-content */
-}
-.hestia-team .hestia-title {
-  color: #444444;
-  font-size: 39px;
-  font-weight: 300;
-  line-height: 43px;
-  margin: 30px 0 25px;
-  min-height: 32px;
-}
-.hestia-team h5.description {
-  color: #9A9A9A;
-  font-size: 19px;
-  font-weight: 300;
-  line-height: 26px;
-  margin: 0;
-}
-.hestia-team .hestia-team-content {
-  margin: 30px 0 0;
-}
-.hestia-team .hestia-team-content .card {
-  margin: 30px 0 20px;
-  text-align: center;
-}
-.hestia-team .hestia-team-content .card .col-md-5 {
-  float: none;
-  text-align: center;
-  margin: 0 auto;
-  width: auto;
-}
-.hestia-team .hestia-team-content .card .col-md-5 .card-image {
-  display: block;
-  width: 120px;
-  height: 120px;
-  margin: 0 auto;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-.hestia-team .hestia-team-content .card .col-md-5 .card-image img {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
-  max-width: 100%;
-  height: auto;
-}
-.hestia-team .hestia-team-content .card .col-md-7 {
-  float: none;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  width: auto;
-}
-.hestia-team .hestia-team-content .card .content .card-title {
-  color: #444444;
-  font-size: 22px;
-  font-weight: 300;
-  line-height: 26px;
-  margin: 5px 0 0;
-}
-.hestia-team .hestia-team-content .card .content .category {
-  color: #868e96;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 18px;
-  margin: 5px 0;
-}
-.hestia-team .hestia-team-content .card .content .card-description {
-  color: #9A9A9A;
-  font-family: inherit;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 22px;
-  margin: 15px 0 5px;
-}
-.hestia-team .hestia-team-content .card .content .footer a.btn {
-  opacity: 0.8;
-}
-.hestia-team .hestia-team-content .card .content .footer a.btn:hover {
-  opacity: 0.65;
-}
-
-/*--------------------------------------------------------------
-## Testimonials Section
---------------------------------------------------------------*/
-.hestia-testimonials {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  /* End of .hestia-team-content */
-}
-.hestia-testimonials .hestia-title {
-  color: #444444;
-  font-size: 39px;
-  font-weight: 300;
-  line-height: 42px;
-}
-.hestia-testimonials .description {
-  color: #9A9A9A;
-  font-size: 19px;
-  font-weight: 300;
-  line-height: 26px;
-  margin: 0;
-}
-.hestia-testimonials .hestia-testimonials-content {
-  margin: 30px 0 0;
-}
-.hestia-testimonials .hestia-testimonials-content .row:nth-of-type(2n+1) .col-md-4:nth-of-type(3n+1) .card-testimonial {
-  background-color: #6bd098;
-}
-.hestia-testimonials .hestia-testimonials-content .row:nth-of-type(2n+1) .col-md-4:nth-of-type(3n+2) .card-testimonial {
-  background-color: #fbc658;
-}
-.hestia-testimonials .hestia-testimonials-content .row:nth-of-type(2n+1) .col-md-4:nth-of-type(3n+3) .card-testimonial {
-  background-color: #e91e63;
-}
-.hestia-testimonials .hestia-testimonials-content .row:nth-of-type(2n+2) .col-md-4:nth-of-type(3n+1) .card-testimonial {
-  background-color: #f5593d;
-}
-.hestia-testimonials .hestia-testimonials-content .row:nth-of-type(2n+2) .col-md-4:nth-of-type(3n+2) .card-testimonial {
-  background-color: #51cbce;
-}
-.hestia-testimonials .hestia-testimonials-content .row:nth-of-type(2n+2) .col-md-4:nth-of-type(3n+3) .card-testimonial {
-  background-color: #51bcda;
-}
-.hestia-testimonials .hestia-testimonials-content .row .col-md-4 .card-testimonial .content .card-title, .hestia-testimonials .hestia-testimonials-content .row .col-md-4 .card-testimonial .content .category, .hestia-testimonials .hestia-testimonials-content .row .col-md-4 .card-testimonial .content .card-description {
-  color: #fff;
-}
-.hestia-testimonials .hestia-testimonials-content .card-testimonial {
-  text-align: right;
-  padding: 20px 20px 0;
-  -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -moz-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -ms-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -o-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-}
-.hestia-testimonials .hestia-testimonials-content .card-testimonial .card-avatar {
-  margin: 0;
-  max-width: 60px;
-  max-height: 60px;
-}
-.hestia-testimonials .hestia-testimonials-content .card-testimonial .card-avatar img {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  margin: 0 0 -20px;
-}
-.hestia-testimonials .hestia-testimonials-content .card-testimonial .content .card-title {
-  font-weight: 600;
-}
-.hestia-testimonials .hestia-testimonials-content .card-testimonial .content .category {
-  font-weight: 300;
-}
-.hestia-testimonials .hestia-testimonials-content .card-testimonial .content .card-description {
-  font-family: inherit;
-  font-weight: 300;
-}
-.hestia-testimonials .hestia-testimonials-content .card-testimonial:hover {
-  -webkit-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
-}
-
-/*--------------------------------------------------------------
-## Blog Section
---------------------------------------------------------------*/
-.home .hestia-blogs {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  background-color: #eeeeee;
-  /* End of .hestia-blog-content */
-}
-.home .hestia-blogs .hestia-title {
-  color: #444444;
-  font-size: 39px;
-  font-weight: 300;
-  line-height: 41px;
-}
-.home .hestia-blogs .description {
-  color: #9A9A9A;
-  font-size: 19px;
-  font-weight: 300;
-  line-height: 26px;
-  margin: 0;
-}
-.home .hestia-blogs .hestia-blog-content {
-  margin: 60px 0 0;
-  padding: 0;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .category a {
-  color: #6bd098;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .category a:hover {
-  color: #44c47d;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .category a {
-  color: #51cbce;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .category a:hover {
-  color: #34b5b8;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .category a {
-  color: #51bcda;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .category a:hover {
-  color: #2ba9cd;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag {
-  color: #fff;
-  background-color: #6bd098;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag:hover {
-  color: #fff;
-  background-color: #44c47d;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag {
-  color: #fff;
-  background-color: #51cbce;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag:hover {
-  color: #fff;
-  background-color: #34b5b8;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag {
-  color: #fff;
-  background-color: #51bcda;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag:hover {
-  color: #fff;
-  background-color: #2ba9cd;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .category a {
-  color: #f5593d;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .category a:hover {
-  color: #f33816;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .category a {
-  color: #fbc658;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .category a:hover {
-  color: #fab526;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .category a {
-  color: #e91e63;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .category a:hover {
-  color: #C11F64;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag {
-  color: #fff;
-  background-color: #f5593d;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag:hover {
-  color: #fff;
-  background-color: #f33816;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag {
-  color: #fff;
-  background-color: #fbc658;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag:hover {
-  color: #fff;
-  background-color: #fab526;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag {
-  color: #fff;
-  background-color: #e91e63;
-}
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag:hover {
-  color: #fff;
-  background-color: #C11F64;
-}
-.home .hestia-blogs .hestia-blog-content .card-blog {
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
-  background-color: #fff;
-  margin: 5px 0 20px;
-  text-align: center;
-  -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
-  -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
-  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -moz-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -ms-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  -o-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-  transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
-}
-.home .hestia-blogs .hestia-blog-content .card-blog .card-image {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-border-radius: 12px;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-  -moz-border-radius: 12px;
-  -moz-border-radius-bottomleft: 0;
-  -moz-border-radius-bottomright: 0;
-  border-radius: 12px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-}
-.home .hestia-blogs .hestia-blog-content .card-blog .card-image a {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
-.home .hestia-blogs .hestia-blog-content .card-blog .card-image a img {
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-  border-radius: 0;
-}
-.home .hestia-blogs .hestia-blog-content .card-blog .content {
-  text-align: right;
-  padding: 20px;
-}
-.home .hestia-blogs .hestia-blog-content .card-blog .content .category {
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 18px;
-  padding: 10px 0 0;
-  margin: 0;
-}
-.home .hestia-blogs .hestia-blog-content .card-blog .content .card-title {
-  color: #444444;
-  font-size: 19px;
-  font-weight: 300;
-  line-height: 26px;
-  margin: 5px 0 0;
-}
-.home .hestia-blogs .hestia-blog-content .card-blog .content .card-description {
-  color: #9A9A9A;
-  font-family: inherit;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 22px;
-  margin: 15px 0 5px;
-}
-.home .hestia-blogs .hestia-blog-content .card-blog .content .card-description .moretag {
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  background-color: #51cbce;
-  border-color: #51cbce;
-  color: #FFFFFF;
-  opacity: 1;
-  box-sizing: border-box;
-  border-width: 2px;
-  font-size: 12px;
-  font-weight: 600;
-  line-height: 1.75;
-  cursor: pointer;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 10px 20px;
-  display: block;
-  max-width: 133px;
-  margin: 20px 0 0 auto;
-}
-.home .hestia-blogs .hestia-blog-content .card-blog:hover {
-  -webkit-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
-  -moz-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
 }
 
 /*--------------------------------------------------------------
@@ -1079,6 +723,579 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 }
 
 /*--------------------------------------------------------------
+## Portfolio Section
+--------------------------------------------------------------*/
+.hestia-work {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.hestia-work .hestia-title {
+  color: "Montserrat", "Helvetica", "Arial", sans-serif;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 42px;
+  margin: 30px 0 25px;
+  min-height: 32px;
+}
+.hestia-work .description {
+  color: #9A9A9A;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0 0 8px;
+}
+.hestia-work .hestia-portfolio-content .card {
+  -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+}
+.hestia-work .hestia-portfolio-content .card .card-title {
+  -moz-osx-font-smoothing: initial;
+  -webkit-font-smoothing: initial;
+  font-weight: 300;
+}
+
+/*--------------------------------------------------------------
+## Team Section
+--------------------------------------------------------------*/
+.hestia-team {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  /* End of .hestia-team-content */
+}
+.hestia-team .hestia-title {
+  color: #444444;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 43px;
+  margin: 30px 0 25px;
+  min-height: 32px;
+}
+.hestia-team h5.description {
+  color: #9A9A9A;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0;
+}
+.hestia-team .hestia-team-content {
+  margin: 30px 0 0;
+}
+.hestia-team .hestia-team-content .card {
+  margin: 30px 0 20px;
+  text-align: center;
+}
+.hestia-team .hestia-team-content .card .col-md-5 {
+  float: none;
+  text-align: center;
+  margin: 0 auto;
+  width: auto;
+}
+.hestia-team .hestia-team-content .card .col-md-5 .card-image {
+  display: block;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+.hestia-team .hestia-team-content .card .col-md-5 .card-image img {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  max-width: 100%;
+  height: auto;
+}
+.hestia-team .hestia-team-content .card .col-md-7 {
+  float: none;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: auto;
+}
+.hestia-team .hestia-team-content .card .content .card-title {
+  color: #444444;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 5px 0 0;
+}
+.hestia-team .hestia-team-content .card .content .category {
+  color: #868e96;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  margin: 5px 0;
+}
+.hestia-team .hestia-team-content .card .content .card-description {
+  color: #9A9A9A;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 15px 0 5px;
+}
+.hestia-team .hestia-team-content .card .content .footer a.btn {
+  opacity: 0.8;
+}
+.hestia-team .hestia-team-content .card .content .footer a.btn:hover {
+  opacity: 0.65;
+}
+
+/*--------------------------------------------------------------
+## Pricing Section
+--------------------------------------------------------------*/
+.hestia-pricing {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.hestia-pricing .hestia-title {
+  color: #444444;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 42px;
+  margin: 30px 0 25px;
+  min-height: 32px;
+}
+.hestia-pricing p.text-gray {
+  color: #9A9A9A;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 0 0 5px;
+}
+.hestia-pricing .card-pricing {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -moz-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -ms-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -o-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+}
+.hestia-pricing .card-pricing .category {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.hestia-pricing .card-pricing .card-title {
+  font-size: 51px;
+  font-weight: 300;
+  line-height: 42px;
+  margin-top: 30px;
+}
+.hestia-pricing .card-pricing .card-title small:first-child {
+  color: inherit;
+  font-size: 51px;
+  font-weight: 300;
+  top: 0;
+}
+.hestia-pricing .card-pricing ul {
+  margin: 20px auto;
+  max-width: 240px;
+}
+.hestia-pricing .card-pricing ul li {
+  -moz-osx-font-smoothing: initial;
+  -webkit-font-smoothing: initial;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  padding: 5px 0;
+  border: none;
+}
+.hestia-pricing .card-pricing .btn {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 21px;
+  padding: 8px 18px;
+}
+.hestia-pricing .card-pricing .btn:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.75;
+}
+.hestia-pricing .card-pricing:hover {
+  -webkit-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.hestia-pricing .hestia-table-two .card-pricing .category,
+.hestia-pricing .hestia-table-two .card-pricing .card-title,
+.hestia-pricing .hestia-table-two .card-pricing .card-title small,
+.hestia-pricing .hestia-table-two .card-pricing ul li,
+.hestia-pricing .hestia-table-two .card-pricing ul li b {
+  color: #fff;
+}
+.hestia-pricing .hestia-table-two .card-pricing .btn {
+  color: #66615B;
+  background-color: white;
+}
+
+/*--------------------------------------------------------------
+## Ribbon Section
+--------------------------------------------------------------*/
+.hestia-ribbon {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  padding: 35px 0;
+}
+.hestia-ribbon .hestia-title {
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 54px;
+}
+.hestia-ribbon .btn.btn-primary {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 21px;
+  padding: 8px 18px;
+}
+.hestia-ribbon .btn.btn-primary:hover {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  opacity: 0.75;
+}
+
+/*--------------------------------------------------------------
+## Testimonials Section
+--------------------------------------------------------------*/
+.hestia-testimonials {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  /* End of .hestia-team-content */
+}
+.hestia-testimonials .hestia-title {
+  color: #444444;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 42px;
+}
+.hestia-testimonials .description {
+  color: #9A9A9A;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0;
+}
+.hestia-testimonials .hestia-testimonials-content {
+  margin: 30px 0 0;
+}
+.hestia-testimonials .hestia-testimonials-content .row:nth-of-type(2n+1) .col-md-4:nth-of-type(3n+1) .card-testimonial {
+  background-color: #6bd098;
+}
+.hestia-testimonials .hestia-testimonials-content .row:nth-of-type(2n+1) .col-md-4:nth-of-type(3n+2) .card-testimonial {
+  background-color: #fbc658;
+}
+.hestia-testimonials .hestia-testimonials-content .row:nth-of-type(2n+1) .col-md-4:nth-of-type(3n+3) .card-testimonial {
+  background-color: #e91e63;
+}
+.hestia-testimonials .hestia-testimonials-content .row:nth-of-type(2n+2) .col-md-4:nth-of-type(3n+1) .card-testimonial {
+  background-color: #f5593d;
+}
+.hestia-testimonials .hestia-testimonials-content .row:nth-of-type(2n+2) .col-md-4:nth-of-type(3n+2) .card-testimonial {
+  background-color: #51cbce;
+}
+.hestia-testimonials .hestia-testimonials-content .row:nth-of-type(2n+2) .col-md-4:nth-of-type(3n+3) .card-testimonial {
+  background-color: #51bcda;
+}
+.hestia-testimonials .hestia-testimonials-content .row .col-md-4 .card-testimonial .content .card-title, .hestia-testimonials .hestia-testimonials-content .row .col-md-4 .card-testimonial .content .category, .hestia-testimonials .hestia-testimonials-content .row .col-md-4 .card-testimonial .content .card-description {
+  color: #fff;
+}
+.hestia-testimonials .hestia-testimonials-content .card-testimonial {
+  text-align: right;
+  padding: 20px 20px 0;
+  -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -moz-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -ms-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -o-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+}
+.hestia-testimonials .hestia-testimonials-content .card-testimonial .card-avatar {
+  margin: 0;
+  max-width: 60px;
+  max-height: 60px;
+}
+.hestia-testimonials .hestia-testimonials-content .card-testimonial .card-avatar img {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  margin: 0 0 -20px;
+}
+.hestia-testimonials .hestia-testimonials-content .card-testimonial .content .card-title {
+  font-weight: 600;
+}
+.hestia-testimonials .hestia-testimonials-content .card-testimonial .content .category {
+  font-weight: 300;
+}
+.hestia-testimonials .hestia-testimonials-content .card-testimonial .content .card-description {
+  font-family: inherit;
+  font-weight: 300;
+}
+.hestia-testimonials .hestia-testimonials-content .card-testimonial:hover {
+  -webkit-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+}
+
+/*--------------------------------------------------------------
+## Subscribe Section
+--------------------------------------------------------------*/
+.subscribe-line {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+.subscribe-line .title {
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 42px;
+}
+.subscribe-line .subscribe-description {
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0 0 40px;
+}
+
+/*--------------------------------------------------------------
+## Blog Section
+--------------------------------------------------------------*/
+.home:not(.blog) .hestia-blogs {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #eeeeee;
+  /* End of .hestia-blog-content */
+}
+.home:not(.blog) .hestia-blogs .hestia-title {
+  color: #444444;
+  font-size: 39px;
+  font-weight: 300;
+  line-height: 41px;
+}
+.home:not(.blog) .hestia-blogs .description {
+  color: #9A9A9A;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 0;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content {
+  margin: 60px 0 0;
+  padding: 0;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .category a {
+  color: #6bd098;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .category a:hover {
+  color: #44c47d;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .category a {
+  color: #51cbce;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .category a:hover {
+  color: #34b5b8;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .category a {
+  color: #51bcda;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .category a:hover {
+  color: #2ba9cd;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag {
+  color: #fff;
+  background-color: #6bd098;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag:hover {
+  color: #fff;
+  background-color: #44c47d;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag {
+  color: #fff;
+  background-color: #51cbce;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag:hover {
+  color: #fff;
+  background-color: #34b5b8;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag {
+  color: #fff;
+  background-color: #51bcda;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag:hover {
+  color: #fff;
+  background-color: #2ba9cd;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .category a {
+  color: #f5593d;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .category a:hover {
+  color: #f33816;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .category a {
+  color: #fbc658;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .category a:hover {
+  color: #fab526;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .category a {
+  color: #e91e63;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .category a:hover {
+  color: #C11F64;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag {
+  color: #fff;
+  background-color: #f5593d;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag:hover {
+  color: #fff;
+  background-color: #f33816;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag {
+  color: #fff;
+  background-color: #fbc658;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag:hover {
+  color: #fff;
+  background-color: #fab526;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag {
+  color: #fff;
+  background-color: #e91e63;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag:hover {
+  color: #fff;
+  background-color: #C11F64;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog {
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  background-color: #fff;
+  margin: 5px 0 20px;
+  text-align: center;
+  -webkit-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -moz-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -ms-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  -o-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+  transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .card-image {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 12px;
+  -webkit-border-bottom-left-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius: 12px;
+  -moz-border-radius-bottomleft: 0;
+  -moz-border-radius-bottomright: 0;
+  border-radius: 12px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .card-image a {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .card-image a img {
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content {
+  text-align: right;
+  padding: 20px;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content .category {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  padding: 10px 0 0;
+  margin: 0;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content .card-title {
+  color: #444444;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 26px;
+  margin: 5px 0 0;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content .card-description {
+  color: #9A9A9A;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 22px;
+  margin: 15px 0 5px;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content .card-description .moretag {
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #51cbce;
+  border-color: #51cbce;
+  color: #FFFFFF;
+  opacity: 1;
+  box-sizing: border-box;
+  border-width: 2px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.75;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 10px 20px;
+  display: block;
+  max-width: 133px;
+  margin: 20px 0 0 auto;
+}
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog:hover {
+  -webkit-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
+}
+
+/*--------------------------------------------------------------
 ## Contact Section
 --------------------------------------------------------------*/
 .contactus {
@@ -1129,58 +1346,6 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   -moz-box-shadow: none;
   box-shadow: none;
   opacity: 0.75;
-}
-
-/*--------------------------------------------------------------
-## Ribbon Section
---------------------------------------------------------------*/
-.hestia-ribbon {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  padding: 35px 0;
-}
-.hestia-ribbon .hestia-title {
-  font-weight: 300;
-  font-size: 26px;
-  line-height: 54px;
-}
-.hestia-ribbon .btn.btn-primary {
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 21px;
-  padding: 8px 18px;
-}
-.hestia-ribbon .btn.btn-primary:hover {
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  opacity: 0.75;
-}
-
-/*--------------------------------------------------------------
-## Subscribe Section
---------------------------------------------------------------*/
-.subscribe-line {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-}
-.subscribe-line .title {
-  font-size: 39px;
-  font-weight: 300;
-  line-height: 42px;
-}
-.subscribe-line .subscribe-description {
-  font-size: 19px;
-  font-weight: 300;
-  line-height: 26px;
-  margin: 0 0 40px;
 }
 
 /*--------------------------------------------------------------
@@ -2126,6 +2291,9 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   font-weight: 400;
   margin-left: 3px;
 }
+.woocommerce-cart .shop_table tbody button {
+  color: #ffffff !important;
+}
 .woocommerce-cart .cart_totals {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -2218,6 +2386,22 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   font-weight: 300;
   line-height: 27px;
 }
+.woocommerce-checkout #hestia-checkout-coupon .button {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 11px 10px;
+}
+.woocommerce-checkout #hestia-checkout-coupon .button:hover {
+  opacity: 0.75;
+}
 .woocommerce-checkout #payment #place_order {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -2275,6 +2459,12 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 
 .woocommerce-page .woocommerce-error:before {
   display: none;
+}
+
+.woocommerce-checkout #hestia-checkout-coupon .woocommerce-message,
+.woocommerce-checkout #hestia-checkout-coupon .woocommerce-error {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* Info message */

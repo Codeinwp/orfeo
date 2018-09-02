@@ -4,7 +4,7 @@ Theme URI:      https://themeisle.com/themes/orfeo/
 Author:         ThemeIsle
 Author URI:     https://themeisle.com
 Description:    Orfeo is a responsive WordPress theme with multipurpose design. It is a good fit for both small businesses and corporate businesses, as it is highly customizable via the Live Customizer. You can use Orfeo for restaurants, startups, freelancer resume, creative agencies, portfolios, WooCommerce, or niches like sports, medical, blogging, fashion, lawyer sites etc. It has a one-page design, Sendinblue newsletter integration, widgetized footer, and a clean appearance. The theme is compatible with Elementor Page Builder, Photo Gallery, Flat Parallax Slider, and Travel Map; it is mobile friendly and optimized for SEO.
-Version:        1.0.5
+Version:        1.0.6
 License:        GNU General Public License v2 or later
 License URI:    http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain:    orfeo
@@ -43,6 +43,24 @@ div, p, a, span, li, body {
 /*--------------------------------------------------------------
 # Widgets
 --------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Buttons
+--------------------------------------------------------------*/
+a,
+.btn,
+button,
+.button {
+  box-shadow: none !important;
+}
+
+a:hover,
+.btn:hover,
+button:hover,
+.button:hover {
+  box-shadow: none !important;
+  opacity: 0.75;
+}
+
 /*--------------------------------------------------------------
 ## Widgets
 --------------------------------------------------------------*/
@@ -492,27 +510,27 @@ div, p, a, span, li, body {
 /*--------------------------------------------------------------
 ## Big Title Section
 --------------------------------------------------------------*/
-.header .carousel {
+.carousel {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-.header .carousel .hestia-title {
+.carousel .hestia-title {
   font-size: 50px;
   font-weight: 800;
   line-height: 55px;
   margin: 30px 0 25px;
 }
-.header .carousel .sub-title {
+.carousel .sub-title {
   font-family: inherit;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
   margin: 0 0 8px;
 }
-.header .carousel .buttons {
+.carousel .buttons {
   margin: 30px 0 0;
 }
-.header .carousel .buttons a {
+.carousel .buttons a {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
@@ -522,16 +540,16 @@ div, p, a, span, li, body {
   line-height: 24px;
   padding: 11px 30px;
 }
-.header .carousel .buttons .btn.btn-primary,
-.header .carousel .buttons .btn.btn-primary:hover {
+.carousel .buttons .btn.btn-primary,
+.carousel .buttons .btn.btn-primary:hover {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
 }
-.header .carousel .buttons .btn.btn-primary:hover {
+.carousel .buttons .btn.btn-primary:hover {
   opacity: 0.75;
 }
-.header .carousel .buttons .btn-right {
+.carousel .buttons .btn-right {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -540,11 +558,19 @@ div, p, a, span, li, body {
   border: 2px solid #ffffff;
   padding: 9px 28px;
 }
-.header .carousel .buttons .btn-right:hover {
+.carousel .buttons .btn-right:hover {
   opacity: 0.75;
 }
-.header .carousel .buttons .btn-primary + .btn-right {
-  margin-left: 30px;
+.carousel .big-title-slider-content .buttons .btn,
+.carousel .big-title-slider-content .buttons .btn-right {
+  display: inline-block;
+  margin: 15px;
+}
+.carousel .big-title-slider-content.text-left .buttons .btn {
+  margin-left: auto;
+}
+.carousel .big-title-slider-content.text-right .buttons .btn {
+  margin-right: auto;
 }
 
 /*--------------------------------------------------------------
@@ -1069,114 +1095,114 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 /*--------------------------------------------------------------
 ## Blog Section
 --------------------------------------------------------------*/
-.home .hestia-blogs {
+.home:not(.blog) .hestia-blogs {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   background-color: #eeeeee;
   /* End of .hestia-blog-content */
 }
-.home .hestia-blogs .hestia-title {
+.home:not(.blog) .hestia-blogs .hestia-title {
   color: #444444;
   font-size: 39px;
   font-weight: 300;
   line-height: 41px;
 }
-.home .hestia-blogs .description {
+.home:not(.blog) .hestia-blogs .description {
   color: #9A9A9A;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
   margin: 0;
 }
-.home .hestia-blogs .hestia-blog-content {
+.home:not(.blog) .hestia-blogs .hestia-blog-content {
   margin: 60px 0 0;
   padding: 0;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .category a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .category a {
   color: #6bd098;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .category a:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .category a:hover {
   color: #44c47d;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .category a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .category a {
   color: #51cbce;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .category a:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .category a:hover {
   color: #34b5b8;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .category a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .category a {
   color: #51bcda;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .category a:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .category a:hover {
   color: #2ba9cd;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag {
   color: #fff;
   background-color: #6bd098;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+1) .card-description a.moretag:hover {
   color: #fff;
   background-color: #44c47d;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag {
   color: #fff;
   background-color: #51cbce;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+2) .card-description a.moretag:hover {
   color: #fff;
   background-color: #34b5b8;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag {
   color: #fff;
   background-color: #51bcda;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+1) article:nth-child(3n+3) .card-description a.moretag:hover {
   color: #fff;
   background-color: #2ba9cd;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .category a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .category a {
   color: #f5593d;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .category a:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .category a:hover {
   color: #f33816;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .category a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .category a {
   color: #fbc658;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .category a:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .category a:hover {
   color: #fab526;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .category a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .category a {
   color: #e91e63;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .category a:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .category a:hover {
   color: #C11F64;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag {
   color: #fff;
   background-color: #f5593d;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+1) .card-description a.moretag:hover {
   color: #fff;
   background-color: #f33816;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag {
   color: #fff;
   background-color: #fbc658;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+2) .card-description a.moretag:hover {
   color: #fff;
   background-color: #fab526;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag {
   color: #fff;
   background-color: #e91e63;
 }
-.home .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .row:nth-child(2n+2) article:nth-child(3n+3) .card-description a.moretag:hover {
   color: #fff;
   background-color: #C11F64;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog {
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   border-radius: 12px;
@@ -1192,7 +1218,7 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   -o-transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
   transition: 300ms cubic-bezier(0.34, 2, 0.6, 1), box-shadow 200ms ease;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .card-image {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .card-image {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -1206,35 +1232,35 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .card-image a {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .card-image a {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .card-image a img {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .card-image a img {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
   border-radius: 0;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .content {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content {
   text-align: left;
   padding: 20px;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .content .category {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content .category {
   font-size: 12px;
   font-weight: 600;
   line-height: 18px;
   padding: 10px 0 0;
   margin: 0;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .content .card-title {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content .card-title {
   color: #444444;
   font-size: 19px;
   font-weight: 300;
   line-height: 26px;
   margin: 5px 0 0;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .content .card-description {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content .card-description {
   color: #9A9A9A;
   font-family: inherit;
   font-size: 15px;
@@ -1242,7 +1268,7 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   line-height: 22px;
   margin: 15px 0 5px;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog .content .card-description .moretag {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog .content .card-description .moretag {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
@@ -1263,7 +1289,7 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   max-width: 133px;
   margin: 20px auto 0 0;
 }
-.home .hestia-blogs .hestia-blog-content .card-blog:hover {
+.home:not(.blog) .hestia-blogs .hestia-blog-content .card-blog:hover {
   -webkit-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
   box-shadow: 0 12px 19px -7px rgba(0, 0, 0, 0.3);
@@ -2265,6 +2291,9 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   font-weight: 400;
   margin-right: 3px;
 }
+.woocommerce-cart .shop_table tbody button {
+  color: #ffffff !important;
+}
 .woocommerce-cart .cart_totals {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -2357,6 +2386,22 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
   font-weight: 300;
   line-height: 27px;
 }
+.woocommerce-checkout #hestia-checkout-coupon .button {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  padding: 11px 10px;
+}
+.woocommerce-checkout #hestia-checkout-coupon .button:hover {
+  opacity: 0.75;
+}
 .woocommerce-checkout #payment #place_order {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -2414,6 +2459,12 @@ section.products .hestia-shop-content .shop-item .card .card-image a img {
 
 .woocommerce-page .woocommerce-error:before {
   display: none;
+}
+
+.woocommerce-checkout #hestia-checkout-coupon .woocommerce-message,
+.woocommerce-checkout #hestia-checkout-coupon .woocommerce-error {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Info message */
