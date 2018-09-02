@@ -2,9 +2,9 @@
 # This file is distributed under the GNU General Public License v2 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Orfeo 1.0.5\n"
+"Project-Id-Version: Orfeo 1.0.6\n"
 "Report-Msgid-Bugs-To: https://github.com/Codeinwp/orfeo/issues\n"
-"POT-Creation-Date: 2018-02-01 15:16:14+00:00\n"
+"POT-Creation-Date: 2018-09-02 18:36:02+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -40,15 +40,15 @@ msgstr ""
 msgid "First button text"
 msgstr ""
 
-#: functions.php:292
+#: functions.php:298
 msgid "Read more"
 msgstr ""
 
-#: functions.php:369 functions.php:373
+#: functions.php:375 functions.php:379
 msgid "About Orfeo"
 msgstr ""
 
-#: functions.php:378
+#: functions.php:384
 #. translators: s - theme name
 msgid "Welcome to %s! - Version "
 msgstr ""
