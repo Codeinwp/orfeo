@@ -19,3 +19,4 @@ composer.json
 composer.lock
 key.enc
 package-json.lock
+vendor
