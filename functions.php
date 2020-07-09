@@ -6,7 +6,7 @@
  * @since 1.0.0
  */
 
-define( 'ORFEO_VERSION', '1.0.6' );
+define( 'ORFEO_VERSION', '1.0.7' );
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
